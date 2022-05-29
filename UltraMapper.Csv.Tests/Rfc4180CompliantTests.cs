@@ -1,0 +1,51 @@
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Globalization;
+using System.Linq;
+using UltraMapper.Csv.Factories;
+
+namespace UltraMapper.Csv.Tests
+{
+    [TestClass]
+    public class Rfc4180CompliantTest
+    {
+        [CsvReadOptions( CustomPreprocess = true )]
+        private class Auto
+        {
+            public int Year { get; set; }
+            public string Make { get; set; }
+
+            [CsvReadOptions( Unquote = true, UnescapeQuotes = true )]
+            public string Model { get; set; }
+
+            [CsvReadOptions( Unquote = true )]
+            public string Description { get; set; }
+            public double Price { get; set; }
+
+            public void Preprocess( string[] data )
+            {
+
+            }
+        }
+
+        [TestMethod]
+        public void Rfc4180Compliant()
+        {
+            string fileLocation = Resources.GetFileLocation( "RFC4180Standard.csv" );
+            var csvReader = CsvParserFactory.GetInstance<Auto>( new Uri( fileLocation ), cfg =>
+            {
+                cfg.Culture = CultureInfo.GetCultureInfo( "en-Us" );
+                cfg.Delimiter = ",";
+                cfg.HasNewLinesInQuotes = true;
+                cfg.HasDelimiterInQuotes = true;
+                cfg.HasHeader = true;
+                cfg.HasFooter = false;
+            } );         
+
+            var header = csvReader.GetHeader();
+            var records = csvReader.GetRecords().ToList();
+
+            Assert.IsTrue( records.Count == 4 );
+        }
+    }
+}

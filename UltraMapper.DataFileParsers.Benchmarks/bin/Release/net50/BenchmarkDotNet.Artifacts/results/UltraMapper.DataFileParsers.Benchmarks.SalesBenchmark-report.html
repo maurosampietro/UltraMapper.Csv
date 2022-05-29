@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>UltraMapper.DataFileParsers.Benchmarks.SalesBenchmark-20220529-121403</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19044.1586 (21H2)
+Intel Core i7-8700K CPU 3.70GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
+.NET SDK=6.0.300
+  [Host]   : .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+  .NET 5.0 : .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+</code></pre>
+<pre><code>Job=.NET 5.0  Runtime=.NET 5.0  
+</code></pre>
+
+<table>
+<thead><tr><th>Method</th><th>Mean</th><th>Error</th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>FileHelper</td><td>3.183 s</td><td>0.0613 s</td><td>0.0681 s</td>
+</tr><tr><td>CsvHelper</td><td>4.124 s</td><td>0.0800 s</td><td>0.1197 s</td>
+</tr><tr><td>UltraMapper</td><td>3.132 s</td><td>0.0597 s</td><td>0.0639 s</td>
+</tr></tbody></table>
+</body>
+</html>

@@ -1,0 +1,947 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 9 benchmark(s) in total *****
+// ***** Building 3 exe(s) in Parallel: Start   *****
+// ***** Done, took 00:00:17 (17.59 sec)   *****
+// Found 9 benchmarks:
+//   SalesBenchmark.FileHelper: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmark.CsvHelper: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmark.UltraMapper: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmark.FileHelper: .NET 6.0(Runtime=.NET 6.0)
+//   SalesBenchmark.CsvHelper: .NET 6.0(Runtime=.NET 6.0)
+//   SalesBenchmark.UltraMapper: .NET 6.0(Runtime=.NET 6.0)
+//   SalesBenchmark.FileHelper: .NET Framework 4.7(Runtime=.NET Framework 4.7)
+//   SalesBenchmark.CsvHelper: .NET Framework 4.7(Runtime=.NET Framework 4.7)
+//   SalesBenchmark.UltraMapper: .NET Framework 4.7(Runtime=.NET Framework 4.7)
+
+// **************************
+// Benchmark: SalesBenchmark.FileHelper: .NET 5.0(Runtime=.NET 5.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "3a80af2d-507b-4bfc-bc95-3c93ca6de8d8.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmark.FileHelper" --job ".NET 5.0" --benchmarkId 0 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\3a80af2d-507b-4bfc-bc95-3c93ca6de8d8\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 5.0
+
+OverheadJitting  1: 1 op, 205000.00 ns, 205.0000 us/op
+WorkloadJitting  1: 1 op, 7012207700.00 ns, 7.0122 s/op
+
+WorkloadWarmup   1: 1 op, 6664519300.00 ns, 6.6645 s/op
+WorkloadWarmup   2: 1 op, 6909496100.00 ns, 6.9095 s/op
+WorkloadWarmup   3: 1 op, 7027441000.00 ns, 7.0274 s/op
+WorkloadWarmup   4: 1 op, 7286646600.00 ns, 7.2866 s/op
+WorkloadWarmup   5: 1 op, 6934885900.00 ns, 6.9349 s/op
+WorkloadWarmup   6: 1 op, 7372408300.00 ns, 7.3724 s/op
+WorkloadWarmup   7: 1 op, 7040246100.00 ns, 7.0402 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 6761888900.00 ns, 6.7619 s/op
+WorkloadActual   2: 1 op, 6721409400.00 ns, 6.7214 s/op
+WorkloadActual   3: 1 op, 7303659200.00 ns, 7.3037 s/op
+WorkloadActual   4: 1 op, 6708575300.00 ns, 6.7086 s/op
+WorkloadActual   5: 1 op, 6787610700.00 ns, 6.7876 s/op
+WorkloadActual   6: 1 op, 7833051300.00 ns, 7.8331 s/op
+WorkloadActual   7: 1 op, 7128351700.00 ns, 7.1284 s/op
+WorkloadActual   8: 1 op, 6689402800.00 ns, 6.6894 s/op
+WorkloadActual   9: 1 op, 6677490900.00 ns, 6.6775 s/op
+WorkloadActual  10: 1 op, 6740320100.00 ns, 6.7403 s/op
+WorkloadActual  11: 1 op, 6908668700.00 ns, 6.9087 s/op
+WorkloadActual  12: 1 op, 6885208400.00 ns, 6.8852 s/op
+WorkloadActual  13: 1 op, 7155580200.00 ns, 7.1556 s/op
+WorkloadActual  14: 1 op, 6611284000.00 ns, 6.6113 s/op
+WorkloadActual  15: 1 op, 7111687000.00 ns, 7.1117 s/op
+WorkloadActual  16: 1 op, 6991814600.00 ns, 6.9918 s/op
+WorkloadActual  17: 1 op, 7013552300.00 ns, 7.0136 s/op
+WorkloadActual  18: 1 op, 6877831900.00 ns, 6.8778 s/op
+WorkloadActual  19: 1 op, 7148343000.00 ns, 7.1483 s/op
+WorkloadActual  20: 1 op, 6391870800.00 ns, 6.3919 s/op
+WorkloadActual  21: 1 op, 6344431600.00 ns, 6.3444 s/op
+WorkloadActual  22: 1 op, 6346982800.00 ns, 6.3470 s/op
+WorkloadActual  23: 1 op, 6302301200.00 ns, 6.3023 s/op
+WorkloadActual  24: 1 op, 6330834600.00 ns, 6.3308 s/op
+WorkloadActual  25: 1 op, 6331284100.00 ns, 6.3313 s/op
+WorkloadActual  26: 1 op, 6342067200.00 ns, 6.3421 s/op
+WorkloadActual  27: 1 op, 6340208800.00 ns, 6.3402 s/op
+WorkloadActual  28: 1 op, 6319617100.00 ns, 6.3196 s/op
+WorkloadActual  29: 1 op, 6365135900.00 ns, 6.3651 s/op
+WorkloadActual  30: 1 op, 6460169700.00 ns, 6.4602 s/op
+WorkloadActual  31: 1 op, 6397510000.00 ns, 6.3975 s/op
+WorkloadActual  32: 1 op, 6341185400.00 ns, 6.3412 s/op
+WorkloadActual  33: 1 op, 6179202000.00 ns, 6.1792 s/op
+WorkloadActual  34: 1 op, 6204588300.00 ns, 6.2046 s/op
+WorkloadActual  35: 1 op, 6229176900.00 ns, 6.2292 s/op
+WorkloadActual  36: 1 op, 6250237900.00 ns, 6.2502 s/op
+WorkloadActual  37: 1 op, 6237361800.00 ns, 6.2374 s/op
+WorkloadActual  38: 1 op, 6195266000.00 ns, 6.1953 s/op
+WorkloadActual  39: 1 op, 6233216200.00 ns, 6.2332 s/op
+WorkloadActual  40: 1 op, 6334319600.00 ns, 6.3343 s/op
+WorkloadActual  41: 1 op, 6219302000.00 ns, 6.2193 s/op
+WorkloadActual  42: 1 op, 6222724900.00 ns, 6.2227 s/op
+WorkloadActual  43: 1 op, 6192005400.00 ns, 6.1920 s/op
+WorkloadActual  44: 1 op, 6236098100.00 ns, 6.2361 s/op
+WorkloadActual  45: 1 op, 6233513000.00 ns, 6.2335 s/op
+WorkloadActual  46: 1 op, 6511811300.00 ns, 6.5118 s/op
+WorkloadActual  47: 1 op, 6277445100.00 ns, 6.2774 s/op
+WorkloadActual  48: 1 op, 6265140000.00 ns, 6.2651 s/op
+WorkloadActual  49: 1 op, 6441533800.00 ns, 6.4415 s/op
+WorkloadActual  50: 1 op, 6420589400.00 ns, 6.4206 s/op
+WorkloadActual  51: 1 op, 6446892800.00 ns, 6.4469 s/op
+WorkloadActual  52: 1 op, 6570486300.00 ns, 6.5705 s/op
+WorkloadActual  53: 1 op, 6361892400.00 ns, 6.3619 s/op
+WorkloadActual  54: 1 op, 6392250500.00 ns, 6.3923 s/op
+WorkloadActual  55: 1 op, 6420484500.00 ns, 6.4205 s/op
+WorkloadActual  56: 1 op, 6368752900.00 ns, 6.3688 s/op
+WorkloadActual  57: 1 op, 6447036100.00 ns, 6.4470 s/op
+WorkloadActual  58: 1 op, 6411315200.00 ns, 6.4113 s/op
+WorkloadActual  59: 1 op, 6398586200.00 ns, 6.3986 s/op
+WorkloadActual  60: 1 op, 6781617400.00 ns, 6.7816 s/op
+WorkloadActual  61: 1 op, 6661261600.00 ns, 6.6613 s/op
+WorkloadActual  62: 1 op, 6673876100.00 ns, 6.6739 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 6761888900.00 ns, 6.7619 s/op
+WorkloadResult   2: 1 op, 6721409400.00 ns, 6.7214 s/op
+WorkloadResult   3: 1 op, 7303659200.00 ns, 7.3037 s/op
+WorkloadResult   4: 1 op, 6708575300.00 ns, 6.7086 s/op
+WorkloadResult   5: 1 op, 6787610700.00 ns, 6.7876 s/op
+WorkloadResult   6: 1 op, 7128351700.00 ns, 7.1284 s/op
+WorkloadResult   7: 1 op, 6689402800.00 ns, 6.6894 s/op
+WorkloadResult   8: 1 op, 6677490900.00 ns, 6.6775 s/op
+WorkloadResult   9: 1 op, 6740320100.00 ns, 6.7403 s/op
+WorkloadResult  10: 1 op, 6908668700.00 ns, 6.9087 s/op
+WorkloadResult  11: 1 op, 6885208400.00 ns, 6.8852 s/op
+WorkloadResult  12: 1 op, 7155580200.00 ns, 7.1556 s/op
+WorkloadResult  13: 1 op, 6611284000.00 ns, 6.6113 s/op
+WorkloadResult  14: 1 op, 7111687000.00 ns, 7.1117 s/op
+WorkloadResult  15: 1 op, 6991814600.00 ns, 6.9918 s/op
+WorkloadResult  16: 1 op, 7013552300.00 ns, 7.0136 s/op
+WorkloadResult  17: 1 op, 6877831900.00 ns, 6.8778 s/op
+WorkloadResult  18: 1 op, 7148343000.00 ns, 7.1483 s/op
+WorkloadResult  19: 1 op, 6391870800.00 ns, 6.3919 s/op
+WorkloadResult  20: 1 op, 6344431600.00 ns, 6.3444 s/op
+WorkloadResult  21: 1 op, 6346982800.00 ns, 6.3470 s/op
+WorkloadResult  22: 1 op, 6302301200.00 ns, 6.3023 s/op
+WorkloadResult  23: 1 op, 6330834600.00 ns, 6.3308 s/op
+WorkloadResult  24: 1 op, 6331284100.00 ns, 6.3313 s/op
+WorkloadResult  25: 1 op, 6342067200.00 ns, 6.3421 s/op
+WorkloadResult  26: 1 op, 6340208800.00 ns, 6.3402 s/op
+WorkloadResult  27: 1 op, 6319617100.00 ns, 6.3196 s/op
+WorkloadResult  28: 1 op, 6365135900.00 ns, 6.3651 s/op
+WorkloadResult  29: 1 op, 6460169700.00 ns, 6.4602 s/op
+WorkloadResult  30: 1 op, 6397510000.00 ns, 6.3975 s/op
+WorkloadResult  31: 1 op, 6341185400.00 ns, 6.3412 s/op
+WorkloadResult  32: 1 op, 6179202000.00 ns, 6.1792 s/op
+WorkloadResult  33: 1 op, 6204588300.00 ns, 6.2046 s/op
+WorkloadResult  34: 1 op, 6229176900.00 ns, 6.2292 s/op
+WorkloadResult  35: 1 op, 6250237900.00 ns, 6.2502 s/op
+WorkloadResult  36: 1 op, 6237361800.00 ns, 6.2374 s/op
+WorkloadResult  37: 1 op, 6195266000.00 ns, 6.1953 s/op
+WorkloadResult  38: 1 op, 6233216200.00 ns, 6.2332 s/op
+WorkloadResult  39: 1 op, 6334319600.00 ns, 6.3343 s/op
+WorkloadResult  40: 1 op, 6219302000.00 ns, 6.2193 s/op
+WorkloadResult  41: 1 op, 6222724900.00 ns, 6.2227 s/op
+WorkloadResult  42: 1 op, 6192005400.00 ns, 6.1920 s/op
+WorkloadResult  43: 1 op, 6236098100.00 ns, 6.2361 s/op
+WorkloadResult  44: 1 op, 6233513000.00 ns, 6.2335 s/op
+WorkloadResult  45: 1 op, 6511811300.00 ns, 6.5118 s/op
+WorkloadResult  46: 1 op, 6277445100.00 ns, 6.2774 s/op
+WorkloadResult  47: 1 op, 6265140000.00 ns, 6.2651 s/op
+WorkloadResult  48: 1 op, 6441533800.00 ns, 6.4415 s/op
+WorkloadResult  49: 1 op, 6420589400.00 ns, 6.4206 s/op
+WorkloadResult  50: 1 op, 6446892800.00 ns, 6.4469 s/op
+WorkloadResult  51: 1 op, 6570486300.00 ns, 6.5705 s/op
+WorkloadResult  52: 1 op, 6361892400.00 ns, 6.3619 s/op
+WorkloadResult  53: 1 op, 6392250500.00 ns, 6.3923 s/op
+WorkloadResult  54: 1 op, 6420484500.00 ns, 6.4205 s/op
+WorkloadResult  55: 1 op, 6368752900.00 ns, 6.3688 s/op
+WorkloadResult  56: 1 op, 6447036100.00 ns, 6.4470 s/op
+WorkloadResult  57: 1 op, 6411315200.00 ns, 6.4113 s/op
+WorkloadResult  58: 1 op, 6398586200.00 ns, 6.3986 s/op
+WorkloadResult  59: 1 op, 6781617400.00 ns, 6.7816 s/op
+WorkloadResult  60: 1 op, 6661261600.00 ns, 6.6613 s/op
+WorkloadResult  61: 1 op, 6673876100.00 ns, 6.6739 s/op
+
+// AfterAll
+// Benchmark Process 7008 has exited with code 0.
+
+Mean = 6.519 s, StdErr = 0.038 s (0.58%), N = 61, StdDev = 0.294 s
+Min = 6.179 s, Q1 = 6.320 s, Median = 6.399 s, Q3 = 6.709 s, Max = 7.304 s
+IQR = 0.389 s, LowerFence = 5.736 s, UpperFence = 7.292 s
+ConfidenceInterval = [6.389 s; 6.649 s] (CI 99.9%), Margin = 0.130 s (2.00% of Mean)
+Skewness = 0.94, Kurtosis = 2.79, MValue = 2.37
+
+// **************************
+// Benchmark: SalesBenchmark.CsvHelper: .NET 5.0(Runtime=.NET 5.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "3a80af2d-507b-4bfc-bc95-3c93ca6de8d8.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmark.CsvHelper" --job ".NET 5.0" --benchmarkId 1 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\3a80af2d-507b-4bfc-bc95-3c93ca6de8d8\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 5.0
+
+OverheadJitting  1: 1 op, 174400.00 ns, 174.4000 us/op
+WorkloadJitting  1: 1 op, 8145077200.00 ns, 8.1451 s/op
+
+WorkloadWarmup   1: 1 op, 8023824000.00 ns, 8.0238 s/op
+WorkloadWarmup   2: 1 op, 8007919800.00 ns, 8.0079 s/op
+WorkloadWarmup   3: 1 op, 7981200500.00 ns, 7.9812 s/op
+WorkloadWarmup   4: 1 op, 8088440800.00 ns, 8.0884 s/op
+WorkloadWarmup   5: 1 op, 8107170500.00 ns, 8.1072 s/op
+WorkloadWarmup   6: 1 op, 8132936400.00 ns, 8.1329 s/op
+WorkloadWarmup   7: 1 op, 7992736000.00 ns, 7.9927 s/op
+WorkloadWarmup   8: 1 op, 7971356600.00 ns, 7.9714 s/op
+WorkloadWarmup   9: 1 op, 8057656700.00 ns, 8.0577 s/op
+WorkloadWarmup  10: 1 op, 8145164200.00 ns, 8.1452 s/op
+WorkloadWarmup  11: 1 op, 8170865200.00 ns, 8.1709 s/op
+WorkloadWarmup  12: 1 op, 8080812600.00 ns, 8.0808 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 8158969700.00 ns, 8.1590 s/op
+WorkloadActual   2: 1 op, 8325794100.00 ns, 8.3258 s/op
+WorkloadActual   3: 1 op, 8248097700.00 ns, 8.2481 s/op
+WorkloadActual   4: 1 op, 8302841200.00 ns, 8.3028 s/op
+WorkloadActual   5: 1 op, 8010828100.00 ns, 8.0108 s/op
+WorkloadActual   6: 1 op, 8252156600.00 ns, 8.2522 s/op
+WorkloadActual   7: 1 op, 8146887900.00 ns, 8.1469 s/op
+WorkloadActual   8: 1 op, 8128763400.00 ns, 8.1288 s/op
+WorkloadActual   9: 1 op, 8108753600.00 ns, 8.1088 s/op
+WorkloadActual  10: 1 op, 8479517100.00 ns, 8.4795 s/op
+WorkloadActual  11: 1 op, 8081724100.00 ns, 8.0817 s/op
+WorkloadActual  12: 1 op, 8090276300.00 ns, 8.0903 s/op
+WorkloadActual  13: 1 op, 8001560200.00 ns, 8.0016 s/op
+WorkloadActual  14: 1 op, 7919486600.00 ns, 7.9195 s/op
+WorkloadActual  15: 1 op, 7770019400.00 ns, 7.7700 s/op
+WorkloadActual  16: 1 op, 7719115500.00 ns, 7.7191 s/op
+WorkloadActual  17: 1 op, 7602140600.00 ns, 7.6021 s/op
+WorkloadActual  18: 1 op, 7571362100.00 ns, 7.5714 s/op
+WorkloadActual  19: 1 op, 7802712100.00 ns, 7.8027 s/op
+WorkloadActual  20: 1 op, 7677111700.00 ns, 7.6771 s/op
+WorkloadActual  21: 1 op, 8130618200.00 ns, 8.1306 s/op
+WorkloadActual  22: 1 op, 8460642800.00 ns, 8.4606 s/op
+WorkloadActual  23: 1 op, 8312139900.00 ns, 8.3121 s/op
+WorkloadActual  24: 1 op, 7877840400.00 ns, 7.8778 s/op
+WorkloadActual  25: 1 op, 7951546300.00 ns, 7.9515 s/op
+WorkloadActual  26: 1 op, 7834937800.00 ns, 7.8349 s/op
+WorkloadActual  27: 1 op, 8023766500.00 ns, 8.0238 s/op
+WorkloadActual  28: 1 op, 7843589400.00 ns, 7.8436 s/op
+WorkloadActual  29: 1 op, 7801142400.00 ns, 7.8011 s/op
+WorkloadActual  30: 1 op, 7811062700.00 ns, 7.8111 s/op
+WorkloadActual  31: 1 op, 7830799200.00 ns, 7.8308 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 8158969700.00 ns, 8.1590 s/op
+WorkloadResult   2: 1 op, 8325794100.00 ns, 8.3258 s/op
+WorkloadResult   3: 1 op, 8248097700.00 ns, 8.2481 s/op
+WorkloadResult   4: 1 op, 8302841200.00 ns, 8.3028 s/op
+WorkloadResult   5: 1 op, 8010828100.00 ns, 8.0108 s/op
+WorkloadResult   6: 1 op, 8252156600.00 ns, 8.2522 s/op
+WorkloadResult   7: 1 op, 8146887900.00 ns, 8.1469 s/op
+WorkloadResult   8: 1 op, 8128763400.00 ns, 8.1288 s/op
+WorkloadResult   9: 1 op, 8108753600.00 ns, 8.1088 s/op
+WorkloadResult  10: 1 op, 8479517100.00 ns, 8.4795 s/op
+WorkloadResult  11: 1 op, 8081724100.00 ns, 8.0817 s/op
+WorkloadResult  12: 1 op, 8090276300.00 ns, 8.0903 s/op
+WorkloadResult  13: 1 op, 8001560200.00 ns, 8.0016 s/op
+WorkloadResult  14: 1 op, 7919486600.00 ns, 7.9195 s/op
+WorkloadResult  15: 1 op, 7770019400.00 ns, 7.7700 s/op
+WorkloadResult  16: 1 op, 7719115500.00 ns, 7.7191 s/op
+WorkloadResult  17: 1 op, 7602140600.00 ns, 7.6021 s/op
+WorkloadResult  18: 1 op, 7571362100.00 ns, 7.5714 s/op
+WorkloadResult  19: 1 op, 7802712100.00 ns, 7.8027 s/op
+WorkloadResult  20: 1 op, 7677111700.00 ns, 7.6771 s/op
+WorkloadResult  21: 1 op, 8130618200.00 ns, 8.1306 s/op
+WorkloadResult  22: 1 op, 8460642800.00 ns, 8.4606 s/op
+WorkloadResult  23: 1 op, 8312139900.00 ns, 8.3121 s/op
+WorkloadResult  24: 1 op, 7877840400.00 ns, 7.8778 s/op
+WorkloadResult  25: 1 op, 7951546300.00 ns, 7.9515 s/op
+WorkloadResult  26: 1 op, 7834937800.00 ns, 7.8349 s/op
+WorkloadResult  27: 1 op, 8023766500.00 ns, 8.0238 s/op
+WorkloadResult  28: 1 op, 7843589400.00 ns, 7.8436 s/op
+WorkloadResult  29: 1 op, 7801142400.00 ns, 7.8011 s/op
+WorkloadResult  30: 1 op, 7811062700.00 ns, 7.8111 s/op
+WorkloadResult  31: 1 op, 7830799200.00 ns, 7.8308 s/op
+
+// AfterAll
+// Benchmark Process 19736 has exited with code 0.
+
+Mean = 8.009 s, StdErr = 0.044 s (0.54%), N = 31, StdDev = 0.243 s
+Min = 7.571 s, Q1 = 7.821 s, Median = 8.011 s, Q3 = 8.153 s, Max = 8.480 s
+IQR = 0.332 s, LowerFence = 7.323 s, UpperFence = 8.651 s
+ConfidenceInterval = [7.850 s; 8.168 s] (CI 99.9%), Margin = 0.159 s (1.98% of Mean)
+Skewness = 0.12, Kurtosis = 2.05, MValue = 2
+
+// **************************
+// Benchmark: SalesBenchmark.UltraMapper: .NET 5.0(Runtime=.NET 5.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "3a80af2d-507b-4bfc-bc95-3c93ca6de8d8.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmark.UltraMapper" --job ".NET 5.0" --benchmarkId 2 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\3a80af2d-507b-4bfc-bc95-3c93ca6de8d8\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 5.0
+
+OverheadJitting  1: 1 op, 175600.00 ns, 175.6000 us/op
+WorkloadJitting  1: 1 op, 3640027800.00 ns, 3.6400 s/op
+
+WorkloadWarmup   1: 1 op, 3575867200.00 ns, 3.5759 s/op
+WorkloadWarmup   2: 1 op, 3633531900.00 ns, 3.6335 s/op
+WorkloadWarmup   3: 1 op, 3628042300.00 ns, 3.6280 s/op
+WorkloadWarmup   4: 1 op, 3604721500.00 ns, 3.6047 s/op
+WorkloadWarmup   5: 1 op, 3673128300.00 ns, 3.6731 s/op
+WorkloadWarmup   6: 1 op, 3697956700.00 ns, 3.6980 s/op
+WorkloadWarmup   7: 1 op, 3620894800.00 ns, 3.6209 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 3793696400.00 ns, 3.7937 s/op
+WorkloadActual   2: 1 op, 3674818500.00 ns, 3.6748 s/op
+WorkloadActual   3: 1 op, 3971156500.00 ns, 3.9712 s/op
+WorkloadActual   4: 1 op, 3937488400.00 ns, 3.9375 s/op
+WorkloadActual   5: 1 op, 4007486000.00 ns, 4.0075 s/op
+WorkloadActual   6: 1 op, 3691566100.00 ns, 3.6916 s/op
+WorkloadActual   7: 1 op, 3728725900.00 ns, 3.7287 s/op
+WorkloadActual   8: 1 op, 3593246700.00 ns, 3.5932 s/op
+WorkloadActual   9: 1 op, 3511940900.00 ns, 3.5119 s/op
+WorkloadActual  10: 1 op, 3517982100.00 ns, 3.5180 s/op
+WorkloadActual  11: 1 op, 3598071500.00 ns, 3.5981 s/op
+WorkloadActual  12: 1 op, 3579765700.00 ns, 3.5798 s/op
+WorkloadActual  13: 1 op, 3750724100.00 ns, 3.7507 s/op
+WorkloadActual  14: 1 op, 3675000300.00 ns, 3.6750 s/op
+WorkloadActual  15: 1 op, 3778539600.00 ns, 3.7785 s/op
+WorkloadActual  16: 1 op, 3649642600.00 ns, 3.6496 s/op
+WorkloadActual  17: 1 op, 3673321200.00 ns, 3.6733 s/op
+WorkloadActual  18: 1 op, 3780354600.00 ns, 3.7804 s/op
+WorkloadActual  19: 1 op, 3642342100.00 ns, 3.6423 s/op
+WorkloadActual  20: 1 op, 3631193100.00 ns, 3.6312 s/op
+WorkloadActual  21: 1 op, 3667721800.00 ns, 3.6677 s/op
+WorkloadActual  22: 1 op, 3664356200.00 ns, 3.6644 s/op
+WorkloadActual  23: 1 op, 3555409800.00 ns, 3.5554 s/op
+WorkloadActual  24: 1 op, 3520096500.00 ns, 3.5201 s/op
+WorkloadActual  25: 1 op, 3629457600.00 ns, 3.6295 s/op
+WorkloadActual  26: 1 op, 3602181400.00 ns, 3.6022 s/op
+WorkloadActual  27: 1 op, 3501689900.00 ns, 3.5017 s/op
+WorkloadActual  28: 1 op, 3532527700.00 ns, 3.5325 s/op
+WorkloadActual  29: 1 op, 3486791500.00 ns, 3.4868 s/op
+WorkloadActual  30: 1 op, 3489166700.00 ns, 3.4892 s/op
+WorkloadActual  31: 1 op, 3527615000.00 ns, 3.5276 s/op
+WorkloadActual  32: 1 op, 3490727300.00 ns, 3.4907 s/op
+WorkloadActual  33: 1 op, 3482472700.00 ns, 3.4825 s/op
+WorkloadActual  34: 1 op, 3514357800.00 ns, 3.5144 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 3793696400.00 ns, 3.7937 s/op
+WorkloadResult   2: 1 op, 3674818500.00 ns, 3.6748 s/op
+WorkloadResult   3: 1 op, 3691566100.00 ns, 3.6916 s/op
+WorkloadResult   4: 1 op, 3728725900.00 ns, 3.7287 s/op
+WorkloadResult   5: 1 op, 3593246700.00 ns, 3.5932 s/op
+WorkloadResult   6: 1 op, 3511940900.00 ns, 3.5119 s/op
+WorkloadResult   7: 1 op, 3517982100.00 ns, 3.5180 s/op
+WorkloadResult   8: 1 op, 3598071500.00 ns, 3.5981 s/op
+WorkloadResult   9: 1 op, 3579765700.00 ns, 3.5798 s/op
+WorkloadResult  10: 1 op, 3750724100.00 ns, 3.7507 s/op
+WorkloadResult  11: 1 op, 3675000300.00 ns, 3.6750 s/op
+WorkloadResult  12: 1 op, 3778539600.00 ns, 3.7785 s/op
+WorkloadResult  13: 1 op, 3649642600.00 ns, 3.6496 s/op
+WorkloadResult  14: 1 op, 3673321200.00 ns, 3.6733 s/op
+WorkloadResult  15: 1 op, 3780354600.00 ns, 3.7804 s/op
+WorkloadResult  16: 1 op, 3642342100.00 ns, 3.6423 s/op
+WorkloadResult  17: 1 op, 3631193100.00 ns, 3.6312 s/op
+WorkloadResult  18: 1 op, 3667721800.00 ns, 3.6677 s/op
+WorkloadResult  19: 1 op, 3664356200.00 ns, 3.6644 s/op
+WorkloadResult  20: 1 op, 3555409800.00 ns, 3.5554 s/op
+WorkloadResult  21: 1 op, 3520096500.00 ns, 3.5201 s/op
+WorkloadResult  22: 1 op, 3629457600.00 ns, 3.6295 s/op
+WorkloadResult  23: 1 op, 3602181400.00 ns, 3.6022 s/op
+WorkloadResult  24: 1 op, 3501689900.00 ns, 3.5017 s/op
+WorkloadResult  25: 1 op, 3532527700.00 ns, 3.5325 s/op
+WorkloadResult  26: 1 op, 3486791500.00 ns, 3.4868 s/op
+WorkloadResult  27: 1 op, 3489166700.00 ns, 3.4892 s/op
+WorkloadResult  28: 1 op, 3527615000.00 ns, 3.5276 s/op
+WorkloadResult  29: 1 op, 3490727300.00 ns, 3.4907 s/op
+WorkloadResult  30: 1 op, 3482472700.00 ns, 3.4825 s/op
+WorkloadResult  31: 1 op, 3514357800.00 ns, 3.5144 s/op
+
+// AfterAll
+// Benchmark Process 7680 has exited with code 0.
+
+Mean = 3.611 s, StdErr = 0.017 s (0.48%), N = 31, StdDev = 0.096 s
+Min = 3.482 s, Q1 = 3.519 s, Median = 3.602 s, Q3 = 3.674 s, Max = 3.794 s
+IQR = 0.155 s, LowerFence = 3.286 s, UpperFence = 3.907 s
+ConfidenceInterval = [3.548 s; 3.674 s] (CI 99.9%), Margin = 0.063 s (1.75% of Mean)
+Skewness = 0.3, Kurtosis = 1.84, MValue = 2
+
+// **************************
+// Benchmark: SalesBenchmark.FileHelper: .NET 6.0(Runtime=.NET 6.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "fc9d1906-7f38-4027-99b6-becde532d618.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmark.FileHelper" --job ".NET 6.0" --benchmarkId 0 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\fc9d1906-7f38-4027-99b6-becde532d618\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.5 (6.0.522.21309), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 6.0
+
+OverheadJitting  1: 1 op, 161200.00 ns, 161.2000 us/op
+WorkloadJitting  1: 1 op, 5745150200.00 ns, 5.7452 s/op
+
+WorkloadWarmup   1: 1 op, 5778678100.00 ns, 5.7787 s/op
+WorkloadWarmup   2: 1 op, 5654714300.00 ns, 5.6547 s/op
+WorkloadWarmup   3: 1 op, 5584225100.00 ns, 5.5842 s/op
+WorkloadWarmup   4: 1 op, 5524506600.00 ns, 5.5245 s/op
+WorkloadWarmup   5: 1 op, 5563167900.00 ns, 5.5632 s/op
+WorkloadWarmup   6: 1 op, 5564843800.00 ns, 5.5648 s/op
+WorkloadWarmup   7: 1 op, 5545824000.00 ns, 5.5458 s/op
+WorkloadWarmup   8: 1 op, 5574818700.00 ns, 5.5748 s/op
+WorkloadWarmup   9: 1 op, 5553761300.00 ns, 5.5538 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 5562847900.00 ns, 5.5628 s/op
+WorkloadActual   2: 1 op, 5521454400.00 ns, 5.5215 s/op
+WorkloadActual   3: 1 op, 5514359900.00 ns, 5.5144 s/op
+WorkloadActual   4: 1 op, 5655804600.00 ns, 5.6558 s/op
+WorkloadActual   5: 1 op, 5546744500.00 ns, 5.5467 s/op
+WorkloadActual   6: 1 op, 5507770400.00 ns, 5.5078 s/op
+WorkloadActual   7: 1 op, 5576664100.00 ns, 5.5767 s/op
+WorkloadActual   8: 1 op, 5520096300.00 ns, 5.5201 s/op
+WorkloadActual   9: 1 op, 5496074400.00 ns, 5.4961 s/op
+WorkloadActual  10: 1 op, 5558269300.00 ns, 5.5583 s/op
+WorkloadActual  11: 1 op, 5518913900.00 ns, 5.5189 s/op
+WorkloadActual  12: 1 op, 5570998500.00 ns, 5.5710 s/op
+WorkloadActual  13: 1 op, 5560338600.00 ns, 5.5603 s/op
+WorkloadActual  14: 1 op, 5541881300.00 ns, 5.5419 s/op
+WorkloadActual  15: 1 op, 5567034500.00 ns, 5.5670 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 5562847900.00 ns, 5.5628 s/op
+WorkloadResult   2: 1 op, 5521454400.00 ns, 5.5215 s/op
+WorkloadResult   3: 1 op, 5514359900.00 ns, 5.5144 s/op
+WorkloadResult   4: 1 op, 5546744500.00 ns, 5.5467 s/op
+WorkloadResult   5: 1 op, 5507770400.00 ns, 5.5078 s/op
+WorkloadResult   6: 1 op, 5576664100.00 ns, 5.5767 s/op
+WorkloadResult   7: 1 op, 5520096300.00 ns, 5.5201 s/op
+WorkloadResult   8: 1 op, 5496074400.00 ns, 5.4961 s/op
+WorkloadResult   9: 1 op, 5558269300.00 ns, 5.5583 s/op
+WorkloadResult  10: 1 op, 5518913900.00 ns, 5.5189 s/op
+WorkloadResult  11: 1 op, 5570998500.00 ns, 5.5710 s/op
+WorkloadResult  12: 1 op, 5560338600.00 ns, 5.5603 s/op
+WorkloadResult  13: 1 op, 5541881300.00 ns, 5.5419 s/op
+WorkloadResult  14: 1 op, 5567034500.00 ns, 5.5670 s/op
+
+// AfterAll
+// Benchmark Process 11840 has exited with code 0.
+
+Mean = 5.540 s, StdErr = 0.007 s (0.13%), N = 14, StdDev = 0.027 s
+Min = 5.496 s, Q1 = 5.519 s, Median = 5.544 s, Q3 = 5.562 s, Max = 5.577 s
+IQR = 0.043 s, LowerFence = 5.455 s, UpperFence = 5.627 s
+ConfidenceInterval = [5.510 s; 5.570 s] (CI 99.9%), Margin = 0.030 s (0.54% of Mean)
+Skewness = -0.15, Kurtosis = 1.37, MValue = 2
+
+// **************************
+// Benchmark: SalesBenchmark.CsvHelper: .NET 6.0(Runtime=.NET 6.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "fc9d1906-7f38-4027-99b6-becde532d618.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmark.CsvHelper" --job ".NET 6.0" --benchmarkId 1 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\fc9d1906-7f38-4027-99b6-becde532d618\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.5 (6.0.522.21309), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 6.0
+
+OverheadJitting  1: 1 op, 166100.00 ns, 166.1000 us/op
+WorkloadJitting  1: 1 op, 7330371000.00 ns, 7.3304 s/op
+
+WorkloadWarmup   1: 1 op, 7112990900.00 ns, 7.1130 s/op
+WorkloadWarmup   2: 1 op, 7076003400.00 ns, 7.0760 s/op
+WorkloadWarmup   3: 1 op, 7132402300.00 ns, 7.1324 s/op
+WorkloadWarmup   4: 1 op, 7141993600.00 ns, 7.1420 s/op
+WorkloadWarmup   5: 1 op, 7161148100.00 ns, 7.1611 s/op
+WorkloadWarmup   6: 1 op, 7102342300.00 ns, 7.1023 s/op
+WorkloadWarmup   7: 1 op, 7101995000.00 ns, 7.1020 s/op
+WorkloadWarmup   8: 1 op, 7119041400.00 ns, 7.1190 s/op
+WorkloadWarmup   9: 1 op, 7192251400.00 ns, 7.1923 s/op
+WorkloadWarmup  10: 1 op, 7968477300.00 ns, 7.9685 s/op
+WorkloadWarmup  11: 1 op, 8172448400.00 ns, 8.1724 s/op
+WorkloadWarmup  12: 1 op, 7813041100.00 ns, 7.8130 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 7431512400.00 ns, 7.4315 s/op
+WorkloadActual   2: 1 op, 7403578400.00 ns, 7.4036 s/op
+WorkloadActual   3: 1 op, 7418859100.00 ns, 7.4189 s/op
+WorkloadActual   4: 1 op, 7681771900.00 ns, 7.6818 s/op
+WorkloadActual   5: 1 op, 7557365400.00 ns, 7.5574 s/op
+WorkloadActual   6: 1 op, 7479031300.00 ns, 7.4790 s/op
+WorkloadActual   7: 1 op, 7397747500.00 ns, 7.3977 s/op
+WorkloadActual   8: 1 op, 7463407700.00 ns, 7.4634 s/op
+WorkloadActual   9: 1 op, 7431475100.00 ns, 7.4315 s/op
+WorkloadActual  10: 1 op, 7480885800.00 ns, 7.4809 s/op
+WorkloadActual  11: 1 op, 7429208700.00 ns, 7.4292 s/op
+WorkloadActual  12: 1 op, 7510010500.00 ns, 7.5100 s/op
+WorkloadActual  13: 1 op, 7404880500.00 ns, 7.4049 s/op
+WorkloadActual  14: 1 op, 7616074900.00 ns, 7.6161 s/op
+WorkloadActual  15: 1 op, 7423587000.00 ns, 7.4236 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 7431512400.00 ns, 7.4315 s/op
+WorkloadResult   2: 1 op, 7403578400.00 ns, 7.4036 s/op
+WorkloadResult   3: 1 op, 7418859100.00 ns, 7.4189 s/op
+WorkloadResult   4: 1 op, 7557365400.00 ns, 7.5574 s/op
+WorkloadResult   5: 1 op, 7479031300.00 ns, 7.4790 s/op
+WorkloadResult   6: 1 op, 7397747500.00 ns, 7.3977 s/op
+WorkloadResult   7: 1 op, 7463407700.00 ns, 7.4634 s/op
+WorkloadResult   8: 1 op, 7431475100.00 ns, 7.4315 s/op
+WorkloadResult   9: 1 op, 7480885800.00 ns, 7.4809 s/op
+WorkloadResult  10: 1 op, 7429208700.00 ns, 7.4292 s/op
+WorkloadResult  11: 1 op, 7510010500.00 ns, 7.5100 s/op
+WorkloadResult  12: 1 op, 7404880500.00 ns, 7.4049 s/op
+WorkloadResult  13: 1 op, 7423587000.00 ns, 7.4236 s/op
+
+// AfterAll
+// Benchmark Process 21532 has exited with code 0.
+
+Mean = 7.449 s, StdErr = 0.013 s (0.18%), N = 13, StdDev = 0.047 s
+Min = 7.398 s, Q1 = 7.419 s, Median = 7.431 s, Q3 = 7.479 s, Max = 7.557 s
+IQR = 0.060 s, LowerFence = 7.329 s, UpperFence = 7.569 s
+ConfidenceInterval = [7.392 s; 7.505 s] (CI 99.9%), Margin = 0.057 s (0.76% of Mean)
+Skewness = 0.89, Kurtosis = 2.66, MValue = 2
+
+// **************************
+// Benchmark: SalesBenchmark.UltraMapper: .NET 6.0(Runtime=.NET 6.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "fc9d1906-7f38-4027-99b6-becde532d618.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmark.UltraMapper" --job ".NET 6.0" --benchmarkId 2 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\fc9d1906-7f38-4027-99b6-becde532d618\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.5 (6.0.522.21309), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 6.0
+
+OverheadJitting  1: 1 op, 154400.00 ns, 154.4000 us/op
+WorkloadJitting  1: 1 op, 3487250700.00 ns, 3.4873 s/op
+
+WorkloadWarmup   1: 1 op, 3326829500.00 ns, 3.3268 s/op
+WorkloadWarmup   2: 1 op, 3373931200.00 ns, 3.3739 s/op
+WorkloadWarmup   3: 1 op, 3370743500.00 ns, 3.3707 s/op
+WorkloadWarmup   4: 1 op, 3342622600.00 ns, 3.3426 s/op
+WorkloadWarmup   5: 1 op, 3360363300.00 ns, 3.3604 s/op
+WorkloadWarmup   6: 1 op, 3362268800.00 ns, 3.3623 s/op
+WorkloadWarmup   7: 1 op, 3392714300.00 ns, 3.3927 s/op
+WorkloadWarmup   8: 1 op, 3357459400.00 ns, 3.3575 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 3307113700.00 ns, 3.3071 s/op
+WorkloadActual   2: 1 op, 3372723400.00 ns, 3.3727 s/op
+WorkloadActual   3: 1 op, 3359573100.00 ns, 3.3596 s/op
+WorkloadActual   4: 1 op, 3344500300.00 ns, 3.3445 s/op
+WorkloadActual   5: 1 op, 3308320500.00 ns, 3.3083 s/op
+WorkloadActual   6: 1 op, 3332440400.00 ns, 3.3324 s/op
+WorkloadActual   7: 1 op, 3310099600.00 ns, 3.3101 s/op
+WorkloadActual   8: 1 op, 3436118500.00 ns, 3.4361 s/op
+WorkloadActual   9: 1 op, 3410033600.00 ns, 3.4100 s/op
+WorkloadActual  10: 1 op, 3374069400.00 ns, 3.3741 s/op
+WorkloadActual  11: 1 op, 3360160600.00 ns, 3.3602 s/op
+WorkloadActual  12: 1 op, 3337627900.00 ns, 3.3376 s/op
+WorkloadActual  13: 1 op, 3335311900.00 ns, 3.3353 s/op
+WorkloadActual  14: 1 op, 3380424500.00 ns, 3.3804 s/op
+WorkloadActual  15: 1 op, 3330697900.00 ns, 3.3307 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 3307113700.00 ns, 3.3071 s/op
+WorkloadResult   2: 1 op, 3372723400.00 ns, 3.3727 s/op
+WorkloadResult   3: 1 op, 3359573100.00 ns, 3.3596 s/op
+WorkloadResult   4: 1 op, 3344500300.00 ns, 3.3445 s/op
+WorkloadResult   5: 1 op, 3308320500.00 ns, 3.3083 s/op
+WorkloadResult   6: 1 op, 3332440400.00 ns, 3.3324 s/op
+WorkloadResult   7: 1 op, 3310099600.00 ns, 3.3101 s/op
+WorkloadResult   8: 1 op, 3436118500.00 ns, 3.4361 s/op
+WorkloadResult   9: 1 op, 3410033600.00 ns, 3.4100 s/op
+WorkloadResult  10: 1 op, 3374069400.00 ns, 3.3741 s/op
+WorkloadResult  11: 1 op, 3360160600.00 ns, 3.3602 s/op
+WorkloadResult  12: 1 op, 3337627900.00 ns, 3.3376 s/op
+WorkloadResult  13: 1 op, 3335311900.00 ns, 3.3353 s/op
+WorkloadResult  14: 1 op, 3380424500.00 ns, 3.3804 s/op
+WorkloadResult  15: 1 op, 3330697900.00 ns, 3.3307 s/op
+
+// AfterAll
+// Benchmark Process 21872 has exited with code 0.
+
+Mean = 3.353 s, StdErr = 0.010 s (0.29%), N = 15, StdDev = 0.037 s
+Min = 3.307 s, Q1 = 3.332 s, Median = 3.345 s, Q3 = 3.373 s, Max = 3.436 s
+IQR = 0.042 s, LowerFence = 3.269 s, UpperFence = 3.436 s
+ConfidenceInterval = [3.314 s; 3.393 s] (CI 99.9%), Margin = 0.040 s (1.18% of Mean)
+Skewness = 0.63, Kurtosis = 2.49, MValue = 2
+
+// **************************
+// Benchmark: SalesBenchmark.FileHelper: .NET Framework 4.7(Runtime=.NET Framework 4.7)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\9e69beeb-6c7b-4fea-a978-f5cacfd6bfb1\bin\Release\net47\9e69beeb-6c7b-4fea-a978-f5cacfd6bfb1.exe --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmark.FileHelper" --job ".NET Framework 4.7" --benchmarkId 0 in 
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.8 (4.8.4470.0), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET Framework 4.7
+
+OverheadJitting  1: 1 op, 220500.00 ns, 220.5000 us/op
+WorkloadJitting  1: 1 op, 10408806000.00 ns, 10.4088 s/op
+
+WorkloadWarmup   1: 1 op, 10341814000.00 ns, 10.3418 s/op
+WorkloadWarmup   2: 1 op, 10273210400.00 ns, 10.2732 s/op
+WorkloadWarmup   3: 1 op, 10410419700.00 ns, 10.4104 s/op
+WorkloadWarmup   4: 1 op, 10418020100.00 ns, 10.4180 s/op
+WorkloadWarmup   5: 1 op, 10276134800.00 ns, 10.2761 s/op
+WorkloadWarmup   6: 1 op, 10382575300.00 ns, 10.3826 s/op
+WorkloadWarmup   7: 1 op, 10290120300.00 ns, 10.2901 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 10333435000.00 ns, 10.3334 s/op
+WorkloadActual   2: 1 op, 10298040300.00 ns, 10.2980 s/op
+WorkloadActual   3: 1 op, 10498122100.00 ns, 10.4981 s/op
+WorkloadActual   4: 1 op, 10261648800.00 ns, 10.2616 s/op
+WorkloadActual   5: 1 op, 10242622400.00 ns, 10.2426 s/op
+WorkloadActual   6: 1 op, 10328387500.00 ns, 10.3284 s/op
+WorkloadActual   7: 1 op, 10534622900.00 ns, 10.5346 s/op
+WorkloadActual   8: 1 op, 10391391500.00 ns, 10.3914 s/op
+WorkloadActual   9: 1 op, 10398951300.00 ns, 10.3990 s/op
+WorkloadActual  10: 1 op, 10310318000.00 ns, 10.3103 s/op
+WorkloadActual  11: 1 op, 10385732200.00 ns, 10.3857 s/op
+WorkloadActual  12: 1 op, 10249550300.00 ns, 10.2496 s/op
+WorkloadActual  13: 1 op, 10431927400.00 ns, 10.4319 s/op
+WorkloadActual  14: 1 op, 9910789700.00 ns, 9.9108 s/op
+WorkloadActual  15: 1 op, 10263105300.00 ns, 10.2631 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 10333435000.00 ns, 10.3334 s/op
+WorkloadResult   2: 1 op, 10298040300.00 ns, 10.2980 s/op
+WorkloadResult   3: 1 op, 10498122100.00 ns, 10.4981 s/op
+WorkloadResult   4: 1 op, 10261648800.00 ns, 10.2616 s/op
+WorkloadResult   5: 1 op, 10242622400.00 ns, 10.2426 s/op
+WorkloadResult   6: 1 op, 10328387500.00 ns, 10.3284 s/op
+WorkloadResult   7: 1 op, 10534622900.00 ns, 10.5346 s/op
+WorkloadResult   8: 1 op, 10391391500.00 ns, 10.3914 s/op
+WorkloadResult   9: 1 op, 10398951300.00 ns, 10.3990 s/op
+WorkloadResult  10: 1 op, 10310318000.00 ns, 10.3103 s/op
+WorkloadResult  11: 1 op, 10385732200.00 ns, 10.3857 s/op
+WorkloadResult  12: 1 op, 10249550300.00 ns, 10.2496 s/op
+WorkloadResult  13: 1 op, 10431927400.00 ns, 10.4319 s/op
+WorkloadResult  14: 1 op, 9910789700.00 ns, 9.9108 s/op
+WorkloadResult  15: 1 op, 10263105300.00 ns, 10.2631 s/op
+
+// AfterAll
+// Benchmark Process 22400 has exited with code 0.
+
+Mean = 10.323 s, StdErr = 0.037 s (0.36%), N = 15, StdDev = 0.144 s
+Min = 9.911 s, Q1 = 10.262 s, Median = 10.328 s, Q3 = 10.395 s, Max = 10.535 s
+IQR = 0.133 s, LowerFence = 10.063 s, UpperFence = 10.594 s
+ConfidenceInterval = [10.168 s; 10.477 s] (CI 99.9%), Margin = 0.154 s (1.50% of Mean)
+Skewness = -1.19, Kurtosis = 4.92, MValue = 2
+
+// **************************
+// Benchmark: SalesBenchmark.CsvHelper: .NET Framework 4.7(Runtime=.NET Framework 4.7)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\9e69beeb-6c7b-4fea-a978-f5cacfd6bfb1\bin\Release\net47\9e69beeb-6c7b-4fea-a978-f5cacfd6bfb1.exe --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmark.CsvHelper" --job ".NET Framework 4.7" --benchmarkId 1 in 
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.8 (4.8.4470.0), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET Framework 4.7
+
+OverheadJitting  1: 1 op, 254600.00 ns, 254.6000 us/op
+WorkloadJitting  1: 1 op, 11431273900.00 ns, 11.4313 s/op
+
+WorkloadWarmup   1: 1 op, 11274610400.00 ns, 11.2746 s/op
+WorkloadWarmup   2: 1 op, 11052008500.00 ns, 11.0520 s/op
+WorkloadWarmup   3: 1 op, 11215747100.00 ns, 11.2157 s/op
+WorkloadWarmup   4: 1 op, 11041864300.00 ns, 11.0419 s/op
+WorkloadWarmup   5: 1 op, 11317500300.00 ns, 11.3175 s/op
+WorkloadWarmup   6: 1 op, 11155863600.00 ns, 11.1559 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 10946130500.00 ns, 10.9461 s/op
+WorkloadActual   2: 1 op, 11126152800.00 ns, 11.1262 s/op
+WorkloadActual   3: 1 op, 11113377000.00 ns, 11.1134 s/op
+WorkloadActual   4: 1 op, 11094204700.00 ns, 11.0942 s/op
+WorkloadActual   5: 1 op, 10833417900.00 ns, 10.8334 s/op
+WorkloadActual   6: 1 op, 10868589600.00 ns, 10.8686 s/op
+WorkloadActual   7: 1 op, 10933448700.00 ns, 10.9334 s/op
+WorkloadActual   8: 1 op, 11254717000.00 ns, 11.2547 s/op
+WorkloadActual   9: 1 op, 11131871300.00 ns, 11.1319 s/op
+WorkloadActual  10: 1 op, 11476715800.00 ns, 11.4767 s/op
+WorkloadActual  11: 1 op, 11456521600.00 ns, 11.4565 s/op
+WorkloadActual  12: 1 op, 10892464800.00 ns, 10.8925 s/op
+WorkloadActual  13: 1 op, 10846342100.00 ns, 10.8463 s/op
+WorkloadActual  14: 1 op, 10831671500.00 ns, 10.8317 s/op
+WorkloadActual  15: 1 op, 10907591400.00 ns, 10.9076 s/op
+WorkloadActual  16: 1 op, 10885101900.00 ns, 10.8851 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 10946130500.00 ns, 10.9461 s/op
+WorkloadResult   2: 1 op, 11126152800.00 ns, 11.1262 s/op
+WorkloadResult   3: 1 op, 11113377000.00 ns, 11.1134 s/op
+WorkloadResult   4: 1 op, 11094204700.00 ns, 11.0942 s/op
+WorkloadResult   5: 1 op, 10833417900.00 ns, 10.8334 s/op
+WorkloadResult   6: 1 op, 10868589600.00 ns, 10.8686 s/op
+WorkloadResult   7: 1 op, 10933448700.00 ns, 10.9334 s/op
+WorkloadResult   8: 1 op, 11254717000.00 ns, 11.2547 s/op
+WorkloadResult   9: 1 op, 11131871300.00 ns, 11.1319 s/op
+WorkloadResult  10: 1 op, 11476715800.00 ns, 11.4767 s/op
+WorkloadResult  11: 1 op, 11456521600.00 ns, 11.4565 s/op
+WorkloadResult  12: 1 op, 10892464800.00 ns, 10.8925 s/op
+WorkloadResult  13: 1 op, 10846342100.00 ns, 10.8463 s/op
+WorkloadResult  14: 1 op, 10831671500.00 ns, 10.8317 s/op
+WorkloadResult  15: 1 op, 10907591400.00 ns, 10.9076 s/op
+WorkloadResult  16: 1 op, 10885101900.00 ns, 10.8851 s/op
+
+// AfterAll
+// Benchmark Process 1328 has exited with code 0.
+
+Mean = 11.037 s, StdErr = 0.053 s (0.48%), N = 16, StdDev = 0.211 s
+Min = 10.832 s, Q1 = 10.881 s, Median = 10.940 s, Q3 = 11.128 s, Max = 11.477 s
+IQR = 0.247 s, LowerFence = 10.511 s, UpperFence = 11.497 s
+ConfidenceInterval = [10.822 s; 11.253 s] (CI 99.9%), Margin = 0.215 s (1.95% of Mean)
+Skewness = 0.87, Kurtosis = 2.43, MValue = 2
+
+// **************************
+// Benchmark: SalesBenchmark.UltraMapper: .NET Framework 4.7(Runtime=.NET Framework 4.7)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\9e69beeb-6c7b-4fea-a978-f5cacfd6bfb1\bin\Release\net47\9e69beeb-6c7b-4fea-a978-f5cacfd6bfb1.exe --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmark.UltraMapper" --job ".NET Framework 4.7" --benchmarkId 2 in 
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.8 (4.8.4470.0), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET Framework 4.7
+
+OverheadJitting  1: 1 op, 199200.00 ns, 199.2000 us/op
+WorkloadJitting  1: 1 op, 4582683300.00 ns, 4.5827 s/op
+
+WorkloadWarmup   1: 1 op, 4796394600.00 ns, 4.7964 s/op
+WorkloadWarmup   2: 1 op, 4544222300.00 ns, 4.5442 s/op
+WorkloadWarmup   3: 1 op, 4507720900.00 ns, 4.5077 s/op
+WorkloadWarmup   4: 1 op, 4532089700.00 ns, 4.5321 s/op
+WorkloadWarmup   5: 1 op, 4505279900.00 ns, 4.5053 s/op
+WorkloadWarmup   6: 1 op, 4551831800.00 ns, 4.5518 s/op
+WorkloadWarmup   7: 1 op, 4493596700.00 ns, 4.4936 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 4545226900.00 ns, 4.5452 s/op
+WorkloadActual   2: 1 op, 4521047900.00 ns, 4.5210 s/op
+WorkloadActual   3: 1 op, 4559403900.00 ns, 4.5594 s/op
+WorkloadActual   4: 1 op, 4509069400.00 ns, 4.5091 s/op
+WorkloadActual   5: 1 op, 4529709200.00 ns, 4.5297 s/op
+WorkloadActual   6: 1 op, 4508294300.00 ns, 4.5083 s/op
+WorkloadActual   7: 1 op, 4506107200.00 ns, 4.5061 s/op
+WorkloadActual   8: 1 op, 4521572900.00 ns, 4.5216 s/op
+WorkloadActual   9: 1 op, 4745287800.00 ns, 4.7453 s/op
+WorkloadActual  10: 1 op, 4526184900.00 ns, 4.5262 s/op
+WorkloadActual  11: 1 op, 4481178800.00 ns, 4.4812 s/op
+WorkloadActual  12: 1 op, 4530435600.00 ns, 4.5304 s/op
+WorkloadActual  13: 1 op, 4524591000.00 ns, 4.5246 s/op
+WorkloadActual  14: 1 op, 4527172000.00 ns, 4.5272 s/op
+WorkloadActual  15: 1 op, 4563293200.00 ns, 4.5633 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 4545226900.00 ns, 4.5452 s/op
+WorkloadResult   2: 1 op, 4521047900.00 ns, 4.5210 s/op
+WorkloadResult   3: 1 op, 4559403900.00 ns, 4.5594 s/op
+WorkloadResult   4: 1 op, 4509069400.00 ns, 4.5091 s/op
+WorkloadResult   5: 1 op, 4529709200.00 ns, 4.5297 s/op
+WorkloadResult   6: 1 op, 4508294300.00 ns, 4.5083 s/op
+WorkloadResult   7: 1 op, 4506107200.00 ns, 4.5061 s/op
+WorkloadResult   8: 1 op, 4521572900.00 ns, 4.5216 s/op
+WorkloadResult   9: 1 op, 4526184900.00 ns, 4.5262 s/op
+WorkloadResult  10: 1 op, 4481178800.00 ns, 4.4812 s/op
+WorkloadResult  11: 1 op, 4530435600.00 ns, 4.5304 s/op
+WorkloadResult  12: 1 op, 4524591000.00 ns, 4.5246 s/op
+WorkloadResult  13: 1 op, 4527172000.00 ns, 4.5272 s/op
+WorkloadResult  14: 1 op, 4563293200.00 ns, 4.5633 s/op
+
+// AfterAll
+// Benchmark Process 20156 has exited with code 0.
+
+Mean = 4.525 s, StdErr = 0.006 s (0.13%), N = 14, StdDev = 0.021 s
+Min = 4.481 s, Q1 = 4.512 s, Median = 4.525 s, Q3 = 4.530 s, Max = 4.563 s
+IQR = 0.018 s, LowerFence = 4.485 s, UpperFence = 4.558 s
+ConfidenceInterval = [4.501 s; 4.549 s] (CI 99.9%), Margin = 0.024 s (0.53% of Mean)
+Skewness = 0.01, Kurtosis = 2.61, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\UltraMapper.DataFileParsers.Benchmarks.SalesBenchmark-report.csv
+  BenchmarkDotNet.Artifacts\results\UltraMapper.DataFileParsers.Benchmarks.SalesBenchmark-report-github.md
+  BenchmarkDotNet.Artifacts\results\UltraMapper.DataFileParsers.Benchmarks.SalesBenchmark-report.html
+
+// * Detailed results *
+SalesBenchmark.FileHelper: .NET 5.0(Runtime=.NET 5.0)
+Runtime = .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 6.519 s, StdErr = 0.038 s (0.58%), N = 61, StdDev = 0.294 s
+Min = 6.179 s, Q1 = 6.320 s, Median = 6.399 s, Q3 = 6.709 s, Max = 7.304 s
+IQR = 0.389 s, LowerFence = 5.736 s, UpperFence = 7.292 s
+ConfidenceInterval = [6.389 s; 6.649 s] (CI 99.9%), Margin = 0.130 s (2.00% of Mean)
+Skewness = 0.94, Kurtosis = 2.79, MValue = 2.37
+-------------------- Histogram --------------------
+[6.081 s ; 6.227 s) | @@@@@@
+[6.227 s ; 6.423 s) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[6.423 s ; 6.601 s) | @@@@@@
+[6.601 s ; 6.798 s) | @@@@@@@@@@@
+[6.798 s ; 6.976 s) | @@@
+[6.976 s ; 7.172 s) | @@@@@@
+[7.172 s ; 7.402 s) | @
+---------------------------------------------------
+
+SalesBenchmark.CsvHelper: .NET 5.0(Runtime=.NET 5.0)
+Runtime = .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 8.009 s, StdErr = 0.044 s (0.54%), N = 31, StdDev = 0.243 s
+Min = 7.571 s, Q1 = 7.821 s, Median = 8.011 s, Q3 = 8.153 s, Max = 8.480 s
+IQR = 0.332 s, LowerFence = 7.323 s, UpperFence = 8.651 s
+ConfidenceInterval = [7.850 s; 8.168 s] (CI 99.9%), Margin = 0.159 s (1.98% of Mean)
+Skewness = 0.12, Kurtosis = 2.05, MValue = 2
+-------------------- Histogram --------------------
+[7.544 s ; 7.759 s) | @@@@
+[7.759 s ; 7.979 s) | @@@@@@@@@@
+[7.979 s ; 8.182 s) | @@@@@@@@@@
+[8.182 s ; 8.388 s) | @@@@@
+[8.388 s ; 8.581 s) | @@
+---------------------------------------------------
+
+SalesBenchmark.UltraMapper: .NET 5.0(Runtime=.NET 5.0)
+Runtime = .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 3.611 s, StdErr = 0.017 s (0.48%), N = 31, StdDev = 0.096 s
+Min = 3.482 s, Q1 = 3.519 s, Median = 3.602 s, Q3 = 3.674 s, Max = 3.794 s
+IQR = 0.155 s, LowerFence = 3.286 s, UpperFence = 3.907 s
+ConfidenceInterval = [3.548 s; 3.674 s] (CI 99.9%), Margin = 0.063 s (1.75% of Mean)
+Skewness = 0.3, Kurtosis = 1.84, MValue = 2
+-------------------- Histogram --------------------
+[3.479 s ; 3.559 s) | @@@@@@@@@@@@
+[3.559 s ; 3.677 s) | @@@@@@@@@@@@@
+[3.677 s ; 3.801 s) | @@@@@@
+---------------------------------------------------
+
+SalesBenchmark.FileHelper: .NET 6.0(Runtime=.NET 6.0)
+Runtime = .NET 6.0.5 (6.0.522.21309), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 5.540 s, StdErr = 0.007 s (0.13%), N = 14, StdDev = 0.027 s
+Min = 5.496 s, Q1 = 5.519 s, Median = 5.544 s, Q3 = 5.562 s, Max = 5.577 s
+IQR = 0.043 s, LowerFence = 5.455 s, UpperFence = 5.627 s
+ConfidenceInterval = [5.510 s; 5.570 s] (CI 99.9%), Margin = 0.030 s (0.54% of Mean)
+Skewness = -0.15, Kurtosis = 1.37, MValue = 2
+-------------------- Histogram --------------------
+[5.482 s ; 5.591 s) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+SalesBenchmark.CsvHelper: .NET 6.0(Runtime=.NET 6.0)
+Runtime = .NET 6.0.5 (6.0.522.21309), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 7.449 s, StdErr = 0.013 s (0.18%), N = 13, StdDev = 0.047 s
+Min = 7.398 s, Q1 = 7.419 s, Median = 7.431 s, Q3 = 7.479 s, Max = 7.557 s
+IQR = 0.060 s, LowerFence = 7.329 s, UpperFence = 7.569 s
+ConfidenceInterval = [7.392 s; 7.505 s] (CI 99.9%), Margin = 0.057 s (0.76% of Mean)
+Skewness = 0.89, Kurtosis = 2.66, MValue = 2
+-------------------- Histogram --------------------
+[7.371 s ; 7.584 s) | @@@@@@@@@@@@@
+---------------------------------------------------
+
+SalesBenchmark.UltraMapper: .NET 6.0(Runtime=.NET 6.0)
+Runtime = .NET 6.0.5 (6.0.522.21309), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 3.353 s, StdErr = 0.010 s (0.29%), N = 15, StdDev = 0.037 s
+Min = 3.307 s, Q1 = 3.332 s, Median = 3.345 s, Q3 = 3.373 s, Max = 3.436 s
+IQR = 0.042 s, LowerFence = 3.269 s, UpperFence = 3.436 s
+ConfidenceInterval = [3.314 s; 3.393 s] (CI 99.9%), Margin = 0.040 s (1.18% of Mean)
+Skewness = 0.63, Kurtosis = 2.49, MValue = 2
+-------------------- Histogram --------------------
+[3.293 s ; 3.456 s) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+SalesBenchmark.FileHelper: .NET Framework 4.7(Runtime=.NET Framework 4.7)
+Runtime = .NET Framework 4.8 (4.8.4470.0), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 10.323 s, StdErr = 0.037 s (0.36%), N = 15, StdDev = 0.144 s
+Min = 9.911 s, Q1 = 10.262 s, Median = 10.328 s, Q3 = 10.395 s, Max = 10.535 s
+IQR = 0.133 s, LowerFence = 10.063 s, UpperFence = 10.594 s
+ConfidenceInterval = [10.168 s; 10.477 s] (CI 99.9%), Margin = 0.154 s (1.50% of Mean)
+Skewness = -1.19, Kurtosis = 4.92, MValue = 2
+-------------------- Histogram --------------------
+[ 9.834 s ; 10.164 s) | @
+[10.164 s ; 10.611 s) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+SalesBenchmark.CsvHelper: .NET Framework 4.7(Runtime=.NET Framework 4.7)
+Runtime = .NET Framework 4.8 (4.8.4470.0), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 11.037 s, StdErr = 0.053 s (0.48%), N = 16, StdDev = 0.211 s
+Min = 10.832 s, Q1 = 10.881 s, Median = 10.940 s, Q3 = 11.128 s, Max = 11.477 s
+IQR = 0.247 s, LowerFence = 10.511 s, UpperFence = 11.497 s
+ConfidenceInterval = [10.822 s; 11.253 s] (CI 99.9%), Margin = 0.215 s (1.95% of Mean)
+Skewness = 0.87, Kurtosis = 2.43, MValue = 2
+-------------------- Histogram --------------------
+[10.779 s ; 11.063 s) | @@@@@@@@@
+[11.063 s ; 11.352 s) | @@@@@
+[11.352 s ; 11.587 s) | @@
+---------------------------------------------------
+
+SalesBenchmark.UltraMapper: .NET Framework 4.7(Runtime=.NET Framework 4.7)
+Runtime = .NET Framework 4.8 (4.8.4470.0), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 4.525 s, StdErr = 0.006 s (0.13%), N = 14, StdDev = 0.021 s
+Min = 4.481 s, Q1 = 4.512 s, Median = 4.525 s, Q3 = 4.530 s, Max = 4.563 s
+IQR = 0.018 s, LowerFence = 4.485 s, UpperFence = 4.558 s
+ConfidenceInterval = [4.501 s; 4.549 s] (CI 99.9%), Margin = 0.024 s (0.53% of Mean)
+Skewness = 0.01, Kurtosis = 2.61, MValue = 2
+-------------------- Histogram --------------------
+[4.474 s ; 4.565 s) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19044.1586 (21H2)
+Intel Core i7-8700K CPU 3.70GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
+.NET SDK=6.0.300
+  [Host]             : .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+  .NET 5.0           : .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+  .NET 6.0           : .NET 6.0.5 (6.0.522.21309), X64 RyuJIT
+  .NET Framework 4.7 : .NET Framework 4.8 (4.8.4470.0), X64 RyuJIT
+
+
+|      Method |                Job |            Runtime |     Mean |    Error |   StdDev |   Median |
+|------------ |------------------- |------------------- |---------:|---------:|---------:|---------:|
+|  FileHelper |           .NET 5.0 |           .NET 5.0 |  6.519 s | 0.1303 s | 0.2942 s |  6.399 s |
+|   CsvHelper |           .NET 5.0 |           .NET 5.0 |  8.009 s | 0.1588 s | 0.2425 s |  8.011 s |
+| UltraMapper |           .NET 5.0 |           .NET 5.0 |  3.611 s | 0.0631 s | 0.0963 s |  3.602 s |
+|  FileHelper |           .NET 6.0 |           .NET 6.0 |  5.540 s | 0.0300 s | 0.0266 s |  5.544 s |
+|   CsvHelper |           .NET 6.0 |           .NET 6.0 |  7.449 s | 0.0566 s | 0.0472 s |  7.431 s |
+| UltraMapper |           .NET 6.0 |           .NET 6.0 |  3.353 s | 0.0397 s | 0.0372 s |  3.345 s |
+|  FileHelper | .NET Framework 4.7 | .NET Framework 4.7 | 10.323 s | 0.1543 s | 0.1444 s | 10.328 s |
+|   CsvHelper | .NET Framework 4.7 | .NET Framework 4.7 | 11.037 s | 0.2153 s | 0.2115 s | 10.940 s |
+| UltraMapper | .NET Framework 4.7 | .NET Framework 4.7 |  4.525 s | 0.0241 s | 0.0214 s |  4.525 s |
+
+// * Hints *
+Outliers
+  SalesBenchmark.FileHelper: .NET 5.0            -> 1 outlier  was  removed (7.83 s)
+  SalesBenchmark.UltraMapper: .NET 5.0           -> 3 outliers were removed (3.94 s..4.01 s)
+  SalesBenchmark.FileHelper: .NET 6.0            -> 1 outlier  was  removed (5.66 s)
+  SalesBenchmark.CsvHelper: .NET 6.0             -> 2 outliers were removed (7.62 s, 7.68 s)
+  SalesBenchmark.FileHelper: .NET Framework 4.7  -> 1 outlier  was  detected (9.91 s)
+  SalesBenchmark.UltraMapper: .NET Framework 4.7 -> 1 outlier  was  removed (4.75 s)
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  Median : Value separating the higher half of all measurements (50th percentile)
+  1 s    : 1 Second (1 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:33:15 (1995.28 sec), executed benchmarks: 9
+
+Global total time: 00:33:32 (2012.88 sec), executed benchmarks: 9
+// * Artifacts cleanup *
