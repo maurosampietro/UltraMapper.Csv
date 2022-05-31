@@ -10,6 +10,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.M
         public IEnumerable<SaleRecordMCD> ReadRecords( string fileLocation )
         {
             var engine = new FileHelperAsyncEngine<SaleRecordMCD>();
+            //engine.Options.Delimiter = "~DELIMITER~";
             engine.BeginReadFile( fileLocation );
             return engine;
         }
@@ -18,7 +19,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.M
         {
             string fileLocation = Path.Combine(
                  Path.GetDirectoryName( Assembly.GetExecutingAssembly().Location ),
-                "Resources", $"1m Sales Records.{nameof( MultiCharFileHelpersSalesTest )}.csv" );
+                "Resources", $"1m Sales Records.output.{nameof( MultiCharFileHelpersSalesTest )}.csv" );
 
             var engine = new DelimitedFileEngine<SaleRecordMCD>();
             engine.WriteFile( fileLocation, records );

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using System.Text;
 using UltraMapper.DataFileParsers.Benchmarks;
 using UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample;
 
@@ -45,26 +46,37 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.S
 
         public void WriteRecords( IEnumerable<SaleRecord> records )
         {
-            string fileLocation = Path.Combine(
-              Path.GetDirectoryName( Assembly.GetExecutingAssembly().Location ),
-             "Resources", $"dataset.{Name}.csv" );
+            string dir = Path.Combine( Path.GetTempPath(), "UltraMapper.CSV.Benchmarks" );
+            Directory.CreateDirectory( dir );
 
-            //using( var writer = new StreamWriter( fileLocation ) )
-            //{
-            //    var sb = new StringBuilder();
+            string fileLocation = Path.Combine( dir,
+                $"1m Sales Records.output.{nameof( SingleCharBaselineSalesTest )}.csv" );
+   
+            using( var writer = new StreamWriter( fileLocation ) )
+            {
+                var sb = new StringBuilder();
 
-            //    foreach( var item in records )
-            //    {
-            //        sb.Append( item.anzsic06 ).Append( ',' );
-            //        sb.Append( item.Area ).Append( ',' );
-            //        sb.Append( item.year ).Append( ',' );
-            //        sb.Append( item.geo_count ).Append( ',' );
-            //        sb.Append( item.ec_count );
+                foreach( var item in records )
+                {
+                    sb.Append( item.Region ).Append( ',' );
+                    sb.Append( item.Country ).Append( ',' );
+                    sb.Append( item.ItemType ).Append( ',' );
+                    sb.Append( item.SalesChannel ).Append( ',' );
+                    sb.Append( item.OrderPriority ).Append( ',' );
+                    sb.Append( item.OrderDate ).Append( ',' );
+                    sb.Append( item.OrderID ).Append( ',' );
+                    sb.Append( item.ShipDate ).Append( ',' );
+                    sb.Append( item.UnitsSold ).Append( ',' );
+                    sb.Append( item.UnitPrice ).Append( ',' );
+                    sb.Append( item.UnitCost ).Append( ',' );
+                    sb.Append( item.TotalRevenue ).Append( ',' );
+                    sb.Append( item.TotalCost ).Append( ',' );
+                    sb.Append( item.TotalProfit );
 
-            //        writer.WriteLine( sb.ToString() );
-            //        sb.Clear();
-            //    }
-            //}
+                    writer.WriteLine( sb.ToString() );
+                    sb.Clear();
+                }
+            }
         }
     }
 }

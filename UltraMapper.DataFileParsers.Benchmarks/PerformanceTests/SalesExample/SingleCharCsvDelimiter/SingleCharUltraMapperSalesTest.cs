@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using UltraMapper.Csv.Factories;
+using UltraMapper.Csv.FileFormats;
 
 namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.SingleCharCsvDelimiter
 {
@@ -26,16 +27,21 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.S
 
         public void WriteRecords( IEnumerable<SaleRecord> records )
         {
-            string fileLocation = Path.Combine(
-              Path.GetDirectoryName( Assembly.GetExecutingAssembly().Location ),
-             "Resources", $"dataset.{nameof( SingleCharUltraMapperSalesTest )}.csv" );
+            string dir = Path.Combine( Path.GetTempPath(), "UltraMapper.CSV.Benchmarks" );
+            Directory.CreateDirectory( dir );
 
-            //var csvWriter = new CsvWriter( fileLocation )
-            //{
-            //    //HasHeader = false
-            //};
+            string fileLocation = Path.Combine( dir,
+                $"1m Sales Records.output.{nameof( SingleCharUltraMapperSalesTest )}.csv" );
 
-            //csvWriter.Write( records, false );
+            using( var writer = new StreamWriter( fileLocation ) )
+            {
+                var csvWriter = new DataFileWriter( writer )
+                {
+                    //HasHeader = false
+                };
+
+                csvWriter.WriteRecords( records );
+            }
         }
     }
 

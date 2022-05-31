@@ -9,7 +9,7 @@ namespace UltraMapper.Csv.Tests
     [TestClass]
     public class Rfc4180CompliantTest
     {
-        [CsvReadOptions( CustomPreprocess = true )]
+        [CustomPreprocess( IsEnabled = true )]
         private class Auto
         {
             public int Year { get; set; }

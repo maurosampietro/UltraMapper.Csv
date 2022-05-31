@@ -4,9 +4,9 @@ using UltraMapper.Csv.Config;
 using UltraMapper.Csv.FileFormats;
 using UltraMapper.Csv.FileFormats.Delimited.Mode;
 using UltraMapper.Csv.Footer.FooterReaders;
-using UltraMapper.Csv.Internals;
 using UltraMapper.Csv.LineReaders;
 using UltraMapper.Csv.LineSplitters;
+using UltraMapper.Csv.UltraMapper.Extensions.Read;
 
 namespace UltraMapper.Csv
 {

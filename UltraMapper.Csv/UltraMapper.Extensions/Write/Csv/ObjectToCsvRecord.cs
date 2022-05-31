@@ -76,8 +76,8 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
                 .Select( ( m, index ) => new
                 {
                     Member = m,
-                    Options = m.GetCustomAttribute<OutOptionsAttribute>() ??
-                            new OutOptionsAttribute() {/*Order = index*/ }
+                    Options = m.GetCustomAttribute<CsvWriteOptionsAttribute>() ??
+                            new CsvWriteOptionsAttribute() {/*Order = index*/ }
                 } )
                 .Where( m => !m.Options.IsIgnored )
                 .OrderBy( info => info.Options.Order )

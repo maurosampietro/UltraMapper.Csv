@@ -38,6 +38,8 @@ namespace UltraMapper.Csv.Tests
                 cfg.HasFooter = true;
             } );
 
+            reader.FieldConfig.Reading.Configure( "Name", o => { o.FieldLength = 30; } );
+
             var footer = reader.GetFooter();
             var records = reader.GetRecords().ToList();
 

@@ -6,7 +6,7 @@ namespace UltraMapper.Csv
     {
         public bool IsIgnored { get; set; }
         public bool IsRequired { get; set; }
-        public int Order { get; set; }
+        public int Order { get; set; } = -1;
         public string Name { get; set; }
 
         public char TrimChar { get; set; } = '\0';

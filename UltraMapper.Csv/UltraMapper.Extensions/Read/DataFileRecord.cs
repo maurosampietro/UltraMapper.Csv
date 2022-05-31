@@ -1,4 +1,4 @@
-﻿namespace UltraMapper.Csv.Internals
+﻿namespace UltraMapper.Csv.UltraMapper.Extensions.Read
 {
     //Encapsulating data in this ad-hoc class is a neat way 
     //to inform the mapper to use a specific UltraMapper extension

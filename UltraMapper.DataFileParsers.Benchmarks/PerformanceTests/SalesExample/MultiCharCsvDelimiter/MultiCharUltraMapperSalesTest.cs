@@ -1,11 +1,13 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Engines;
 using BenchmarkDotNet.Jobs;
+using CsvHelper;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using UltraMapper.Csv.Factories;
+using UltraMapper.Csv.FileFormats;
 using UltraMapper.DataFileParsers.Benchmarks;
 using UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample;
 
@@ -32,15 +34,18 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.M
         public void WriteRecords( IEnumerable<SaleRecordMCD> records )
         {
             string fileLocation = Path.Combine(
-              Path.GetDirectoryName( Assembly.GetExecutingAssembly().Location ),
-             "Resources", $"dataset.{nameof(MultiCharUltraMapperSalesTest)}.csv" );
+                 Path.GetDirectoryName( Assembly.GetExecutingAssembly().Location ),
+                "Resources", $"1m Sales Records.output.{nameof( MultiCharUltraMapperSalesTest )}.csv" );
 
-            //var csvWriter = new CsvWriter( fileLocation )
-            //{
-            //    //HasHeader = false
-            //};
+            using( var writer = new StreamWriter( fileLocation ) )
+            {
+                var csvWriter = new DataFileWriter( writer )
+                {
+                    //HasHeader = false
+                };
 
-            //csvWriter.Write( records, false );
+                csvWriter.WriteRecords( records );
+            }
         }
     }
 

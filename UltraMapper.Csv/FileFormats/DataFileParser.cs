@@ -9,15 +9,16 @@ using UltraMapper.Csv.Footer;
 using UltraMapper.Csv.Footer.FooterReaders;
 using UltraMapper.Csv.Header;
 using UltraMapper.Csv.Header.HeaderReaders;
-using UltraMapper.Csv.Internals;
 using UltraMapper.Csv.LineReaders;
 using UltraMapper.Csv.LineSplitters;
-using UltraMapper.Csv.UltraMapper.Extensions;
+using UltraMapper.Csv.UltraMapper.Extensions.Read;
+using UltraMapper.Csv.UltraMapper.Extensions.Read.Csv;
 using UltraMapper.Csv.UltraMapper.Extensions.Write;
 using UltraMapper.MappingExpressionBuilders;
 
 namespace UltraMapper.Csv.FileFormats
 {
+
     public abstract class DataFileParser<TRecord, TConfiguration> : IHeaderSupport, IFooterSupport
         where TRecord : class, new()
         where TConfiguration : IDataFileParserConfiguration
@@ -61,7 +62,7 @@ namespace UltraMapper.Csv.FileFormats
 
         public DataFileParser( TextReader reader,
             ILineSplitter lineSplitter,
-            ILineReader lineReader, 
+            ILineReader lineReader,
             IHeaderReader headerReader,
             IFooterReader footerReader,
             TConfiguration options )

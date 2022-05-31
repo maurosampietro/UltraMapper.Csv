@@ -3,12 +3,14 @@ using System.Globalization;
 using System.IO;
 using System.Text;
 using UltraMapper.Csv.Config;
+using UltraMapper.Csv.Config.FieldOptions;
 using UltraMapper.Csv.FileFormats;
 using UltraMapper.Csv.Footer;
 using UltraMapper.Csv.Footer.FooterReaders;
 using UltraMapper.Csv.Header;
 using UltraMapper.Csv.LineReaders;
 using UltraMapper.Csv.LineSplitters;
+using UltraMapper.Csv.UltraMapper.Extensions.Write;
 
 namespace UltraMapper.Csv
 {
@@ -16,7 +18,7 @@ namespace UltraMapper.Csv
         ICsvParser<TRecord>, IHeaderSupport, IFooterSupport
         where TRecord : class, new()
     {
-        private readonly bool _disposeReader = false;
+        public FieldConfiguration<TRecord, CsvReadOptionsAttribute, CsvWriteOptionsAttribute> FieldConfig { get; }
 
         internal CsvParser( TextReader reader, string delimiter,
             ILineSplitter lineSplitter,
@@ -32,12 +34,8 @@ namespace UltraMapper.Csv
             IHeaderReader headerReader = null, IFooterReader footerReader = null,
             CsvConfig config = null )
             : base( reader, lineSplitter, lineReader, headerReader, footerReader, new CsvReadonlyConfig( config ) )
-        { }
-
-        ~CsvParser()
         {
-            if( _disposeReader )
-                _reader?.Dispose();
+            this.FieldConfig = new FieldConfiguration<TRecord, CsvReadOptionsAttribute, CsvWriteOptionsAttribute>();
         }
     }
 }
