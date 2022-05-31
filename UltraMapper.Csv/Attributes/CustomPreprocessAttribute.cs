@@ -2,14 +2,16 @@
 
 namespace UltraMapper.Csv
 {
+    /// <summary>
+    /// Controls the call to a method that allows for custom preprocessing of record data.
+    /// The method signature must be 'void Preprocess( string data[] )'.
+    /// You can override the method name by setting <see cref="MethodName"/>.
+    /// </summary>
     [AttributeUsage( AttributeTargets.Class, AllowMultiple = false )]
     public class CustomPreprocessAttribute : Attribute
     {
-        /// <summary>
-        /// Calls a custom method for further preprocessing.
-        /// If set to true, the method is searched in the class you are applying this attribute on.
-        /// The method signature must be 'void Preprocess( string data[] )'.
-        /// You can override the method name by setting <see cref="MethodName"/>.
+        /// <summary>       
+        /// If set to true, the method is searched.
         /// The default value for this property is set to true.
         /// </summary>
         public bool IsEnabled { get; set; } = true;
