@@ -1,4 +1,6 @@
-﻿using System.Globalization;
+﻿using System.Collections.Generic;
+using System.Globalization;
+using System.Reflection;
 using System.Text;
 
 namespace UltraMapper.Csv.UltraMapper.Extensions.Write

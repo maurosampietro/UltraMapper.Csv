@@ -9,9 +9,9 @@ using UltraMapper.MappingExpressionBuilders;
 
 namespace UltraMapper.Csv.UltraMapper.Extensions.Write
 {
-    internal class ObjectToCsvRecord : ReferenceMapper
+    internal class ObjectToCsvRecordMapper : ReferenceMapper
     {
-        public ObjectToCsvRecord( Configuration mappingConfiguration )
+        public ObjectToCsvRecordMapper( Configuration mappingConfiguration )
             : base( mappingConfiguration ) { }
 
         public override bool CanHandle( Type source, Type target )

@@ -11,14 +11,14 @@ using UltraMapper.MappingExpressionBuilders;
 
 namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
 {
-    internal class DataRecordMapper : ReferenceMapper
+    internal class CsvRecordToObjectMapper : ReferenceMapper
     {
-        public DataRecordMapper( Configuration mappingConfiguration )
+        public CsvRecordToObjectMapper( Configuration mappingConfiguration )
             : base( mappingConfiguration ) { }
 
         public override bool CanHandle( Type source, Type target )
         {
-            return source == typeof( DataRecord );
+            return source == typeof( CsvRecordReadObject );
         }
 
         public override LambdaExpression GetMappingExpression( Type source, Type target, IMappingOptions options )
@@ -27,7 +27,7 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
             var targetMembers = this.SelectTargetMembers( target )
                 .OfType<PropertyInfo>().ToArray();
 
-            var dataArray = Expression.Field( context.SourceInstance, nameof( DataRecord.Data ) );
+            var dataArray = Expression.Property( context.SourceInstance, nameof( CsvRecordReadObject.Data ) );
             var assignments = this.GetAssignments( targetMembers, dataArray, context ).ToList();
             var expression = assignments.Count > 0 ? Expression.Block( assignments )
                 : (Expression)Expression.Empty();

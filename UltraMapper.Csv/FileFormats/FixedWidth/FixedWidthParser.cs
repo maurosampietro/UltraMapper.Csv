@@ -7,13 +7,21 @@ using UltraMapper.Csv.FileFormats;
 using UltraMapper.Csv.Footer.FooterReaders;
 using UltraMapper.Csv.LineReaders;
 using UltraMapper.Csv.LineSplitters;
+using UltraMapper.Csv.UltraMapper.Extensions.Read.Csv;
+using UltraMapper.Csv.UltraMapper.Extensions.Read.FixedWidth;
+using UltraMapper.MappingExpressionBuilders;
 
 namespace UltraMapper.Csv
 {
-    public class FixedWidthParser<TRecord> : DataFileParser<TRecord, IDataFileParserConfiguration>
+    public class FixedWidthParser<TRecord> : DataFileParser<TRecord, IDataFileParserConfiguration, FixedWidthRecordReadObject>
         where TRecord : class, new()
     {
-        public FieldOptionsProvider<TRecord, FixedWidthFieldReadOptionsAttribute> FieldConfig { get; }
+        public FieldOptionsProvider<FixedWidthFieldReadOptionsAttribute> FieldConfig { get; }
+
+        static FixedWidthParser()
+        {
+            Mapper.Config.Mappers.AddBefore<ReferenceMapper>( new FixedWidthRecordToObjectMapper( Mapper.Config ) );
+        }
 
         internal FixedWidthParser( TextReader reader,
             ILineSplitter lineSplitter, ILineReader lineReader,
@@ -23,7 +31,7 @@ namespace UltraMapper.Csv
         : base( reader, lineSplitter, lineReader, headerReader, footerReader, options )
         {
             var sourceMemberProvider = Mapper.Config.Conventions.OfType<DefaultConvention>().Single().SourceMemberProvider;
-            this.FieldConfig = new FieldOptionsProvider<TRecord, FixedWidthFieldReadOptionsAttribute>( sourceMemberProvider );
+            this.FieldConfig = new FieldOptionsProvider<FixedWidthFieldReadOptionsAttribute>( sourceMemberProvider, typeof( TRecord ) );
         }
     }
 }

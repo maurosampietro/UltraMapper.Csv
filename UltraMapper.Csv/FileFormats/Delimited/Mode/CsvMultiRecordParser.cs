@@ -6,7 +6,7 @@ using UltraMapper.Csv.FileFormats.Delimited.Mode;
 using UltraMapper.Csv.Footer.FooterReaders;
 using UltraMapper.Csv.LineReaders;
 using UltraMapper.Csv.LineSplitters;
-using UltraMapper.Csv.UltraMapper.Extensions.Read;
+using UltraMapper.Csv.UltraMapper.Extensions.Read.Csv;
 
 namespace UltraMapper.Csv
 {
@@ -14,7 +14,7 @@ namespace UltraMapper.Csv
     /// Handle heterogeneous records.
     /// </summary>
     /// <typeparam name="TRecord"></typeparam>
-    public class CsvMultiRecordParser : DataFileParser<object, ICsvParserConfiguration>, ICsvParser<object>
+    public class CsvMultiRecordParser : DataFileParser<object, ICsvParserConfiguration, CsvRecordReadObject>, ICsvParser<object>
     {
         private Type _recordType = null;
 
@@ -36,7 +36,7 @@ namespace UltraMapper.Csv
             if( _recordType != recordType )
             {
                 _recordType = recordType;
-                _mapFunction = Mapper.Config[ typeof( DataRecord ), recordType ].MappingFunc;
+                _mapFunction = Mapper.Config[ typeof( CsvRecordReadObject ), recordType ].MappingFunc;
             }
 
             _dataRecord.Data = _lineSplitter.Split( line );

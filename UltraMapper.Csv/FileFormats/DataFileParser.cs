@@ -17,11 +17,12 @@ using UltraMapper.MappingExpressionBuilders;
 
 namespace UltraMapper.Csv.FileFormats
 {
-    public abstract class DataFileParser<TRecord, TConfiguration> : IHeaderSupport, IFooterSupport
+    public abstract class DataFileParser<TRecord, TConfiguration, TReadObject> : IHeaderSupport, IFooterSupport
         where TRecord : class, new()
         where TConfiguration : IDataFileParserConfiguration
+        where TReadObject : IRecordReadAdapter, new()
     {
-        protected readonly DataRecord _dataRecord = new DataRecord();
+        protected readonly TReadObject _dataRecord = new TReadObject();
         protected readonly TextReader _reader;
 
         protected Action<ReferenceTracker, object, object> _mapFunction;
@@ -48,11 +49,6 @@ namespace UltraMapper.Csv.FileFormats
                 rule.TargetMemberProvider.IgnoreFields = true;
                 rule.TargetMemberProvider.IgnoreMethods = true;
                 rule.TargetMemberProvider.IgnoreNonPublicMembers = true;
-            } );
-
-            cfg.Mappers.AddBefore<ReferenceMapper>( new IMappingExpressionBuilder[]
-            {
-                new DataRecordMapper( cfg )
             } );
         } );
 
@@ -130,7 +126,7 @@ namespace UltraMapper.Csv.FileFormats
         public virtual IEnumerable<TRecord> GetRecords()
         {
             if( _mapFunction == null )
-                _mapFunction = Mapper.Config[ typeof( DataRecord ), typeof( TRecord ) ].MappingFunc;
+                _mapFunction = Mapper.Config[ typeof( TReadObject ), typeof( TRecord ) ].MappingFunc;
 
             if( _lastLine != null && _footerReader.IsConsumingOriginalStream )
                 throw new Exception( "Cannot read the stream after the footer has been read. The end of the stream has been reached." );

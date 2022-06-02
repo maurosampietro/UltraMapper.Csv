@@ -202,5 +202,26 @@ namespace UltraMapper.Csv.Internals
 
             return str.Replace( pair, single );
         }
+
+        internal static string Pad( this string str, PadSides padSide, int totalWidth, char paddingChar )
+        {
+            switch( padSide )
+            {
+                case PadSides.LEFT: return str.PadLeft( totalWidth, paddingChar );
+                case PadSides.RIGHT: return str.PadRight( totalWidth, paddingChar );
+                case PadSides.CENTER: return str.PadCenter( totalWidth, paddingChar );
+            }
+
+            throw new ArgumentException( $"Unsupported value '{padSide}' used for parameter '{nameof( padSide )}'" );
+        }
+
+        internal static string PadCenter( this string str, int totalWidth, char paddingChar )
+        {
+            int padding = totalWidth - str.Length;
+            int padLeft = (padding / 2) + str.Length;
+
+            return str.PadLeft( padLeft, paddingChar )
+                .PadRight( totalWidth, paddingChar );
+        }
     }
 }

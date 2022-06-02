@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using UltraMapper.Conventions;
+using UltraMapper.Csv.Config.FieldOptions;
+using UltraMapper.Csv.FileFormats.FixedWidth;
+using UltraMapper.Csv.Internals;
 using UltraMapper.Internals;
 using UltraMapper.MappingExpressionBuilders;
 
 namespace UltraMapper.Csv.UltraMapper.Extensions.Write
 {
-    internal class ObjectToFixedWidthRecord : ReferenceMapper
+    internal class ObjectToFixedWidthRecordMapper : ReferenceMapper
     {
-        public ObjectToFixedWidthRecord( Configuration mappingConfiguration )
+        public ObjectToFixedWidthRecordMapper( Configuration mappingConfiguration )
             : base( mappingConfiguration ) { }
 
         public override bool CanHandle( Type source, Type target )
@@ -35,11 +37,14 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
                 context.ReferenceTracker, context.SourceInstance, context.TargetInstance );
         }
 
-        readonly Expression<Action<FixedWidthRecordWriteObject, string, bool>> _appendText = 
-            ( sb, text, addDelimiter ) => AppendText( sb, text );
+        readonly Expression<Action<FixedWidthRecordWriteObject, string, FixedWidthFieldWriteOptionsAttribute>> _appendText =
+            ( sb, text, options ) => AppendText( sb, text, options );
 
-        private static void AppendText( FixedWidthRecordWriteObject sb, string text ) 
-            => sb.RecordBuilder.Append( text );
+        private static void AppendText( FixedWidthRecordWriteObject sb, string text, FixedWidthFieldWriteOptionsAttribute options )
+        {
+            text = text.Pad( options.PadSide, options.FieldLength, options.PadChar );
+            sb.RecordBuilder.Append( text );
+        }
 
         private IEnumerable<Expression> GetTargetStrings( PropertyInfo[] targetMembers,
             ReferenceMapperContext context )
@@ -53,25 +58,19 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
                     var memberAccess = Expression.Property( context.SourceInstance, item );
                     LambdaExpression toStringExp = MapperConfiguration[ item.PropertyType, typeof( string ) ].MappingExpression;
 
+                    var memberOptions = FieldConfiguration.Get<FixedWidthFieldWriteOptionsAttribute>(context.SourceInstance.Type).FieldOptions[ item ];
+
                     yield return Expression.Invoke( _appendText, context.TargetInstance,
                         Expression.Invoke( toStringExp, memberAccess ),
-                        Expression.Constant( i != targetMembers.Length - 1, typeof( bool ) ) );
+                        Expression.Constant( memberOptions ) );
                 }
             }
         }
 
         protected MemberInfo[] SelectSourceMembers( Type sourceType )
         {
-            var sourceMemberProvider = _mapper.Config.Conventions
-                .OfType<DefaultConvention>().Single().SourceMemberProvider;
-            
-            return sourceMemberProvider.GetMembers( sourceType )
-                .Select( ( m, index ) => new
-                {
-                    Member = m,
-                    Options = m.GetCustomAttribute<FixedWidthFieldWriteOptionsAttribute>() ??
-                            new FixedWidthFieldWriteOptionsAttribute() {/*Order = index*/ }
-                } )
+            return FieldConfiguration.Get<FixedWidthFieldWriteOptionsAttribute>( sourceType ).FieldOptions
+                .Select( kvp => new { Member = kvp.Key, Options = kvp.Value } )
                 .Where( m => !m.Options.IsIgnored )
                 .OrderBy( info => info.Options.Order )
                 .Select( m => m.Member )

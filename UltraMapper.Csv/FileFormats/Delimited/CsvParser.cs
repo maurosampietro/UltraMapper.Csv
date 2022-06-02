@@ -12,16 +12,22 @@ using UltraMapper.Csv.Footer.FooterReaders;
 using UltraMapper.Csv.Header;
 using UltraMapper.Csv.LineReaders;
 using UltraMapper.Csv.LineSplitters;
+using UltraMapper.Csv.UltraMapper.Extensions.Read.Csv;
 using UltraMapper.Csv.UltraMapper.Extensions.Write;
 using UltraMapper.MappingExpressionBuilders;
 
 namespace UltraMapper.Csv
 {
-    public class CsvParser<TRecord> : DataFileParser<TRecord, ICsvParserConfiguration>,
+    public class CsvParser<TRecord> : DataFileParser<TRecord, ICsvParserConfiguration, CsvRecordReadObject>,
         ICsvParser<TRecord>, IHeaderSupport, IFooterSupport
         where TRecord : class, new()
     {
-        public FieldOptionsProvider<TRecord, CsvReadOptionsAttribute> FieldConfig { get; }
+        public FieldOptionsProvider<CsvReadOptionsAttribute> FieldConfig { get; }
+
+        static CsvParser()
+        {
+            Mapper.Config.Mappers.AddBefore<ReferenceMapper>( new CsvRecordToObjectMapper( Mapper.Config ) );
+        }
 
         internal CsvParser( TextReader reader, string delimiter,
             ILineSplitter lineSplitter,
@@ -39,7 +45,7 @@ namespace UltraMapper.Csv
             : base( reader, lineSplitter, lineReader, headerReader, footerReader, new CsvReadonlyConfig( config ) )
         {
             var sourceMemberProvider = Mapper.Config.Conventions.OfType<DefaultConvention>().Single().SourceMemberProvider;
-            this.FieldConfig = new FieldOptionsProvider<TRecord, CsvReadOptionsAttribute>( sourceMemberProvider );
+            this.FieldConfig = new FieldOptionsProvider<CsvReadOptionsAttribute>( sourceMemberProvider, typeof( TRecord ) );
         }
     }
 }
