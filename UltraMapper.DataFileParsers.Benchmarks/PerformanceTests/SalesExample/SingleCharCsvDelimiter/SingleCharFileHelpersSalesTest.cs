@@ -11,6 +11,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.S
         {
             var engine = new FileHelperAsyncEngine<SaleRecord>();
             engine.BeginReadFile( fileLocation );
+
             return engine;
         }
 

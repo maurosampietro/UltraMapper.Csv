@@ -9,9 +9,8 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
     //
     //Only one instance of this class will be created per parser instance.
     //This one instance will be reused over and over again to pass data to the ExpressionBuilder.
-    public class CsvWritingString
+    public class FixedWidthRecordWriteObject : IRecordWriteAdapter
     {
-        public StringBuilder CsvRecordString = new StringBuilder();
-        public string Delimiter { get; set; } = CultureInfo.InvariantCulture.TextInfo.ListSeparator;
+        public StringBuilder RecordBuilder { get; } = new StringBuilder();        
     }
 }

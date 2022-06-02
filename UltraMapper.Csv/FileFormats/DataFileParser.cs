@@ -13,12 +13,10 @@ using UltraMapper.Csv.LineReaders;
 using UltraMapper.Csv.LineSplitters;
 using UltraMapper.Csv.UltraMapper.Extensions.Read;
 using UltraMapper.Csv.UltraMapper.Extensions.Read.Csv;
-using UltraMapper.Csv.UltraMapper.Extensions.Write;
 using UltraMapper.MappingExpressionBuilders;
 
 namespace UltraMapper.Csv.FileFormats
 {
-
     public abstract class DataFileParser<TRecord, TConfiguration> : IHeaderSupport, IFooterSupport
         where TRecord : class, new()
         where TConfiguration : IDataFileParserConfiguration
@@ -131,7 +129,8 @@ namespace UltraMapper.Csv.FileFormats
         /// <typeparam name="TRecord"></typeparam>
         public virtual IEnumerable<TRecord> GetRecords()
         {
-            _mapFunction = Mapper.Config[ typeof( DataRecord ), typeof( TRecord ) ].MappingFunc;
+            if( _mapFunction == null )
+                _mapFunction = Mapper.Config[ typeof( DataRecord ), typeof( TRecord ) ].MappingFunc;
 
             if( _lastLine != null && _footerReader.IsConsumingOriginalStream )
                 throw new Exception( "Cannot read the stream after the footer has been read. The end of the stream has been reached." );
@@ -219,47 +218,6 @@ namespace UltraMapper.Csv.FileFormats
         {
             if( this.Configuration.DisposeReader )
                 _reader?.Dispose();
-        }
-    }
-
-    public class DataFileWriter
-    {
-        private readonly TextWriter _writer;
-
-        public DataFileWriter( TextWriter writer )
-        {
-            _writer = writer;
-        }
-
-        public void WriteRecords<TRecord>( IEnumerable<TRecord> records )
-        {
-            var mapper = new Mapper( cfg =>
-            {
-                cfg.IsReferenceTrackingEnabled = false;
-                cfg.ReferenceBehavior = ReferenceBehaviors.CREATE_NEW_INSTANCE;
-
-                cfg.Conventions.GetOrAdd<DefaultConvention>( rule =>
-                {
-                    rule.SourceMemberProvider.IgnoreFields = true;
-                    rule.SourceMemberProvider.IgnoreMethods = true;
-                    rule.SourceMemberProvider.IgnoreNonPublicMembers = true;
-
-                    rule.TargetMemberProvider.IgnoreFields = true;
-                    rule.TargetMemberProvider.IgnoreMethods = true;
-                    rule.TargetMemberProvider.IgnoreNonPublicMembers = true;
-                } );
-
-                cfg.Mappers.AddBefore<ReferenceMapper>( new ObjectToCsvRecord( cfg ) );
-            } );
-
-            var ws = new CsvWritingString();
-
-            foreach( var record in records )
-            {
-                mapper.Map( record, ws );
-                _writer.WriteLine( ws.CsvRecordString.ToString() );
-                ws.CsvRecordString.Clear();
-            }
         }
     }
 }

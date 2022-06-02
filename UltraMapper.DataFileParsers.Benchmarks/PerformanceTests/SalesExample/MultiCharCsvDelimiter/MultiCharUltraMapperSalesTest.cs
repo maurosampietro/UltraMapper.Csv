@@ -1,13 +1,13 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Engines;
 using BenchmarkDotNet.Jobs;
-using CsvHelper;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using UltraMapper.Csv.Factories;
 using UltraMapper.Csv.FileFormats;
+using UltraMapper.Csv.FileFormats.Delimited;
 using UltraMapper.DataFileParsers.Benchmarks;
 using UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample;
 
@@ -39,7 +39,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.M
 
             using( var writer = new StreamWriter( fileLocation ) )
             {
-                var csvWriter = new DataFileWriter( writer )
+                var csvWriter = new CsvWriter<SaleRecordMCD>( writer, "~" )
                 {
                     //HasHeader = false
                 };

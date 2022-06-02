@@ -4,6 +4,7 @@ using System.IO;
 using System.Reflection;
 using UltraMapper.Csv.Factories;
 using UltraMapper.Csv.FileFormats;
+using UltraMapper.Csv.FileFormats.Delimited;
 
 namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.SingleCharCsvDelimiter
 {
@@ -35,7 +36,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.S
 
             using( var writer = new StreamWriter( fileLocation ) )
             {
-                var csvWriter = new DataFileWriter( writer )
+                var csvWriter = new CsvWriter<SaleRecord>( writer, "~" )
                 {
                     //HasHeader = false
                 };

@@ -1,4 +1,6 @@
 ﻿using System.IO;
+using System.Linq;
+using UltraMapper.Conventions;
 using UltraMapper.Csv.Config.DataFileParserConfig;
 using UltraMapper.Csv.Config.FieldOptions;
 using UltraMapper.Csv.FileFormats;
@@ -11,7 +13,7 @@ namespace UltraMapper.Csv
     public class FixedWidthParser<TRecord> : DataFileParser<TRecord, IDataFileParserConfiguration>
         where TRecord : class, new()
     {
-        public FieldConfiguration<TRecord, FixedWidthFieldReadOptionsAttribute, FixedWidthFieldWriteOptionsAttribute> FieldConfig { get; }
+        public FieldOptionsProvider<TRecord, FixedWidthFieldReadOptionsAttribute> FieldConfig { get; }
 
         internal FixedWidthParser( TextReader reader,
             ILineSplitter lineSplitter, ILineReader lineReader,
@@ -20,7 +22,8 @@ namespace UltraMapper.Csv
             IDataFileParserConfiguration options = null )
         : base( reader, lineSplitter, lineReader, headerReader, footerReader, options )
         {
-            this.FieldConfig = new FieldConfiguration<TRecord, FixedWidthFieldReadOptionsAttribute, FixedWidthFieldWriteOptionsAttribute>();
+            var sourceMemberProvider = Mapper.Config.Conventions.OfType<DefaultConvention>().Single().SourceMemberProvider;
+            this.FieldConfig = new FieldOptionsProvider<TRecord, FixedWidthFieldReadOptionsAttribute>( sourceMemberProvider );
         }
     }
 }

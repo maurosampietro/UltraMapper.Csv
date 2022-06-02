@@ -7,14 +7,13 @@ using UltraMapper.DataFileParsers.Benchmarks;
 
 namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.SingleCharCsvDelimiter
 {
-
     public class SingleCharCsvHelperSalesTest : ICsvBenchmark<SaleRecord>
     {
         public IEnumerable<SaleRecord> ReadRecords( string fileLocation )
         {
             var reader = new StreamReader( fileLocation );
             var csvReader = new CsvReader( reader, CultureInfo.InvariantCulture, leaveOpen: true );
-
+           
             return csvReader.GetRecords<SaleRecord>();
         }
 

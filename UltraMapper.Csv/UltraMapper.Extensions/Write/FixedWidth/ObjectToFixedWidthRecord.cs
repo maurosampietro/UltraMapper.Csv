@@ -11,19 +11,12 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
 {
     internal class ObjectToFixedWidthRecord : ReferenceMapper
     {
-        private readonly SourceMemberProvider _sourceMemberProvider = new SourceMemberProvider()
-        {
-            IgnoreFields = true,
-            IgnoreMethods = true,
-            IgnoreNonPublicMembers = true,
-        };
-
         public ObjectToFixedWidthRecord( Configuration mappingConfiguration )
             : base( mappingConfiguration ) { }
 
         public override bool CanHandle( Type source, Type target )
         {
-            return !source.IsEnumerable() && target == typeof( CsvWritingString );
+            return !source.IsEnumerable() && target == typeof( FixedWidthRecordWriteObject );
         }
 
         public override LambdaExpression GetMappingExpression( Type source, Type target, IMappingOptions options )
@@ -42,14 +35,11 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
                 context.ReferenceTracker, context.SourceInstance, context.TargetInstance );
         }
 
-        readonly Expression<Action<CsvWritingString, string, bool>> _appendText = ( sb, text, addDelimiter ) => AppendText( sb, text, addDelimiter );
-        private static void AppendText( CsvWritingString sb, string text, bool addDelimiter )
-        {
-            sb.CsvRecordString.Append( text );
+        readonly Expression<Action<FixedWidthRecordWriteObject, string, bool>> _appendText = 
+            ( sb, text, addDelimiter ) => AppendText( sb, text );
 
-            if( addDelimiter )
-                sb.CsvRecordString.Append( sb.Delimiter );
-        }
+        private static void AppendText( FixedWidthRecordWriteObject sb, string text ) 
+            => sb.RecordBuilder.Append( text );
 
         private IEnumerable<Expression> GetTargetStrings( PropertyInfo[] targetMembers,
             ReferenceMapperContext context )
@@ -72,7 +62,10 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
 
         protected MemberInfo[] SelectSourceMembers( Type sourceType )
         {
-            return _sourceMemberProvider.GetMembers( sourceType )
+            var sourceMemberProvider = _mapper.Config.Conventions
+                .OfType<DefaultConvention>().Single().SourceMemberProvider;
+            
+            return sourceMemberProvider.GetMembers( sourceType )
                 .Select( ( m, index ) => new
                 {
                     Member = m,

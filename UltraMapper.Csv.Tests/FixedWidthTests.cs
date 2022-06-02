@@ -1,7 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.IO;
 using System.Linq;
 using UltraMapper.Csv.Factories;
+using UltraMapper.Csv.FileFormats;
+using UltraMapper.Csv.FileFormats.FixedWidth;
 
 namespace UltraMapper.Csv.Tests
 {
@@ -18,12 +21,15 @@ namespace UltraMapper.Csv.Tests
         private class FixedWidthRecordWithLengths
         {
             [FixedWidthFieldReadOptions( FieldLength = 20, TrimChar = '~' )]
+            [FixedWidthFieldWriteOptions( FieldLength = 20, PadChar = '~', PadSide = FixedWidthFieldWriteOptionsAttribute.PadSides.RIGHT )]
             public string Name { get; set; }
 
             [FixedWidthFieldReadOptions( FieldLength = 10, TrimChar = '~' )]
+            [FixedWidthFieldWriteOptions( FieldLength = 10, PadChar = '~', PadSide = FixedWidthFieldWriteOptionsAttribute.PadSides.RIGHT )]
             public string State { get; set; }
 
             [FixedWidthFieldReadOptions( FieldLength = 12, TrimChar = '~' )]
+            [FixedWidthFieldWriteOptions( FieldLength = 12, PadChar = '~', PadSide = FixedWidthFieldWriteOptionsAttribute.PadSides.RIGHT )]
             public string Telephone { get; set; }
         }
 
@@ -38,7 +44,7 @@ namespace UltraMapper.Csv.Tests
                 cfg.HasFooter = true;
             } );
 
-            reader.FieldConfig.Reading.Configure( "Name", o => { o.FieldLength = 30; } );
+            reader.FieldConfig.Configure( "Name", o => { o.FieldLength = 30; } );
 
             var footer = reader.GetFooter();
             var records = reader.GetRecords().ToList();
@@ -63,21 +69,35 @@ namespace UltraMapper.Csv.Tests
                 reader.GetRecords().ToList() );
         }
 
-        //[TestMethod]
-        //public void Writing()
-        //{
-        //    string fileLocation = Resources.GetFileLocation( "FixedWidthExample.writingtest.dat" );
+        [TestMethod]
+        public void Writing()
+        {
+            string writeFileLocation = Resources.GetFileLocation( "FixedWidthExample.writingtest.dat" );
 
-        //    var csvReader = new CsvParser( new Uri( fileLocation ) )
-        //    {
-        //        HasHeader = true,
-        //        HasFooter = true
-        //    };
+            string readFileLocation = Resources.GetFileLocation( "FixedWidth.dat" );
 
-        //    var records = csvReader.GetRecords<FixedWidthRecordWithLengths>().ToList();
+            var reader = FixedWidthFactory.GetInstance<FixedWidthRecordWithLengths>(
+                new Uri( readFileLocation ), cfg =>
+                {
+                    cfg.HasHeader = true;
+                    cfg.HasFooter = true;
+                } );
 
-        //    var csvWriter = new CsvWriter( fileLocation + ".ultramapper" );
-        //    csvWriter.Write( records );
-        //}
+            var records = reader.GetRecords().ToList();
+
+            using( var writer = new StreamWriter( writeFileLocation ) )
+            {
+                var csvWriter = new FixedWidthWriter<FixedWidthRecordWithLengths>( writer );
+                csvWriter.WriteHeader();
+                csvWriter.WriteRecords( records );
+                writer.Write( "EndOfFile" );
+            }
+
+            string rawInputFile = File.ReadAllText( readFileLocation );
+            string rawOutputFile = File.ReadAllText( writeFileLocation );
+
+            //manca l'header e il footer
+            Assert.IsTrue( rawInputFile == rawOutputFile );
+        }
     }
 }

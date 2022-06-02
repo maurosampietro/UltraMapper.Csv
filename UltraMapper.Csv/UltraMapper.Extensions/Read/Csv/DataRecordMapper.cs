@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using UltraMapper.Conventions;
+using UltraMapper.Csv.FileFormats;
 using UltraMapper.Csv.Internals;
 using UltraMapper.Internals;
 using UltraMapper.MappingExpressionBuilders;
@@ -12,13 +13,6 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
 {
     internal class DataRecordMapper : ReferenceMapper
     {
-        private readonly TargetMemberProvider _targetMemberProvider = new TargetMemberProvider()
-        {
-            IgnoreFields = true,
-            IgnoreMethods = true,
-            IgnoreNonPublicMembers = true,
-        };
-
         public DataRecordMapper( Configuration mappingConfiguration )
             : base( mappingConfiguration ) { }
 
@@ -157,7 +151,10 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
 
         protected IEnumerable<MemberInfo> SelectTargetMembers( Type targetType )
         {
-            return _targetMemberProvider.GetMembers( targetType )
+            var targetMemberProvider = _mapper.Config.Conventions
+              .OfType<DefaultConvention>().Single().SourceMemberProvider;
+
+            return targetMemberProvider.GetMembers( targetType )
                 .Select( ( m, index ) => new
                 {
                     Member = m,

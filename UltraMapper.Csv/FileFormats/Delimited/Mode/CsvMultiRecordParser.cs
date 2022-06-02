@@ -16,7 +16,7 @@ namespace UltraMapper.Csv
     /// <typeparam name="TRecord"></typeparam>
     public class CsvMultiRecordParser : DataFileParser<object, ICsvParserConfiguration>, ICsvParser<object>
     {
-        private Type _recordType;
+        private Type _recordType = null;
 
         public IMultiRecordSelector Selector { get; set; }
 

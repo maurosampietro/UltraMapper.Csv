@@ -1,8 +1,9 @@
 ﻿using System;
+using UltraMapper.Csv.Config.FieldOptions;
 
 namespace UltraMapper.Csv
 {
-    public sealed class FixedWidthFieldReadOptionsAttribute : Attribute
+    public sealed class FixedWidthFieldReadOptionsAttribute : Attribute, IFieldConfig
     {
         public bool IsIgnored { get; set; }
         public bool IsRequired { get; set; }

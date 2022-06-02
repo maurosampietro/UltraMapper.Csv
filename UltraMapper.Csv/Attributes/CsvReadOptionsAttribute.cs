@@ -1,8 +1,9 @@
 ﻿using System;
+using UltraMapper.Csv.Config.FieldOptions;
 
 namespace UltraMapper.Csv
 {
-    public sealed class CsvReadOptionsAttribute : Attribute
+    public sealed class CsvReadOptionsAttribute : Attribute, IFieldConfig
     {
         public bool IsIgnored { get; set; }
         public bool IsRequired { get; set; }

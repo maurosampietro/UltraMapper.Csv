@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Text;
+using UltraMapper.Conventions;
 using UltraMapper.Csv.Config;
 using UltraMapper.Csv.Config.FieldOptions;
 using UltraMapper.Csv.FileFormats;
@@ -11,6 +13,7 @@ using UltraMapper.Csv.Header;
 using UltraMapper.Csv.LineReaders;
 using UltraMapper.Csv.LineSplitters;
 using UltraMapper.Csv.UltraMapper.Extensions.Write;
+using UltraMapper.MappingExpressionBuilders;
 
 namespace UltraMapper.Csv
 {
@@ -18,7 +21,7 @@ namespace UltraMapper.Csv
         ICsvParser<TRecord>, IHeaderSupport, IFooterSupport
         where TRecord : class, new()
     {
-        public FieldConfiguration<TRecord, CsvReadOptionsAttribute, CsvWriteOptionsAttribute> FieldConfig { get; }
+        public FieldOptionsProvider<TRecord, CsvReadOptionsAttribute> FieldConfig { get; }
 
         internal CsvParser( TextReader reader, string delimiter,
             ILineSplitter lineSplitter,
@@ -35,7 +38,8 @@ namespace UltraMapper.Csv
             CsvConfig config = null )
             : base( reader, lineSplitter, lineReader, headerReader, footerReader, new CsvReadonlyConfig( config ) )
         {
-            this.FieldConfig = new FieldConfiguration<TRecord, CsvReadOptionsAttribute, CsvWriteOptionsAttribute>();
+            var sourceMemberProvider = Mapper.Config.Conventions.OfType<DefaultConvention>().Single().SourceMemberProvider;
+            this.FieldConfig = new FieldOptionsProvider<TRecord, CsvReadOptionsAttribute>( sourceMemberProvider );
         }
     }
 }
