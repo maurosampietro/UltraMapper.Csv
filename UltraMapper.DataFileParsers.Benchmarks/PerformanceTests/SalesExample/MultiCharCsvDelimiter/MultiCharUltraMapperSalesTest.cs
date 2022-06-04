@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using UltraMapper.Csv;
 using UltraMapper.Csv.Factories;
 using UltraMapper.Csv.FileFormats;
 using UltraMapper.Csv.FileFormats.Delimited;
@@ -17,15 +18,15 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.M
     {
         public IEnumerable<SaleRecordMCD> ReadRecords( string fileLocation )
         {
-            var csvReader = CsvParserFactory.GetInstance<SaleRecordMCD>( new Uri( fileLocation ), cfg =>
+            var csvReader = CsvParser<SaleRecordMCD>.GetInstance( fileLocation, cfg =>
             {
                 cfg.Delimiter = "~DELIMITER~";
-                cfg.HasNewLinesInQuotes = true;
-                cfg.HasDelimiterInQuotes = true;
-                cfg.IgnoreCommentedLines = true;
-                cfg.IgnoreEmptyLines = true;
                 cfg.HasHeader = true;
-                cfg.HasFooter = true;
+                cfg.HasFooter = false;
+                cfg.HasNewLinesInQuotes = false;
+                cfg.HasDelimiterInQuotes = false;
+                cfg.IgnoreCommentedLines = false;
+                cfg.IgnoreEmptyLines = false;
             } );
 
             return csvReader.GetRecords();

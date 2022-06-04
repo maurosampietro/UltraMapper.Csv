@@ -9,8 +9,8 @@ Intel Core i7-8700K CPU 3.70GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical 
 Job=.NET 5.0  Runtime=.NET 5.0  
 
 ```
-|      Method |    Mean |    Error |   StdDev |  Median |
-|------------ |--------:|---------:|---------:|--------:|
-|  FileHelper | 2.203 s | 0.0419 s | 0.0498 s | 2.180 s |
-|   CsvHelper | 4.162 s | 0.0811 s | 0.1355 s | 4.233 s |
-| UltraMapper | 1.644 s | 0.0329 s | 0.0937 s | 1.621 s |
+|      Method |    Mean |    Error |   StdDev |
+|------------ |--------:|---------:|---------:|
+|  FileHelper | 2.421 s | 0.0196 s | 0.0183 s |
+|   CsvHelper | 4.429 s | 0.0876 s | 0.1043 s |
+| UltraMapper | 1.431 s | 0.0384 s | 0.1121 s |

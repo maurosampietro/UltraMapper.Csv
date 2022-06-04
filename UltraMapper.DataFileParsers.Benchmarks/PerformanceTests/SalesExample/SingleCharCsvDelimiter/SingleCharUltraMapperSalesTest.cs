@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
-using UltraMapper.Csv.Factories;
-using UltraMapper.Csv.FileFormats;
+using UltraMapper.Csv;
 using UltraMapper.Csv.FileFormats.Delimited;
 
 namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.SingleCharCsvDelimiter
@@ -12,15 +9,15 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.S
     {
         public IEnumerable<SaleRecord> ReadRecords( string fileLocation )
         {
-            var csvReader = CsvParserFactory.GetInstance<SaleRecord>( new Uri( fileLocation ), cfg =>
+            var csvReader = CsvParser<SaleRecord>.GetInstance( fileLocation, cfg =>
             {
                 cfg.Delimiter = ",";
                 cfg.HasHeader = true;
-                cfg.HasFooter = true;
-                cfg.HasNewLinesInQuotes = true;
-                cfg.HasDelimiterInQuotes = true;
-                cfg.IgnoreCommentedLines = true;
-                cfg.IgnoreEmptyLines = true;
+                cfg.HasFooter = false;
+                cfg.HasNewLinesInQuotes = false;
+                cfg.HasDelimiterInQuotes = false;
+                cfg.IgnoreCommentedLines = false;
+                cfg.IgnoreEmptyLines = false;
             } );
 
             return csvReader.GetRecords();

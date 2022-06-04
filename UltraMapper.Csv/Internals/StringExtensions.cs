@@ -3,6 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UltraMapper.Csv.Config.FieldOptions;
 
 namespace UltraMapper.Csv.Internals
 {

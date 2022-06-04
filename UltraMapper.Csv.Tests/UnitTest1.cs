@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using UltraMapper.Csv.Factories;
 using UltraMapper.Csv.Tests.Biostats;
@@ -15,7 +16,7 @@ namespace UltraMapper.Csv.Tests
         {
             string fileLocation = Resources.GetFileLocation( "Titanic.csv" );
 
-            var csvReader = CsvParserFactory.GetInstance<Titanic>( new Uri( fileLocation ), cfg =>
+            var csvReader = CsvParser<Titanic>.GetInstance( fileLocation, cfg =>
             {
                 cfg.Delimiter = ",";
                 cfg.HasHeader = true;
@@ -36,9 +37,9 @@ namespace UltraMapper.Csv.Tests
         [TestMethod]
         public void ReadingFromEmptyString()
         {
-            var csvInput = String.Empty;
+            var csvInput = new StringReader( String.Empty );
 
-            var csvReader = CsvParserFactory.GetInstance<BioStat>( csvInput, cfg =>
+            var csvReader = CsvParser<BioStat>.GetInstance( csvInput, cfg =>
             {
                 cfg.HasHeader = true;
                 cfg.HasFooter = true;
@@ -65,7 +66,7 @@ namespace UltraMapper.Csv.Tests
         //{
         //    string fileLocation = Resources.GetFileLocation( "biostats.csv" );
 
-        //    var csvReader = new CsvParser( new Uri( fileLocation ) )
+        //    var csvReader = new CsvParser( fileLocation )
         //    {
         //        HasHeader = true,
         //        HasFooter = true
@@ -82,7 +83,7 @@ namespace UltraMapper.Csv.Tests
         {
             string fileLocation = Resources.GetFileLocation( "EmptyFile.csv" );
 
-            var csvReader = CsvParserFactory.GetInstance<BioStat>( new Uri( fileLocation ), cfg =>
+            var csvReader = CsvParser<BioStat>.GetInstance( fileLocation, cfg =>
             {
                 cfg.HasHeader = true;
                 cfg.HasFooter = true;
@@ -98,7 +99,7 @@ namespace UltraMapper.Csv.Tests
         {
             string fileLocation = Resources.GetFileLocation( "EmptyFile.csv" );
 
-            var csvReader = CsvParserFactory.GetInstance<BioStat>( new Uri( fileLocation ), cfg =>
+            var csvReader = CsvParser<BioStat>.GetInstance( fileLocation, cfg =>
             {
                 cfg.Delimiter = ",";
                 cfg.HasHeader = false;
@@ -114,7 +115,7 @@ namespace UltraMapper.Csv.Tests
         {
             string fileLocation = Resources.GetFileLocation( "biostats.csv" );
 
-            var csvReader = CsvParserFactory.GetInstance<BioStat>( new Uri( fileLocation ), cfg =>
+            var csvReader = CsvParser<BioStat>.GetInstance( fileLocation, cfg =>
             {
                 cfg.Delimiter = ",";
                 cfg.HasHeader = true;
@@ -150,7 +151,7 @@ namespace UltraMapper.Csv.Tests
     Ruth,       F,   28,       65,      131
     EndOfFile";
 
-            var csvReader = CsvParserFactory.GetInstance<BioStat>( csvInput, cfg =>
+            var csvReader = CsvParser<BioStat>.GetInstance( new StringReader( csvInput ), cfg =>
             {
                 cfg.Delimiter = ",";
                 cfg.HasHeader = true;

@@ -11,7 +11,7 @@ namespace UltraMapper.Csv.FileFormats
         where TWriteObject : IRecordWriteAdapter, new()
     {
         protected readonly TextWriter _writer;
-        private readonly TWriteObject _writingObject;
+        protected readonly TWriteObject _writingObject;
         private Action<ReferenceTracker, object, object> _mapFunction;
 
         public DataFileWriter( TextWriter writer )

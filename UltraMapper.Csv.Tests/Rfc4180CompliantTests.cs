@@ -32,7 +32,7 @@ namespace UltraMapper.Csv.Tests
         public void Rfc4180Compliant()
         {
             string fileLocation = Resources.GetFileLocation( "RFC4180Standard.csv" );
-            var csvReader = CsvParserFactory.GetInstance<Auto>( new Uri( fileLocation ), cfg =>
+            var csvReader = CsvParser<Auto>.GetInstance( fileLocation, cfg =>
             {
                 cfg.Culture = CultureInfo.GetCultureInfo( "en-Us" );
                 cfg.Delimiter = ",";

@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UltraMapper.Conventions;
 using UltraMapper.Csv.Config.FieldOptions;
+using UltraMapper.Csv.Config.FieldOptions.Attributes;
 using UltraMapper.Csv.UltraMapper.Extensions.Write;
 using UltraMapper.MappingExpressionBuilders;
 
@@ -27,6 +27,7 @@ namespace UltraMapper.Csv.FileFormats.Delimited
             this.FieldConfig = new FieldOptionsProvider<CsvWriteOptionsAttribute>( targetMemberProvider, typeof( TRecord ) );
 
             FieldConfiguration.Register<TRecord>( this.FieldConfig );
+            _writingObject.Delimiter = delimiter;
         }
 
         public void WriteHeader()

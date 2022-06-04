@@ -13,7 +13,7 @@ namespace UltraMapper.Csv.Tests
         {
             string fileLocation = Resources.GetFileLocation( "CommentsAndEmptyLines.csv" );
 
-            var csvReader = CsvParserFactory.GetInstance<BioStat>( new Uri( fileLocation ), cfg =>
+            var csvReader = CsvParser<BioStat>.GetInstance( fileLocation, cfg =>
             {
                 cfg.Delimiter = ",";
                 cfg.HasHeader = true;

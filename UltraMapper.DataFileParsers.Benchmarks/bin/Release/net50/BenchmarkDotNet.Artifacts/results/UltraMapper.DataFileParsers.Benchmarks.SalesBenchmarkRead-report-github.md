@@ -10,6 +10,7 @@ Intel Core i7-8700K CPU 3.70GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical 
 ```
 |      Method |    Mean |    Error |   StdDev |
 |------------ |--------:|---------:|---------:|
-|  FileHelper | 3.093 s | 0.0582 s | 0.0544 s |
-|   CsvHelper | 3.836 s | 0.0693 s | 0.0615 s |
-| UltraMapper | 2.998 s | 0.0586 s | 0.0548 s |
+|    BaseLine | 1.610 s | 0.0316 s | 0.0411 s |
+|  FileHelper | 3.019 s | 0.0350 s | 0.0293 s |
+|   CsvHelper | 3.826 s | 0.0743 s | 0.1017 s |
+| UltraMapper | 1.684 s | 0.0148 s | 0.0124 s |

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using UltraMapper.Conventions;
+using UltraMapper.Csv.Config.FieldOptions.Attributes;
 using UltraMapper.Internals;
 using UltraMapper.MappingExpressionBuilders;
 

@@ -6,6 +6,7 @@ using System.Reflection;
 using UltraMapper.Csv.Config.FieldOptions;
 using UltraMapper.Csv.FileFormats.FixedWidth;
 using UltraMapper.Csv.Internals;
+using UltraMapper.Csv.UltraMapper.Extensions.Write.FixedWidth;
 using UltraMapper.Internals;
 using UltraMapper.MappingExpressionBuilders;
 

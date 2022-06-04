@@ -1,9 +1,9 @@
 ﻿using CsvHelper;
+using CsvHelper.Configuration;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Reflection;
-using UltraMapper.DataFileParsers.Benchmarks;
 
 namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.MultiCharCsvDelimiter
 {
@@ -12,7 +12,14 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.M
         public IEnumerable<SaleRecordMCD> ReadRecords( string fileLocation )
         {
             var reader = new StreamReader( fileLocation );
-            var csvReader = new CsvReader( reader, CultureInfo.InvariantCulture, leaveOpen: true );
+
+            var config = new CsvConfiguration( CultureInfo.InvariantCulture )
+            {
+                Delimiter = "~DELIMITER~",
+                LeaveOpen = true, 
+            };
+
+            var csvReader = new CsvReader( reader, config );
 
             return csvReader.GetRecords<SaleRecordMCD>();
         }
@@ -25,7 +32,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.M
 
             using( var writer = new StreamWriter( fileLocation ) )
             {
-                var engine = new CsvWriter(writer, CultureInfo.InvariantCulture);
+                var engine = new CsvWriter( writer, CultureInfo.InvariantCulture );
                 engine.WriteRecords( records );
             }
         }

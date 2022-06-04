@@ -10,7 +10,7 @@ namespace UltraMapper.Csv
         public int Order { get; set; } = -1;
         public string Name { get; set; }
         public int FieldLength { get; set; } = -1;
-        public char PadChar { get; set; } = '\0'; //non va bene come default '\0' perchè termina la stringa
+        public char PadChar { get; set; } = ' '; //non va bene come default '\0' perchè termina la stringa
         public PadSides PadSide { get; set; }
         public PadSides HeaderPadSide { get; set; }
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using UltraMapper.Csv;
 using UltraMapper.Csv.Factories;
 
 namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.GpsDataExample.SingleCharCsvDelimiter
@@ -10,7 +11,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.GpsDataExample
     {
         public IEnumerable<GpsDataRecord> ReadRecords( string fileLocation )
         {
-            var csvReader = CsvParserFactory.GetInstance<GpsDataRecord>( new Uri( fileLocation ), cfg =>
+            var csvReader = CsvParser<GpsDataRecord>.GetInstance( fileLocation, cfg =>
             {
                 cfg.HasHeader = true;
                 cfg.HasFooter = true;

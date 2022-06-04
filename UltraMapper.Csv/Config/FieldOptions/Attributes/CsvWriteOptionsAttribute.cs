@@ -1,7 +1,7 @@
 ﻿using System;
 using UltraMapper.Csv.Config.FieldOptions;
 
-namespace UltraMapper.Csv.UltraMapper.Extensions.Write
+namespace UltraMapper.Csv.Config.FieldOptions.Attributes
 {
     public class CsvWriteOptionsAttribute : Attribute, IFieldConfig
     {

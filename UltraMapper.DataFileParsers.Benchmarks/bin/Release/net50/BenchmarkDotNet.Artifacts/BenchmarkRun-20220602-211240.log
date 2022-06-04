@@ -1,0 +1,465 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 7 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\f6bd7ebe-fc1b-4df2-8902-46b1956e6e79
+// command took 1.41s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\f6bd7ebe-fc1b-4df2-8902-46b1956e6e79
+// command took 12.97s and exited with 1
+// start dotnet build -c Release  --no-restore --no-dependencies /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\f6bd7ebe-fc1b-4df2-8902-46b1956e6e79
+// command took 2.03s and exited with 0
+// ***** Done, took 00:00:16 (16.52 sec)   *****
+// Found 4 benchmarks:
+//   SalesBenchmarkRead.BaseLine: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmarkRead.FileHelper: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmarkRead.CsvHelper: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmarkRead.UltraMapper: .NET 5.0(Runtime=.NET 5.0)
+
+// **************************
+// Benchmark: SalesBenchmarkRead.BaseLine: .NET 5.0(Runtime=.NET 5.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f6bd7ebe-fc1b-4df2-8902-46b1956e6e79.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead.BaseLine" --job ".NET 5.0" --benchmarkId 0 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\f6bd7ebe-fc1b-4df2-8902-46b1956e6e79\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 5.0
+
+OverheadJitting  1: 1 op, 264500.00 ns, 264.5000 us/op
+WorkloadJitting  1: 1 op, 1662464900.00 ns, 1.6625 s/op
+
+WorkloadWarmup   1: 1 op, 1621551100.00 ns, 1.6216 s/op
+WorkloadWarmup   2: 1 op, 1557536900.00 ns, 1.5575 s/op
+WorkloadWarmup   3: 1 op, 1580528300.00 ns, 1.5805 s/op
+WorkloadWarmup   4: 1 op, 1571882700.00 ns, 1.5719 s/op
+WorkloadWarmup   5: 1 op, 1561408600.00 ns, 1.5614 s/op
+WorkloadWarmup   6: 1 op, 1562026900.00 ns, 1.5620 s/op
+WorkloadWarmup   7: 1 op, 1565516600.00 ns, 1.5655 s/op
+WorkloadWarmup   8: 1 op, 1564540800.00 ns, 1.5645 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 1557845200.00 ns, 1.5578 s/op
+WorkloadActual   2: 1 op, 1958544600.00 ns, 1.9585 s/op
+WorkloadActual   3: 1 op, 1554501900.00 ns, 1.5545 s/op
+WorkloadActual   4: 1 op, 1557406200.00 ns, 1.5574 s/op
+WorkloadActual   5: 1 op, 1562846100.00 ns, 1.5628 s/op
+WorkloadActual   6: 1 op, 1559706900.00 ns, 1.5597 s/op
+WorkloadActual   7: 1 op, 1541640000.00 ns, 1.5416 s/op
+WorkloadActual   8: 1 op, 1594417000.00 ns, 1.5944 s/op
+WorkloadActual   9: 1 op, 1567341100.00 ns, 1.5673 s/op
+WorkloadActual  10: 1 op, 1558543200.00 ns, 1.5585 s/op
+WorkloadActual  11: 1 op, 1647883300.00 ns, 1.6479 s/op
+WorkloadActual  12: 1 op, 1598084400.00 ns, 1.5981 s/op
+WorkloadActual  13: 1 op, 1617746700.00 ns, 1.6177 s/op
+WorkloadActual  14: 1 op, 1626164400.00 ns, 1.6262 s/op
+WorkloadActual  15: 1 op, 1579278900.00 ns, 1.5793 s/op
+WorkloadActual  16: 1 op, 1591259500.00 ns, 1.5913 s/op
+WorkloadActual  17: 1 op, 1583865800.00 ns, 1.5839 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 1557845200.00 ns, 1.5578 s/op
+WorkloadResult   2: 1 op, 1554501900.00 ns, 1.5545 s/op
+WorkloadResult   3: 1 op, 1557406200.00 ns, 1.5574 s/op
+WorkloadResult   4: 1 op, 1562846100.00 ns, 1.5628 s/op
+WorkloadResult   5: 1 op, 1559706900.00 ns, 1.5597 s/op
+WorkloadResult   6: 1 op, 1541640000.00 ns, 1.5416 s/op
+WorkloadResult   7: 1 op, 1594417000.00 ns, 1.5944 s/op
+WorkloadResult   8: 1 op, 1567341100.00 ns, 1.5673 s/op
+WorkloadResult   9: 1 op, 1558543200.00 ns, 1.5585 s/op
+WorkloadResult  10: 1 op, 1647883300.00 ns, 1.6479 s/op
+WorkloadResult  11: 1 op, 1598084400.00 ns, 1.5981 s/op
+WorkloadResult  12: 1 op, 1617746700.00 ns, 1.6177 s/op
+WorkloadResult  13: 1 op, 1626164400.00 ns, 1.6262 s/op
+WorkloadResult  14: 1 op, 1579278900.00 ns, 1.5793 s/op
+WorkloadResult  15: 1 op, 1591259500.00 ns, 1.5913 s/op
+WorkloadResult  16: 1 op, 1583865800.00 ns, 1.5839 s/op
+
+// AfterAll
+// Benchmark Process 19972 has exited with code 0.
+
+Mean = 1.581 s, StdErr = 0.007 s (0.47%), N = 16, StdDev = 0.030 s
+Min = 1.542 s, Q1 = 1.558 s, Median = 1.573 s, Q3 = 1.595 s, Max = 1.648 s
+IQR = 0.037 s, LowerFence = 1.503 s, UpperFence = 1.651 s
+ConfidenceInterval = [1.551 s; 1.611 s] (CI 99.9%), Margin = 0.030 s (1.92% of Mean)
+Skewness = 0.73, Kurtosis = 2.4, MValue = 2
+
+// **************************
+// Benchmark: SalesBenchmarkRead.FileHelper: .NET 5.0(Runtime=.NET 5.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f6bd7ebe-fc1b-4df2-8902-46b1956e6e79.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead.FileHelper" --job ".NET 5.0" --benchmarkId 1 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\f6bd7ebe-fc1b-4df2-8902-46b1956e6e79\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 5.0
+
+OverheadJitting  1: 1 op, 173900.00 ns, 173.9000 us/op
+WorkloadJitting  1: 1 op, 3066084600.00 ns, 3.0661 s/op
+
+WorkloadWarmup   1: 1 op, 2987299200.00 ns, 2.9873 s/op
+WorkloadWarmup   2: 1 op, 2984620800.00 ns, 2.9846 s/op
+WorkloadWarmup   3: 1 op, 2951729900.00 ns, 2.9517 s/op
+WorkloadWarmup   4: 1 op, 2929164400.00 ns, 2.9292 s/op
+WorkloadWarmup   5: 1 op, 2974438300.00 ns, 2.9744 s/op
+WorkloadWarmup   6: 1 op, 2927620900.00 ns, 2.9276 s/op
+WorkloadWarmup   7: 1 op, 2942886800.00 ns, 2.9429 s/op
+WorkloadWarmup   8: 1 op, 2957718500.00 ns, 2.9577 s/op
+WorkloadWarmup   9: 1 op, 2934558300.00 ns, 2.9346 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 2939815200.00 ns, 2.9398 s/op
+WorkloadActual   2: 1 op, 2917579200.00 ns, 2.9176 s/op
+WorkloadActual   3: 1 op, 2962160300.00 ns, 2.9622 s/op
+WorkloadActual   4: 1 op, 2971877700.00 ns, 2.9719 s/op
+WorkloadActual   5: 1 op, 2942680700.00 ns, 2.9427 s/op
+WorkloadActual   6: 1 op, 2979060700.00 ns, 2.9791 s/op
+WorkloadActual   7: 1 op, 2932792600.00 ns, 2.9328 s/op
+WorkloadActual   8: 1 op, 2940718900.00 ns, 2.9407 s/op
+WorkloadActual   9: 1 op, 3048638300.00 ns, 3.0486 s/op
+WorkloadActual  10: 1 op, 3062146900.00 ns, 3.0621 s/op
+WorkloadActual  11: 1 op, 2959968500.00 ns, 2.9600 s/op
+WorkloadActual  12: 1 op, 2911974600.00 ns, 2.9120 s/op
+WorkloadActual  13: 1 op, 2985375200.00 ns, 2.9854 s/op
+WorkloadActual  14: 1 op, 2945946400.00 ns, 2.9459 s/op
+WorkloadActual  15: 1 op, 2932374100.00 ns, 2.9324 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 2939815200.00 ns, 2.9398 s/op
+WorkloadResult   2: 1 op, 2917579200.00 ns, 2.9176 s/op
+WorkloadResult   3: 1 op, 2962160300.00 ns, 2.9622 s/op
+WorkloadResult   4: 1 op, 2971877700.00 ns, 2.9719 s/op
+WorkloadResult   5: 1 op, 2942680700.00 ns, 2.9427 s/op
+WorkloadResult   6: 1 op, 2979060700.00 ns, 2.9791 s/op
+WorkloadResult   7: 1 op, 2932792600.00 ns, 2.9328 s/op
+WorkloadResult   8: 1 op, 2940718900.00 ns, 2.9407 s/op
+WorkloadResult   9: 1 op, 2959968500.00 ns, 2.9600 s/op
+WorkloadResult  10: 1 op, 2911974600.00 ns, 2.9120 s/op
+WorkloadResult  11: 1 op, 2985375200.00 ns, 2.9854 s/op
+WorkloadResult  12: 1 op, 2945946400.00 ns, 2.9459 s/op
+WorkloadResult  13: 1 op, 2932374100.00 ns, 2.9324 s/op
+
+// AfterAll
+// Benchmark Process 18228 has exited with code 0.
+
+Mean = 2.948 s, StdErr = 0.006 s (0.21%), N = 13, StdDev = 0.023 s
+Min = 2.912 s, Q1 = 2.933 s, Median = 2.943 s, Q3 = 2.962 s, Max = 2.985 s
+IQR = 0.029 s, LowerFence = 2.889 s, UpperFence = 3.006 s
+ConfidenceInterval = [2.921 s; 2.975 s] (CI 99.9%), Margin = 0.027 s (0.92% of Mean)
+Skewness = 0.13, Kurtosis = 1.75, MValue = 2
+
+// **************************
+// Benchmark: SalesBenchmarkRead.CsvHelper: .NET 5.0(Runtime=.NET 5.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f6bd7ebe-fc1b-4df2-8902-46b1956e6e79.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead.CsvHelper" --job ".NET 5.0" --benchmarkId 2 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\f6bd7ebe-fc1b-4df2-8902-46b1956e6e79\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 5.0
+
+OverheadJitting  1: 1 op, 177700.00 ns, 177.7000 us/op
+WorkloadJitting  1: 1 op, 3847842800.00 ns, 3.8478 s/op
+
+WorkloadWarmup   1: 1 op, 3747625500.00 ns, 3.7476 s/op
+WorkloadWarmup   2: 1 op, 3750534300.00 ns, 3.7505 s/op
+WorkloadWarmup   3: 1 op, 3824250000.00 ns, 3.8243 s/op
+WorkloadWarmup   4: 1 op, 3827027300.00 ns, 3.8270 s/op
+WorkloadWarmup   5: 1 op, 3845504500.00 ns, 3.8455 s/op
+WorkloadWarmup   6: 1 op, 3849382500.00 ns, 3.8494 s/op
+WorkloadWarmup   7: 1 op, 3737734200.00 ns, 3.7377 s/op
+WorkloadWarmup   8: 1 op, 3802990000.00 ns, 3.8030 s/op
+WorkloadWarmup   9: 1 op, 3724488900.00 ns, 3.7245 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 3684707400.00 ns, 3.6847 s/op
+WorkloadActual   2: 1 op, 3829861900.00 ns, 3.8299 s/op
+WorkloadActual   3: 1 op, 3872395100.00 ns, 3.8724 s/op
+WorkloadActual   4: 1 op, 3802536000.00 ns, 3.8025 s/op
+WorkloadActual   5: 1 op, 3813086900.00 ns, 3.8131 s/op
+WorkloadActual   6: 1 op, 3784741800.00 ns, 3.7847 s/op
+WorkloadActual   7: 1 op, 3689119600.00 ns, 3.6891 s/op
+WorkloadActual   8: 1 op, 3698447600.00 ns, 3.6984 s/op
+WorkloadActual   9: 1 op, 3691874400.00 ns, 3.6919 s/op
+WorkloadActual  10: 1 op, 3703259500.00 ns, 3.7033 s/op
+WorkloadActual  11: 1 op, 3676134400.00 ns, 3.6761 s/op
+WorkloadActual  12: 1 op, 3677018300.00 ns, 3.6770 s/op
+WorkloadActual  13: 1 op, 3711927400.00 ns, 3.7119 s/op
+WorkloadActual  14: 1 op, 3681984700.00 ns, 3.6820 s/op
+WorkloadActual  15: 1 op, 3680925100.00 ns, 3.6809 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 3684707400.00 ns, 3.6847 s/op
+WorkloadResult   2: 1 op, 3829861900.00 ns, 3.8299 s/op
+WorkloadResult   3: 1 op, 3872395100.00 ns, 3.8724 s/op
+WorkloadResult   4: 1 op, 3802536000.00 ns, 3.8025 s/op
+WorkloadResult   5: 1 op, 3813086900.00 ns, 3.8131 s/op
+WorkloadResult   6: 1 op, 3784741800.00 ns, 3.7847 s/op
+WorkloadResult   7: 1 op, 3689119600.00 ns, 3.6891 s/op
+WorkloadResult   8: 1 op, 3698447600.00 ns, 3.6984 s/op
+WorkloadResult   9: 1 op, 3691874400.00 ns, 3.6919 s/op
+WorkloadResult  10: 1 op, 3703259500.00 ns, 3.7033 s/op
+WorkloadResult  11: 1 op, 3676134400.00 ns, 3.6761 s/op
+WorkloadResult  12: 1 op, 3677018300.00 ns, 3.6770 s/op
+WorkloadResult  13: 1 op, 3711927400.00 ns, 3.7119 s/op
+WorkloadResult  14: 1 op, 3681984700.00 ns, 3.6820 s/op
+WorkloadResult  15: 1 op, 3680925100.00 ns, 3.6809 s/op
+
+// AfterAll
+// Benchmark Process 16004 has exited with code 0.
+
+Mean = 3.733 s, StdErr = 0.017 s (0.46%), N = 15, StdDev = 0.067 s
+Min = 3.676 s, Q1 = 3.683 s, Median = 3.698 s, Q3 = 3.794 s, Max = 3.872 s
+IQR = 0.110 s, LowerFence = 3.518 s, UpperFence = 3.959 s
+ConfidenceInterval = [3.662 s; 3.805 s] (CI 99.9%), Margin = 0.072 s (1.92% of Mean)
+Skewness = 0.8, Kurtosis = 1.93, MValue = 2
+
+// **************************
+// Benchmark: SalesBenchmarkRead.UltraMapper: .NET 5.0(Runtime=.NET 5.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f6bd7ebe-fc1b-4df2-8902-46b1956e6e79.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead.UltraMapper" --job ".NET 5.0" --benchmarkId 3 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\f6bd7ebe-fc1b-4df2-8902-46b1956e6e79\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 5.0
+
+OverheadJitting  1: 1 op, 178400.00 ns, 178.4000 us/op
+WorkloadJitting  1: 1 op, 3049088300.00 ns, 3.0491 s/op
+
+WorkloadWarmup   1: 1 op, 2927945500.00 ns, 2.9279 s/op
+WorkloadWarmup   2: 1 op, 2929505700.00 ns, 2.9295 s/op
+WorkloadWarmup   3: 1 op, 2975686500.00 ns, 2.9757 s/op
+WorkloadWarmup   4: 1 op, 2916932700.00 ns, 2.9169 s/op
+WorkloadWarmup   5: 1 op, 2944823700.00 ns, 2.9448 s/op
+WorkloadWarmup   6: 1 op, 4309301500.00 ns, 4.3093 s/op
+WorkloadWarmup   7: 1 op, 3322144700.00 ns, 3.3221 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 3308740400.00 ns, 3.3087 s/op
+WorkloadActual   2: 1 op, 3248634700.00 ns, 3.2486 s/op
+WorkloadActual   3: 1 op, 3412239300.00 ns, 3.4122 s/op
+WorkloadActual   4: 1 op, 3152873100.00 ns, 3.1529 s/op
+WorkloadActual   5: 1 op, 3169074600.00 ns, 3.1691 s/op
+WorkloadActual   6: 1 op, 3170470800.00 ns, 3.1705 s/op
+WorkloadActual   7: 1 op, 3145561500.00 ns, 3.1456 s/op
+WorkloadActual   8: 1 op, 3146552400.00 ns, 3.1466 s/op
+WorkloadActual   9: 1 op, 3204884400.00 ns, 3.2049 s/op
+WorkloadActual  10: 1 op, 3169099200.00 ns, 3.1691 s/op
+WorkloadActual  11: 1 op, 3158850400.00 ns, 3.1589 s/op
+WorkloadActual  12: 1 op, 3212219800.00 ns, 3.2122 s/op
+WorkloadActual  13: 1 op, 3165672400.00 ns, 3.1657 s/op
+WorkloadActual  14: 1 op, 3160185400.00 ns, 3.1602 s/op
+WorkloadActual  15: 1 op, 3207940300.00 ns, 3.2079 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 3248634700.00 ns, 3.2486 s/op
+WorkloadResult   2: 1 op, 3152873100.00 ns, 3.1529 s/op
+WorkloadResult   3: 1 op, 3169074600.00 ns, 3.1691 s/op
+WorkloadResult   4: 1 op, 3170470800.00 ns, 3.1705 s/op
+WorkloadResult   5: 1 op, 3145561500.00 ns, 3.1456 s/op
+WorkloadResult   6: 1 op, 3146552400.00 ns, 3.1466 s/op
+WorkloadResult   7: 1 op, 3204884400.00 ns, 3.2049 s/op
+WorkloadResult   8: 1 op, 3169099200.00 ns, 3.1691 s/op
+WorkloadResult   9: 1 op, 3158850400.00 ns, 3.1589 s/op
+WorkloadResult  10: 1 op, 3212219800.00 ns, 3.2122 s/op
+WorkloadResult  11: 1 op, 3165672400.00 ns, 3.1657 s/op
+WorkloadResult  12: 1 op, 3160185400.00 ns, 3.1602 s/op
+WorkloadResult  13: 1 op, 3207940300.00 ns, 3.2079 s/op
+
+// AfterAll
+// Benchmark Process 20176 has exited with code 0.
+
+Mean = 3.178 s, StdErr = 0.009 s (0.27%), N = 13, StdDev = 0.031 s
+Min = 3.146 s, Q1 = 3.159 s, Median = 3.169 s, Q3 = 3.205 s, Max = 3.249 s
+IQR = 0.046 s, LowerFence = 3.090 s, UpperFence = 3.274 s
+ConfidenceInterval = [3.141 s; 3.215 s] (CI 99.9%), Margin = 0.037 s (1.17% of Mean)
+Skewness = 0.9, Kurtosis = 2.56, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead-report.csv
+  BenchmarkDotNet.Artifacts\results\UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead-report-github.md
+  BenchmarkDotNet.Artifacts\results\UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead-report.html
+
+// * Detailed results *
+SalesBenchmarkRead.BaseLine: .NET 5.0(Runtime=.NET 5.0)
+Runtime = .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 1.581 s, StdErr = 0.007 s (0.47%), N = 16, StdDev = 0.030 s
+Min = 1.542 s, Q1 = 1.558 s, Median = 1.573 s, Q3 = 1.595 s, Max = 1.648 s
+IQR = 0.037 s, LowerFence = 1.503 s, UpperFence = 1.651 s
+ConfidenceInterval = [1.551 s; 1.611 s] (CI 99.9%), Margin = 0.030 s (1.92% of Mean)
+Skewness = 0.73, Kurtosis = 2.4, MValue = 2
+-------------------- Histogram --------------------
+[1.526 s ; 1.585 s) | @@@@@@@@@@
+[1.585 s ; 1.653 s) | @@@@@@
+---------------------------------------------------
+
+SalesBenchmarkRead.FileHelper: .NET 5.0(Runtime=.NET 5.0)
+Runtime = .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 2.948 s, StdErr = 0.006 s (0.21%), N = 13, StdDev = 0.023 s
+Min = 2.912 s, Q1 = 2.933 s, Median = 2.943 s, Q3 = 2.962 s, Max = 2.985 s
+IQR = 0.029 s, LowerFence = 2.889 s, UpperFence = 3.006 s
+ConfidenceInterval = [2.921 s; 2.975 s] (CI 99.9%), Margin = 0.027 s (0.92% of Mean)
+Skewness = 0.13, Kurtosis = 1.75, MValue = 2
+-------------------- Histogram --------------------
+[2.910 s ; 2.998 s) | @@@@@@@@@@@@@
+---------------------------------------------------
+
+SalesBenchmarkRead.CsvHelper: .NET 5.0(Runtime=.NET 5.0)
+Runtime = .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 3.733 s, StdErr = 0.017 s (0.46%), N = 15, StdDev = 0.067 s
+Min = 3.676 s, Q1 = 3.683 s, Median = 3.698 s, Q3 = 3.794 s, Max = 3.872 s
+IQR = 0.110 s, LowerFence = 3.518 s, UpperFence = 3.959 s
+ConfidenceInterval = [3.662 s; 3.805 s] (CI 99.9%), Margin = 0.072 s (1.92% of Mean)
+Skewness = 0.8, Kurtosis = 1.93, MValue = 2
+-------------------- Histogram --------------------
+[3.657 s ; 3.769 s) | @@@@@@@@@@
+[3.769 s ; 3.908 s) | @@@@@
+---------------------------------------------------
+
+SalesBenchmarkRead.UltraMapper: .NET 5.0(Runtime=.NET 5.0)
+Runtime = .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 3.178 s, StdErr = 0.009 s (0.27%), N = 13, StdDev = 0.031 s
+Min = 3.146 s, Q1 = 3.159 s, Median = 3.169 s, Q3 = 3.205 s, Max = 3.249 s
+IQR = 0.046 s, LowerFence = 3.090 s, UpperFence = 3.274 s
+ConfidenceInterval = [3.141 s; 3.215 s] (CI 99.9%), Margin = 0.037 s (1.17% of Mean)
+Skewness = 0.9, Kurtosis = 2.56, MValue = 2
+-------------------- Histogram --------------------
+[3.128 s ; 3.266 s) | @@@@@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19044.1586 (21H2)
+Intel Core i7-8700K CPU 3.70GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
+.NET SDK=6.0.300
+  [Host]   : .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+  .NET 5.0 : .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+
+Job=.NET 5.0  Runtime=.NET 5.0  
+
+|      Method |    Mean |    Error |   StdDev |
+|------------ |--------:|---------:|---------:|
+|    BaseLine | 1.581 s | 0.0303 s | 0.0297 s |
+|  FileHelper | 2.948 s | 0.0271 s | 0.0226 s |
+|   CsvHelper | 3.733 s | 0.0717 s | 0.0670 s |
+| UltraMapper | 3.178 s | 0.0371 s | 0.0310 s |
+
+// * Hints *
+Outliers
+  SalesBenchmarkRead.BaseLine: .NET 5.0    -> 1 outlier  was  removed (1.96 s)
+  SalesBenchmarkRead.FileHelper: .NET 5.0  -> 2 outliers were removed (3.05 s, 3.06 s)
+  SalesBenchmarkRead.UltraMapper: .NET 5.0 -> 2 outliers were removed (3.31 s, 3.41 s)
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  1 s    : 1 Second (1 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 3 benchmark(s) to run **
+Run time: 00:04:44 (284.22 sec), executed benchmarks: 4
+
+// Found 3 benchmarks:
+//   SalesBenchmarkWrite.FileHelper: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmarkWrite.CsvHelper: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmarkWrite.UltraMapper: .NET 5.0(Runtime=.NET 5.0)
+
+// **************************
+// Benchmark: SalesBenchmarkWrite.FileHelper: .NET 5.0(Runtime=.NET 5.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f6bd7ebe-fc1b-4df2-8902-46b1956e6e79.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkWrite.FileHelper" --job ".NET 5.0" --benchmarkId 4 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\f6bd7ebe-fc1b-4df2-8902-46b1956e6e79\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 5.0
+
+OverheadJitting  1: 1 op, 190300.00 ns, 190.3000 us/op
+WorkloadJitting  1: 1 op, 2418992500.00 ns, 2.4190 s/op
+
+WorkloadWarmup   1: 1 op, 2418673700.00 ns, 2.4187 s/op
+WorkloadWarmup   2: 1 op, 2403684000.00 ns, 2.4037 s/op
+WorkloadWarmup   3: 1 op, 2413574100.00 ns, 2.4136 s/op
+WorkloadWarmup   4: 1 op, 2367094400.00 ns, 2.3671 s/op
+WorkloadWarmup   5: 1 op, 2440348700.00 ns, 2.4403 s/op
+WorkloadWarmup   6: 1 op, 2407212200.00 ns, 2.4072 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 2391209900.00 ns, 2.3912 s/op
+WorkloadActual   2: 1 op, 2380994200.00 ns, 2.3810 s/op
+WorkloadActual   3: 1 op, 2422807000.00 ns, 2.4228 s/op
+WorkloadActual   4: 1 op, 2409634800.00 ns, 2.4096 s/op
+WorkloadActual   5: 1 op, 2377060400.00 ns, 2.3771 s/op
+WorkloadActual   6: 1 op, 2377990200.00 ns, 2.3780 s/op
+WorkloadActual   7: 1 op, 2406466300.00 ns, 2.4065 s/op
+WorkloadActual   8: 1 op, 2391511700.00 ns, 2.3915 s/op
+WorkloadActual   9: 1 op, 2410169200.00 ns, 2.4102 s/op
+WorkloadActual  10: 1 op, 2365991100.00 ns, 2.3660 s/op
+WorkloadActual  11: 1 op, 2408680800.00 ns, 2.4087 s/op
+WorkloadActual  12: 1 op, 2395233900.00 ns, 2.3952 s/op
+WorkloadActual  13: 1 op, 2379888300.00 ns, 2.3799 s/op
+WorkloadActual  14: 1 op, 2401093400.00 ns, 2.4011 s/op
+WorkloadActual  15: 1 op, 2473984600.00 ns, 2.4740 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 2391209900.00 ns, 2.3912 s/op
+WorkloadResult   2: 1 op, 2380994200.00 ns, 2.3810 s/op
+WorkloadResult   3: 1 op, 2422807000.00 ns, 2.4228 s/op
+WorkloadResult   4: 1 op, 2409634800.00 ns, 2.4096 s/op
+WorkloadResult   5: 1 op, 2377060400.00 ns, 2.3771 s/op
+WorkloadResult   6: 1 op, 2377990200.00 ns, 2.3780 s/op
+WorkloadResult   7: 1 op, 2406466300.00 ns, 2.4065 s/op
+WorkloadResult   8: 1 op, 2391511700.00 ns, 2.3915 s/op
+WorkloadResult   9: 1 op, 2410169200.00 ns, 2.4102 s/op
+WorkloadResult  10: 1 op, 2365991100.00 ns, 2.3660 s/op
+WorkloadResult  11: 1 op, 2408680800.00 ns, 2.4087 s/op
+WorkloadResult  12: 1 op, 2395233900.00 ns, 2.3952 s/op
+WorkloadResult  13: 1 op, 2379888300.00 ns, 2.3799 s/op
+WorkloadResult  14: 1 op, 2401093400.00 ns, 2.4011 s/op
+
+// AfterAll
+// Benchmark Process 21444 has exited with code 0.
+
+Mean = 2.394 s, StdErr = 0.004 s (0.18%), N = 14, StdDev = 0.016 s
+Min = 2.366 s, Q1 = 2.380 s, Median = 2.393 s, Q3 = 2.408 s, Max = 2.423 s
+IQR = 0.028 s, LowerFence = 2.338 s, UpperFence = 2.450 s
+ConfidenceInterval = [2.376 s; 2.413 s] (CI 99.9%), Margin = 0.018 s (0.77% of Mean)
+Skewness = -0.01, Kurtosis = 1.73, MValue = 2
+
+// **************************
+// Benchmark: SalesBenchmarkWrite.CsvHelper: .NET 5.0(Runtime=.NET 5.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f6bd7ebe-fc1b-4df2-8902-46b1956e6e79.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkWrite.CsvHelper" --job ".NET 5.0" --benchmarkId 5 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\f6bd7ebe-fc1b-4df2-8902-46b1956e6e79\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 5.0
+
+OverheadJitting  1: 1 op, 192700.00 ns, 192.7000 us/op
+WorkloadJitting  1: 1 op, 4785870900.00 ns, 4.7859 s/op
+
+WorkloadWarmup   1: 1 op, 4720103500.00 ns, 4.7201 s/op
+WorkloadWarmup   2: 1 op, 4255724600.00 ns, 4.2557 s/op
+WorkloadWarmup   3: 1 op, 4422943000.00 ns, 4.4229 s/op
+WorkloadWarmup   4: 1 op, 4198060200.00 ns, 4.1981 s/op
+WorkloadWarmup   5: 1 op, 4356807000.00 ns, 4.3568 s/op
+WorkloadWarmup   6: 1 op, 4483896800.00 ns, 4.4839 s/op
+WorkloadWarmup   7: 1 op, 4224458700.00 ns, 4.2245 s/op
+
+// BeforeActualRun

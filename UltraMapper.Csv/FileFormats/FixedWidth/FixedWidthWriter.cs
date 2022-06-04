@@ -5,8 +5,8 @@ using UltraMapper.Conventions;
 using UltraMapper.Csv.Config.FieldOptions;
 using UltraMapper.Csv.Internals;
 using UltraMapper.Csv.UltraMapper.Extensions.Write;
+using UltraMapper.Csv.UltraMapper.Extensions.Write.FixedWidth;
 using UltraMapper.MappingExpressionBuilders;
-using static UltraMapper.Csv.FixedWidthFieldWriteOptionsAttribute;
 
 namespace UltraMapper.Csv.FileFormats.FixedWidth
 {

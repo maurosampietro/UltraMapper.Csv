@@ -2,6 +2,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using UltraMapper.Csv.Config.FieldOptions;
 using UltraMapper.Csv.Factories;
 using UltraMapper.Csv.FileFormats.FixedWidth;
 
@@ -24,7 +25,7 @@ namespace UltraMapper.Csv.Tests
             public string Name { get; set; }
 
             [FixedWidthFieldReadOptions( FieldLength = 10, TrimChar = '~' )]
-            [FixedWidthFieldWriteOptions( FieldLength = 10, PadSide = PadSides.CENTER, HeaderPadSide = PadSides.RIGHT )]
+            [FixedWidthFieldWriteOptions( FieldLength = 10, PadChar = '~', PadSide = PadSides.CENTER, HeaderPadSide = PadSides.RIGHT )]
             public string State { get; set; }
 
             [FixedWidthFieldReadOptions( FieldLength = 12, TrimChar = '~' )]
@@ -37,7 +38,7 @@ namespace UltraMapper.Csv.Tests
         {
             string fileLocation = Resources.GetFileLocation( "FixedWidth.dat" );
 
-            var reader = FixedWidthFactory.GetInstance<FixedWidthRecordWithLengths>( new Uri( fileLocation ), cfg =>
+            var reader = FixedWidthParser<FixedWidthRecordWithLengths>.GetInstance( fileLocation, cfg =>
             {
                 cfg.HasHeader = true;
                 cfg.HasFooter = true;
@@ -68,12 +69,11 @@ namespace UltraMapper.Csv.Tests
         {
             string fileLocation = Resources.GetFileLocation( "FixedWidth.dat" );
 
-            var reader = FixedWidthFactory.GetInstance<FixedWidthRecordNoLengths>(
-                new Uri( fileLocation ), cfg =>
-                {
-                    cfg.HasHeader = true;
-                    cfg.HasFooter = true;
-                } );
+            var reader = FixedWidthParser<FixedWidthRecordNoLengths>.GetInstance( fileLocation, cfg =>
+            {
+                cfg.HasHeader = true;
+                cfg.HasFooter = true;
+            } );
 
             //Assert.ThrowsException<Exception>( () =>
             reader.GetRecords().ToList();
@@ -85,7 +85,7 @@ namespace UltraMapper.Csv.Tests
         {
             string readFileLocation = Resources.GetFileLocation( "FixedWidth.dat" );
 
-            var reader = FixedWidthFactory.GetInstance<FixedWidthRecordWithLengths>( new Uri( readFileLocation ), cfg =>
+            var reader = FixedWidthParser<FixedWidthRecordWithLengths>.GetInstance( readFileLocation, cfg =>
             {
                 cfg.HasHeader = true;
                 cfg.HasFooter = true;

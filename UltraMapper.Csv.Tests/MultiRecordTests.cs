@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.IO;
 using System.Linq;
 using UltraMapper.Csv.Benchmarks.SalesExample;
 using UltraMapper.Csv.Factories;
@@ -30,7 +31,7 @@ Sales,Middle East and North Africa,Morocco,Clothes,Online,M,9/14/2013,667593514,
                 throw new NotSupportedException();
             }
 
-            var csvReader = CsvParserFactory.GetMultiRecordInstance( csvInput, recordTypeSelector, cfg =>
+            var csvReader = CsvMultiRecordParser.GetInstance( new StringReader( csvInput ), recordTypeSelector, cfg =>
             {
                 cfg.Delimiter = ",";
                 cfg.IgnoreEmptyLines = true;
