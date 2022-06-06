@@ -44,7 +44,7 @@ namespace UltraMapper.Csv
             : base( reader, lineSplitter, lineReader, headerReader, footerReader, new CsvReadonlyConfig( config ) )
         {
             var sourceMemberProvider = Mapper.Config.Conventions.OfType<DefaultConvention>().Single().SourceMemberProvider;
-            this.FieldConfig = new FieldOptionsProvider<CsvReadOptionsAttribute>( sourceMemberProvider, typeof( TRecord ) );
+            this.FieldConfig = FieldConfiguration.Register<CsvReadOptionsAttribute, TRecord>( sourceMemberProvider );
         }
 
         public static CsvParser<TRecord> GetInstance( string filePath, CsvConfig config )

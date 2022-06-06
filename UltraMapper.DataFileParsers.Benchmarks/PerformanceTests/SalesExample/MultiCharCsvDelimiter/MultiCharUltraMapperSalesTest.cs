@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using UltraMapper.Csv;
-using UltraMapper.Csv.Factories;
 using UltraMapper.Csv.FileFormats;
 using UltraMapper.Csv.FileFormats.Delimited;
 using UltraMapper.DataFileParsers.Benchmarks;

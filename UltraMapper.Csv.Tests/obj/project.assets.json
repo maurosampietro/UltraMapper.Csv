@@ -6178,18 +6178,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sam\\.nuget\\packages\\": {},
+    "C:\\Users\\fcea31\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv.Tests\\UltraMapper.Csv.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv.Tests\\UltraMapper.Csv.Tests.csproj",
       "projectName": "UltraMapper.Csv.Tests",
-      "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv.Tests\\UltraMapper.Csv.Tests.csproj",
-      "packagesPath": "C:\\Users\\Sam\\.nuget\\packages\\",
-      "outputPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv.Tests\\obj\\",
+      "projectPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv.Tests\\UltraMapper.Csv.Tests.csproj",
+      "packagesPath": "C:\\Users\\fcea31\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -6197,7 +6197,7 @@
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fcea31\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6207,6 +6207,7 @@
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\ALLITUDE_LAVORO\\PROGETTI\\BinComuni": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -6214,24 +6215,24 @@
         "net5.0": {
           "targetAlias": "net50",
           "projectReferences": {
-            "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
-              "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
+            "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
+              "projectPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
             }
           }
         },
         "net47": {
           "targetAlias": "net47",
           "projectReferences": {
-            "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
-              "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
+            "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
+              "projectPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
             }
           }
         },
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
-              "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
+            "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
+              "projectPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
             }
           }
         }
@@ -6270,7 +6271,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       },
       "net47": {
         "targetAlias": "net47",
@@ -6284,7 +6285,7 @@
             "version": "[2.2.10, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       },
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
@@ -6314,7 +6315,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

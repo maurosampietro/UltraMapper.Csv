@@ -3,7 +3,6 @@ using System;
 using System.IO;
 using System.Linq;
 using UltraMapper.Csv.Config.FieldOptions;
-using UltraMapper.Csv.Factories;
 using UltraMapper.Csv.FileFormats.FixedWidth;
 
 namespace UltraMapper.Csv.Tests

@@ -3,7 +3,6 @@ using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using UltraMapper.Csv.Factories;
 using UltraMapper.Csv.Tests.Biostats;
 
 namespace UltraMapper.Csv.Tests

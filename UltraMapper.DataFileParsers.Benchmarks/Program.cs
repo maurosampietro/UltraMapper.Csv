@@ -6,7 +6,6 @@ using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Net;
-using UltraMapper.Csv.Factories;
 using UltraMapper.Csv.FileFormats.Delimited;
 using UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample;
 using UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.MultiCharCsvDelimiter;

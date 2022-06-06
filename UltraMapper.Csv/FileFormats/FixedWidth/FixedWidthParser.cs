@@ -34,7 +34,7 @@ namespace UltraMapper.Csv
         : base( reader, lineSplitter, lineReader, headerReader, footerReader, options )
         {
             var sourceMemberProvider = Mapper.Config.Conventions.OfType<DefaultConvention>().Single().SourceMemberProvider;
-            this.FieldConfig = new FieldOptionsProvider<FixedWidthFieldReadOptionsAttribute>( sourceMemberProvider, typeof( TRecord ) );
+            this.FieldConfig = FieldConfiguration.Register<FixedWidthFieldReadOptionsAttribute, TRecord>( sourceMemberProvider );
         }
 
         public static FixedWidthParser<TRecord> GetInstance( string filePath, DataFileParserConfiguration config )

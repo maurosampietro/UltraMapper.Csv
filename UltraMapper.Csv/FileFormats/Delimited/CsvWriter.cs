@@ -24,9 +24,8 @@ namespace UltraMapper.Csv.FileFormats.Delimited
             this.Delimiter = delimiter;
 
             var targetMemberProvider = Mapper.Config.Conventions.OfType<DefaultConvention>().Single().TargetMemberProvider;
-            this.FieldConfig = new FieldOptionsProvider<CsvWriteOptionsAttribute>( targetMemberProvider, typeof( TRecord ) );
+            this.FieldConfig = FieldConfiguration.Register<CsvWriteOptionsAttribute, TRecord>( targetMemberProvider );
 
-            FieldConfiguration.Register<TRecord>( this.FieldConfig );
             _writingObject.Delimiter = delimiter;
         }
 

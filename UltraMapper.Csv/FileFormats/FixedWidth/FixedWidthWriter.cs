@@ -23,9 +23,7 @@ namespace UltraMapper.Csv.FileFormats.FixedWidth
         public FixedWidthWriter( TextWriter writer ) : base( writer )
         {
             var targetMemberProvider = Mapper.Config.Conventions.OfType<DefaultConvention>().Single().TargetMemberProvider;
-            this.FieldConfig = new FieldOptionsProvider<FixedWidthFieldWriteOptionsAttribute>( targetMemberProvider, typeof( TRecord ) );
-
-            FieldConfiguration.Register<TRecord>( FieldConfig );
+            this.FieldConfig = FieldConfiguration.Register<FixedWidthFieldWriteOptionsAttribute,TRecord>( targetMemberProvider );
         }
 
         public void WriteHeader()

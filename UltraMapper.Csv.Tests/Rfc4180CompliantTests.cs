@@ -2,7 +2,6 @@
 using System;
 using System.Globalization;
 using System.Linq;
-using UltraMapper.Csv.Factories;
 
 namespace UltraMapper.Csv.Tests
 {

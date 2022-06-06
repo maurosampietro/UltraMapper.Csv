@@ -6,12 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="C:\Users\Sam\.nuget\packages\mstest.testadapter\2.2.1\build\net45\..\_common\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" />
-    <None Remove="C:\Users\Sam\.nuget\packages\mstest.testadapter\2.2.1\build\net45\..\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" />
-    <None Remove="C:\Users\Sam\.nuget\packages\mstest.testadapter\2.2.1\build\net45\..\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
     <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
   </ItemGroup>
