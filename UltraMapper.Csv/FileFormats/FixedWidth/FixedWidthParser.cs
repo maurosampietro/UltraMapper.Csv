@@ -9,7 +9,6 @@ using UltraMapper.Csv.Footer.FooterReaders;
 using UltraMapper.Csv.Header.HeaderReaders;
 using UltraMapper.Csv.LineReaders;
 using UltraMapper.Csv.LineSplitters;
-using UltraMapper.Csv.ParsableLineRules;
 using UltraMapper.Csv.UltraMapper.Extensions.Read.Csv;
 using UltraMapper.Csv.UltraMapper.Extensions.Read.FixedWidth;
 using UltraMapper.MappingExpressionBuilders;
@@ -43,7 +42,7 @@ namespace UltraMapper.Csv
             config.DisposeReader = true;
 
             var lineSplitter = new FixedWidthLineSplitter<TRecord>();
-            var lineReader = GetLineReader( config );
+            var lineReader = LineReaderSelector.GetLineReader( config );
 
             var reader = new StreamReader( filePath, config.Encoding );
 
@@ -64,7 +63,7 @@ namespace UltraMapper.Csv
         public static FixedWidthParser<TRecord> GetInstance( TextReader reader, DataFileParserConfiguration config )
         {
             var lineSplitter = new FixedWidthLineSplitter<TRecord>();
-            var lineReader = GetLineReader( config );
+            var lineReader = LineReaderSelector.GetLineReader( config );
             var headerReader = new DefaultHeaderReader( reader );
             var footerReader = new DefaultFooterReader( reader );
 
@@ -77,34 +76,6 @@ namespace UltraMapper.Csv
             configSetup.Invoke( config );
 
             return GetInstance( reader, config );
-        }
-
-        private static ILineReader GetLineReader( DataFileParserConfiguration config )
-        {
-            var parsableLineRule = GetParsableLineRule( config );
-
-            ILineReader lineReader = new DefaultLineReader();
-            if( config.HasNewLinesInQuotes )
-                lineReader = new CsvRfc4180LineReader();
-
-            if( parsableLineRule != null )
-                lineReader = new SkipNonParsableLineReader( lineReader, parsableLineRule );
-
-            return lineReader;
-        }
-
-        protected static IParsableLineRule GetParsableLineRule( DataFileParserConfiguration config )
-        {
-            if( config.IgnoreCommentedLines && config.IgnoreEmptyLines )
-                return new IgnoreEmptyAndCommentedLine( config.CommentMarker );
-
-            if( config.IgnoreCommentedLines )
-                return new IgnoreCommentedLine( config.CommentMarker );
-
-            if( config.IgnoreEmptyLines )
-                return new IgnoreEmptyLine();
-
-            return null;
         }
     }
 }

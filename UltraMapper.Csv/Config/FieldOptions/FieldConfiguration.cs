@@ -6,9 +6,6 @@ using UltraMapper.Conventions;
 
 namespace UltraMapper.Csv.Config.FieldOptions
 {
-    /// <summary>
-    /// NON VA BENE QUEL COSO QUA!!!
-    /// </summary>
     public static class FieldConfiguration
     {
         private class Key

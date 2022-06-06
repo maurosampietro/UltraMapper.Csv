@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using UltraMapper.Conventions;
 using UltraMapper.Csv.Config;
+using UltraMapper.Csv.Config.DataFileParserConfig;
 using UltraMapper.Csv.Config.FieldOptions;
 using UltraMapper.Csv.FileFormats;
 using UltraMapper.Csv.Footer;
@@ -52,8 +53,8 @@ namespace UltraMapper.Csv
             //We are gonna open a StreamReader on a file so we are responsible of disposing it
             config.DisposeReader = true;
 
-            var lineSplitter = GetLineSplitter( config );
-            var lineReader = GetLineReader( config );
+            var lineSplitter = LineSplitterSelector.GetLineSplitter( config );
+            var lineReader = LineReaderSelector.GetLineReader( config );
 
             var reader = new StreamReader( filePath, config.Encoding );
 
@@ -73,8 +74,8 @@ namespace UltraMapper.Csv
 
         public static CsvParser<TRecord> GetInstance( TextReader reader, CsvConfig config )
         {
-            var lineSplitter = GetLineSplitter( config );
-            var lineReader = GetLineReader( config );
+            var lineSplitter = LineSplitterSelector.GetLineSplitter( config );
+            var lineReader = LineReaderSelector.GetLineReader( config );
             var headerReader = new DefaultHeaderReader( reader );
             var footerReader = new DefaultFooterReader( reader );
 
@@ -87,42 +88,6 @@ namespace UltraMapper.Csv
             configSetup.Invoke( config );
 
             return GetInstance( reader, config );
-        }
-
-        private static ILineReader GetLineReader( CsvConfig config )
-        {
-            var parsableLineRule = GetParsableLineRule( config );
-
-            ILineReader lineReader = new DefaultLineReader();
-            if( config.HasNewLinesInQuotes )
-                lineReader = new CsvRfc4180LineReader();
-
-            if( parsableLineRule != null )
-                lineReader = new SkipNonParsableLineReader( lineReader, parsableLineRule );
-
-            return lineReader;
-        }
-
-        protected static IParsableLineRule GetParsableLineRule( CsvConfig config )
-        {
-            if( config.IgnoreCommentedLines && config.IgnoreEmptyLines )
-                return new IgnoreEmptyAndCommentedLine( config.CommentMarker );
-
-            if( config.IgnoreCommentedLines )
-                return new IgnoreCommentedLine( config.CommentMarker );
-
-            if( config.IgnoreEmptyLines )
-                return new IgnoreEmptyLine();
-
-            return null;
-        }
-
-        private static ILineSplitter GetLineSplitter( CsvConfig config )
-        {
-            if( config.HasDelimiterInQuotes )
-                return new CsvRfc4180DelimitedLineSplitter( config.Delimiter );
-
-            return new DelimiterSplitter( config.Delimiter );
         }
     }
 }
