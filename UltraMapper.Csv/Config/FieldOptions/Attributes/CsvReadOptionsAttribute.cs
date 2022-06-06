@@ -29,5 +29,7 @@ namespace UltraMapper.Csv
         /// with a single double-quote.
         /// </summary>
         public bool UnescapeQuotes { get; set; }
+
+        public string Format { get; set; }
     }
 }

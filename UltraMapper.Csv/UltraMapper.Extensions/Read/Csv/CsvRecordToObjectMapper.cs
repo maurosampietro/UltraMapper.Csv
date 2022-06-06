@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using UltraMapper.Conventions;
-using UltraMapper.Csv.FileFormats;
+using UltraMapper.Csv.Config.FieldOptions;
 using UltraMapper.Csv.Internals;
 using UltraMapper.Internals;
 using UltraMapper.MappingExpressionBuilders;
@@ -59,6 +59,9 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
         private readonly Expression<Func<string, string, string, string, string>> _getErrorExp =
             ( error, fieldErrorValue, memberName, memberType ) => String.Format( error, fieldErrorValue, memberName, memberType );
 
+        private readonly Expression<Func<string, string, DateTime>> _parseDateTimeFormatExp =
+            ( str, format ) => DateTime.ParseExact( str, format, null );
+
         protected IEnumerable<Expression> GetAssignments( PropertyInfo[] targets, Expression dataArray, ReferenceMapperContext context )
         {
             string errorMsg = "Value '{0}' not assignable to param '{1}' of type {2}";
@@ -95,11 +98,21 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
                 var mappingExpression = MapperConfiguration[ typeof( string ),
                     targetMember.PropertyType ].MappingExpression;
 
+                var expression = mappingExpression.Body;
+
+                if( targetMember.PropertyType == typeof( DateTime ) )
+                {
+                    var memberOptions = FieldConfiguration.Get<CsvReadOptionsAttribute>( context.TargetInstance.Type ).FieldOptions[ targetMember ];
+                    if( !String.IsNullOrWhiteSpace( memberOptions.Format ) )
+                        expression = Expression.Invoke( _parseDateTimeFormatExp,
+                            arrayAccess, Expression.Constant( memberOptions.Format ) );
+                }
+
                 string paramNameToReplace = mappingExpression.Parameters
                     .First( p => p.Type != typeof( ReferenceTracker ) ).Name;
 
-                var expression = mappingExpression.Body.ReplaceParameter(
-                    arrayAccess, paramNameToReplace );
+                expression = expression.ReplaceParameter(
+                     arrayAccess, paramNameToReplace );
 
                 var assignment = (Expression)Expression.Assign( Expression.Property(
                      context.TargetInstance, targetMember ), expression );

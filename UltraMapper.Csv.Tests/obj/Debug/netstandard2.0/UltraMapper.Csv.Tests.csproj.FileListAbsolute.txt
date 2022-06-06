@@ -24,3 +24,29 @@ E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.C
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\netstandard2.0\UltraMapper.Csv.Tests.csproj.CopyComplete
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\netstandard2.0\UltraMapper.Csv.Tests.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\netstandard2.0\UltraMapper.Csv.Tests.pdb
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\Resources\Biostats.csv
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\Resources\CommentsAndEmptyLines.csv
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\Resources\EmptyFile.csv
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\Resources\FixedWidth.dat
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\Resources\NewLinesOnly.csv
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\Resources\RFC4180Standard.csv
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\Resources\Titanic.csv
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\UltraMapper.Csv.Tests.deps.json
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\UltraMapper.Csv.Tests.dll
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\UltraMapper.Csv.Tests.pdb
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\UltraMapper.Csv.dll
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\UltraMapper.dll
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\UltraMapper.Csv.pdb
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\netstandard2.0\UltraMapper.pdb
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\netstandard2.0\UltraMapper.Csv.Tests.csproj.AssemblyReference.cache
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\netstandard2.0\UltraMapper.Csv.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\netstandard2.0\UltraMapper.Csv.Tests.AssemblyInfoInputs.cache
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\netstandard2.0\UltraMapper.Csv.Tests.AssemblyInfo.cs
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\netstandard2.0\UltraMapper.Csv.Tests.csproj.CoreCompileInputs.cache
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\netstandard2.0\UltraMapper.Csv.Tests.csproj.CopyComplete
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\netstandard2.0\UltraMapper.Csv.Tests.dll
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\netstandard2.0\UltraMapper.Csv.Tests.pdb

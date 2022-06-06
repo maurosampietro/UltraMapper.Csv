@@ -70,6 +70,7 @@ namespace UltraMapper.Csv.FileFormats
             this.Configuration = options;
 
             //this configuration depends on instance properties
+            Mapper.Config.MapTypes<string, DateTime>( str => ConvertStringToDateTime( str ) );
             Mapper.Config.MapTypes<string, double>( str => ConvertStringToDouble( str ) );
             Mapper.Config.MapTypes<string, bool>( str => ConvertStringToBoolean( str ) );
         }
@@ -192,6 +193,11 @@ namespace UltraMapper.Csv.FileFormats
             {
                 throw new Exception( $"Error mapping '{line}' to type {typeof( TRecord )}", ex );
             }
+        }
+
+        private DateTime ConvertStringToDateTime( string str )
+        {
+            return DateTime.Parse( str, Configuration.Culture );
         }
 
         private double ConvertStringToDouble( string str )

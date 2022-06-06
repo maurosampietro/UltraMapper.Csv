@@ -1,4 +1,6 @@
-﻿namespace UltraMapper.Csv.Tests
+﻿using System;
+
+namespace UltraMapper.Csv.Tests
 {
     internal class BioStat
     {
