@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead-20220603-022819</title>
+<title>UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead-20220610-093431</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -13,8 +13,8 @@
 </head>
 <body>
 <pre><code>
-BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19044.1586 (21H2)
-Intel Core i7-8700K CPU 3.70GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.17763.2928 (1809/October2018Update/Redstone5)
+Intel Core i7-8565U CPU 1.80GHz (Whiskey Lake), 1 CPU, 8 logical and 4 physical cores
 .NET SDK=6.0.300
   [Host]     : .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
   DefaultJob : .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
@@ -24,10 +24,10 @@ Intel Core i7-8700K CPU 3.70GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical 
 <table>
 <thead><tr><th>Method</th><th>Mean</th><th>Error</th><th>StdDev</th>
 </tr>
-</thead><tbody><tr><td>BaseLine</td><td>1.610 s</td><td>0.0316 s</td><td>0.0411 s</td>
-</tr><tr><td>FileHelper</td><td>3.019 s</td><td>0.0350 s</td><td>0.0293 s</td>
-</tr><tr><td>CsvHelper</td><td>3.826 s</td><td>0.0743 s</td><td>0.1017 s</td>
-</tr><tr><td>UltraMapper</td><td>1.684 s</td><td>0.0148 s</td><td>0.0124 s</td>
+</thead><tbody><tr><td>BaseLine</td><td>4.961 s</td><td>0.1401 s</td><td>0.4043 s</td>
+</tr><tr><td>FileHelper</td><td>10.555 s</td><td>0.3188 s</td><td>0.9301 s</td>
+</tr><tr><td>CsvHelper</td><td>13.676 s</td><td>0.3145 s</td><td>0.9023 s</td>
+</tr><tr><td>UltraMapper</td><td>5.826 s</td><td>0.1123 s</td><td>0.1460 s</td>
 </tr></tbody></table>
 </body>
 </html>

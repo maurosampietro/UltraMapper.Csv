@@ -1,0 +1,15 @@
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net60\UltraMapper.Csv.deps.json
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net60\UltraMapper.Csv.dll
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net60\UltraMapper.Csv.pdb
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net60\UltraMapper.dll
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net60\UltraMapper.pdb
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net60\UltraMapper.Csv.csproj.AssemblyReference.cache
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net60\UltraMapper.Csv.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net60\UltraMapper.Csv.AssemblyInfoInputs.cache
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net60\UltraMapper.Csv.AssemblyInfo.cs
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net60\UltraMapper.Csv.csproj.CoreCompileInputs.cache
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net60\UltraMapper.Csv.csproj.CopyComplete
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net60\UltraMapper.Csv.dll
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net60\refint\UltraMapper.Csv.dll
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net60\UltraMapper.Csv.pdb
+C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net60\ref\UltraMapper.Csv.dll

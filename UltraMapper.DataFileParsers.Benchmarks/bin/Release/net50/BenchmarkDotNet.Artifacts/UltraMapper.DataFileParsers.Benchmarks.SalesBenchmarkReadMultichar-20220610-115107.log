@@ -1,0 +1,311 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 9 benchmark(s) in total *****
+// ***** Building 3 exe(s) in Parallel: Start   *****
+// ***** Done, took 00:00:57 (57.65 sec)   *****
+// Found 9 benchmarks:
+//   SalesBenchmarkReadMultichar.BaseLine: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmarkReadMultichar.CsvHelper: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmarkReadMultichar.UltraMapper: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmarkReadMultichar.BaseLine: .NET 6.0(Runtime=.NET 6.0)
+//   SalesBenchmarkReadMultichar.CsvHelper: .NET 6.0(Runtime=.NET 6.0)
+//   SalesBenchmarkReadMultichar.UltraMapper: .NET 6.0(Runtime=.NET 6.0)
+//   SalesBenchmarkReadMultichar.BaseLine: .NET Framework 4.7(Runtime=.NET Framework 4.7)
+//   SalesBenchmarkReadMultichar.CsvHelper: .NET Framework 4.7(Runtime=.NET Framework 4.7)
+//   SalesBenchmarkReadMultichar.UltraMapper: .NET Framework 4.7(Runtime=.NET Framework 4.7)
+
+// **************************
+// Benchmark: SalesBenchmarkReadMultichar.BaseLine: .NET 5.0(Runtime=.NET 5.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "eec22220-4fca-49cf-a642-0851a0d5ca92.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkReadMultichar.BaseLine" --job ".NET 5.0" --benchmarkId 0 in C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\eec22220-4fca-49cf-a642-0851a0d5ca92\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 5.0
+
+OverheadJitting  1: 1 op, 354600.00 ns, 354.6000 us/op
+5000001
+WorkloadJitting  1: 1 op, 9345041800.00 ns, 9.3450 s/op
+
+5000001
+WorkloadWarmup   1: 1 op, 8783681200.00 ns, 8.7837 s/op
+5000001
+WorkloadWarmup   2: 1 op, 8441316600.00 ns, 8.4413 s/op
+5000001
+WorkloadWarmup   3: 1 op, 8566084500.00 ns, 8.5661 s/op
+5000001
+WorkloadWarmup   4: 1 op, 8831569000.00 ns, 8.8316 s/op
+5000001
+WorkloadWarmup   5: 1 op, 12969624700.00 ns, 12.9696 s/op
+5000001
+WorkloadWarmup   6: 1 op, 9624152700.00 ns, 9.6242 s/op
+5000001
+WorkloadWarmup   7: 1 op, 8411105300.00 ns, 8.4111 s/op
+5000001
+WorkloadWarmup   8: 1 op, 8549156300.00 ns, 8.5492 s/op
+5000001
+WorkloadWarmup   9: 1 op, 8387226400.00 ns, 8.3872 s/op
+
+// BeforeActualRun
+5000001
+WorkloadActual   1: 1 op, 9131659200.00 ns, 9.1317 s/op
+5000001
+WorkloadActual   2: 1 op, 10743310300.00 ns, 10.7433 s/op
+5000001
+WorkloadActual   3: 1 op, 9113719400.00 ns, 9.1137 s/op
+5000001
+WorkloadActual   4: 1 op, 8698491100.00 ns, 8.6985 s/op
+5000001
+WorkloadActual   5: 1 op, 9927980500.00 ns, 9.9280 s/op
+5000001
+WorkloadActual   6: 1 op, 8555885800.00 ns, 8.5559 s/op
+5000001
+WorkloadActual   7: 1 op, 8559988300.00 ns, 8.5600 s/op
+5000001
+WorkloadActual   8: 1 op, 8479882900.00 ns, 8.4799 s/op
+5000001
+WorkloadActual   9: 1 op, 9213923000.00 ns, 9.2139 s/op
+5000001
+WorkloadActual  10: 1 op, 10548209800.00 ns, 10.5482 s/op
+5000001
+WorkloadActual  11: 1 op, 11045610400.00 ns, 11.0456 s/op
+5000001
+WorkloadActual  12: 1 op, 10388900300.00 ns, 10.3889 s/op
+5000001
+WorkloadActual  13: 1 op, 10387278800.00 ns, 10.3873 s/op
+5000001
+WorkloadActual  14: 1 op, 10761095600.00 ns, 10.7611 s/op
+5000001
+WorkloadActual  15: 1 op, 12154077300.00 ns, 12.1541 s/op
+5000001
+WorkloadActual  16: 1 op, 11563664400.00 ns, 11.5637 s/op
+5000001
+WorkloadActual  17: 1 op, 8426244400.00 ns, 8.4262 s/op
+5000001
+WorkloadActual  18: 1 op, 8502887300.00 ns, 8.5029 s/op
+5000001
+WorkloadActual  19: 1 op, 8476710500.00 ns, 8.4767 s/op
+5000001
+WorkloadActual  20: 1 op, 8450245700.00 ns, 8.4502 s/op
+5000001
+WorkloadActual  21: 1 op, 9697721700.00 ns, 9.6977 s/op
+5000001
+WorkloadActual  22: 1 op, 10520650200.00 ns, 10.5207 s/op
+5000001
+WorkloadActual  23: 1 op, 9044386700.00 ns, 9.0444 s/op
+5000001
+WorkloadActual  24: 1 op, 8339489800.00 ns, 8.3395 s/op
+5000001
+WorkloadActual  25: 1 op, 8415571300.00 ns, 8.4156 s/op
+5000001
+WorkloadActual  26: 1 op, 8347732900.00 ns, 8.3477 s/op
+5000001
+WorkloadActual  27: 1 op, 8466742900.00 ns, 8.4667 s/op
+5000001
+WorkloadActual  28: 1 op, 8773317200.00 ns, 8.7733 s/op
+5000001
+WorkloadActual  29: 1 op, 8940373100.00 ns, 8.9404 s/op
+5000001
+WorkloadActual  30: 1 op, 8611989700.00 ns, 8.6120 s/op
+5000001
+WorkloadActual  31: 1 op, 8543097900.00 ns, 8.5431 s/op
+5000001
+WorkloadActual  32: 1 op, 8384320300.00 ns, 8.3843 s/op
+5000001
+WorkloadActual  33: 1 op, 8454624700.00 ns, 8.4546 s/op
+5000001
+WorkloadActual  34: 1 op, 9116340400.00 ns, 9.1163 s/op
+5000001
+WorkloadActual  35: 1 op, 8523659700.00 ns, 8.5237 s/op
+5000001
+WorkloadActual  36: 1 op, 8701716000.00 ns, 8.7017 s/op
+5000001
+WorkloadActual  37: 1 op, 8489769100.00 ns, 8.4898 s/op
+5000001
+WorkloadActual  38: 1 op, 8550944000.00 ns, 8.5509 s/op
+5000001
+WorkloadActual  39: 1 op, 8679185700.00 ns, 8.6792 s/op
+5000001
+WorkloadActual  40: 1 op, 8510928500.00 ns, 8.5109 s/op
+5000001
+WorkloadActual  41: 1 op, 8714726100.00 ns, 8.7147 s/op
+5000001
+WorkloadActual  42: 1 op, 8753221200.00 ns, 8.7532 s/op
+5000001
+WorkloadActual  43: 1 op, 8678124600.00 ns, 8.6781 s/op
+5000001
+WorkloadActual  44: 1 op, 8481002800.00 ns, 8.4810 s/op
+5000001
+WorkloadActual  45: 1 op, 8433656100.00 ns, 8.4337 s/op
+5000001
+WorkloadActual  46: 1 op, 8462893000.00 ns, 8.4629 s/op
+5000001
+WorkloadActual  47: 1 op, 8434731500.00 ns, 8.4347 s/op
+5000001
+WorkloadActual  48: 1 op, 8488832500.00 ns, 8.4888 s/op
+5000001
+WorkloadActual  49: 1 op, 8596849700.00 ns, 8.5968 s/op
+5000001
+WorkloadActual  50: 1 op, 8576898000.00 ns, 8.5769 s/op
+5000001
+WorkloadActual  51: 1 op, 8829776600.00 ns, 8.8298 s/op
+5000001
+WorkloadActual  52: 1 op, 8455824400.00 ns, 8.4558 s/op
+5000001
+WorkloadActual  53: 1 op, 8463446500.00 ns, 8.4634 s/op
+5000001
+WorkloadActual  54: 1 op, 8568099800.00 ns, 8.5681 s/op
+5000001
+WorkloadActual  55: 1 op, 8623207900.00 ns, 8.6232 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 9131659200.00 ns, 9.1317 s/op
+WorkloadResult   2: 1 op, 9113719400.00 ns, 9.1137 s/op
+WorkloadResult   3: 1 op, 8698491100.00 ns, 8.6985 s/op
+WorkloadResult   4: 1 op, 9927980500.00 ns, 9.9280 s/op
+WorkloadResult   5: 1 op, 8555885800.00 ns, 8.5559 s/op
+WorkloadResult   6: 1 op, 8559988300.00 ns, 8.5600 s/op
+WorkloadResult   7: 1 op, 8479882900.00 ns, 8.4799 s/op
+WorkloadResult   8: 1 op, 9213923000.00 ns, 9.2139 s/op
+WorkloadResult   9: 1 op, 8426244400.00 ns, 8.4262 s/op
+WorkloadResult  10: 1 op, 8502887300.00 ns, 8.5029 s/op
+WorkloadResult  11: 1 op, 8476710500.00 ns, 8.4767 s/op
+WorkloadResult  12: 1 op, 8450245700.00 ns, 8.4502 s/op
+WorkloadResult  13: 1 op, 9697721700.00 ns, 9.6977 s/op
+WorkloadResult  14: 1 op, 9044386700.00 ns, 9.0444 s/op
+WorkloadResult  15: 1 op, 8339489800.00 ns, 8.3395 s/op
+WorkloadResult  16: 1 op, 8415571300.00 ns, 8.4156 s/op
+WorkloadResult  17: 1 op, 8347732900.00 ns, 8.3477 s/op
+WorkloadResult  18: 1 op, 8466742900.00 ns, 8.4667 s/op
+WorkloadResult  19: 1 op, 8773317200.00 ns, 8.7733 s/op
+WorkloadResult  20: 1 op, 8940373100.00 ns, 8.9404 s/op
+WorkloadResult  21: 1 op, 8611989700.00 ns, 8.6120 s/op
+WorkloadResult  22: 1 op, 8543097900.00 ns, 8.5431 s/op
+WorkloadResult  23: 1 op, 8384320300.00 ns, 8.3843 s/op
+WorkloadResult  24: 1 op, 8454624700.00 ns, 8.4546 s/op
+WorkloadResult  25: 1 op, 9116340400.00 ns, 9.1163 s/op
+WorkloadResult  26: 1 op, 8523659700.00 ns, 8.5237 s/op
+WorkloadResult  27: 1 op, 8701716000.00 ns, 8.7017 s/op
+WorkloadResult  28: 1 op, 8489769100.00 ns, 8.4898 s/op
+WorkloadResult  29: 1 op, 8550944000.00 ns, 8.5509 s/op
+WorkloadResult  30: 1 op, 8679185700.00 ns, 8.6792 s/op
+WorkloadResult  31: 1 op, 8510928500.00 ns, 8.5109 s/op
+WorkloadResult  32: 1 op, 8714726100.00 ns, 8.7147 s/op
+WorkloadResult  33: 1 op, 8753221200.00 ns, 8.7532 s/op
+WorkloadResult  34: 1 op, 8678124600.00 ns, 8.6781 s/op
+WorkloadResult  35: 1 op, 8481002800.00 ns, 8.4810 s/op
+WorkloadResult  36: 1 op, 8433656100.00 ns, 8.4337 s/op
+WorkloadResult  37: 1 op, 8462893000.00 ns, 8.4629 s/op
+WorkloadResult  38: 1 op, 8434731500.00 ns, 8.4347 s/op
+WorkloadResult  39: 1 op, 8488832500.00 ns, 8.4888 s/op
+WorkloadResult  40: 1 op, 8596849700.00 ns, 8.5968 s/op
+WorkloadResult  41: 1 op, 8576898000.00 ns, 8.5769 s/op
+WorkloadResult  42: 1 op, 8829776600.00 ns, 8.8298 s/op
+WorkloadResult  43: 1 op, 8455824400.00 ns, 8.4558 s/op
+WorkloadResult  44: 1 op, 8463446500.00 ns, 8.4634 s/op
+WorkloadResult  45: 1 op, 8568099800.00 ns, 8.5681 s/op
+WorkloadResult  46: 1 op, 8623207900.00 ns, 8.6232 s/op
+
+// AfterAll
+// Benchmark Process 23980 has exited with code 0.
+
+Mean = 8.667 s, StdErr = 0.049 s (0.56%), N = 46, StdDev = 0.331 s
+Min = 8.339 s, Q1 = 8.464 s, Median = 8.553 s, Q3 = 8.711 s, Max = 9.928 s
+IQR = 0.247 s, LowerFence = 8.093 s, UpperFence = 9.082 s
+ConfidenceInterval = [8.495 s; 8.839 s] (CI 99.9%), Margin = 0.172 s (1.98% of Mean)
+Skewness = 2.02, Kurtosis = 7.15, MValue = 2
+
+// **************************
+// Benchmark: SalesBenchmarkReadMultichar.CsvHelper: .NET 5.0(Runtime=.NET 5.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "eec22220-4fca-49cf-a642-0851a0d5ca92.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkReadMultichar.CsvHelper" --job ".NET 5.0" --benchmarkId 1 in C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\eec22220-4fca-49cf-a642-0851a0d5ca92\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 5.0
+
+OverheadJitting  1: 1 op, 277100.00 ns, 277.1000 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> CsvHelper.HeaderValidationException: Header with name 'Item Type'[0] was not found.
+Header with name 'Sales Channel'[0] was not found.
+Header with name 'Order Priority'[0] was not found.
+Header with name 'Order Date'[0] was not found.
+Header with name 'Order ID'[0] was not found.
+Header with name 'Ship Date'[0] was not found.
+Header with name 'Units Sold'[0] was not found.
+Header with name 'Unit Price'[0] was not found.
+Header with name 'Unit Cost'[0] was not found.
+Header with name 'Total Revenue'[0] was not found.
+Header with name 'Total Cost'[0] was not found.
+Header with name 'Total Profit'[0] was not found.
+If you are expecting some headers to be missing and want to ignore this validation, set the configuration HeaderValidated to null. You can also change the functionality to do something else, like logging the issue.
+
+IReader state:
+   ColumnCount: 0
+   CurrentIndex: -1
+   HeaderRecord:
+["Region","Country","ItemType","SalesChannel","OrderPriority","OrderDate","OrderID","ShipDate","UnitsSold","UnitPrice","UnitCost","TotalRevenue","TotalCost","TotalProfit"]
+IParser state:
+   ByteCount: 0
+   CharCount: 273
+   Row: 1
+   RawRow: 1
+   Count: 14
+   RawRecord:
+Region~DELIMITER~Country~DELIMITER~ItemType~DELIMITER~SalesChannel~DELIMITER~OrderPriority~DELIMITER~OrderDate~DELIMITER~OrderID~DELIMITER~ShipDate~DELIMITER~UnitsSold~DELIMITER~UnitPrice~DELIMITER~UnitCost~DELIMITER~TotalRevenue~DELIMITER~TotalCost~DELIMITER~TotalProfit
+
+
+   at CsvHelper.Configuration.ConfigurationFunctions.HeaderValidated(HeaderValidatedArgs args)
+   at CsvHelper.CsvReader.ValidateHeader(Type type)
+   at CsvHelper.CsvReader.ValidateHeader[T]()
+   at CsvHelper.CsvReader.GetRecords[T]()+MoveNext()
+   at System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   at UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkReadMultichar.CsvHelper() in C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\Program.cs:line 76
+   at BenchmarkDotNet.Autogenerated.Runnable_1.WorkloadActionNoUnroll(Int64 invokeCount) in C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\eec22220-4fca-49cf-a642-0851a0d5ca92\eec22220-4fca-49cf-a642-0851a0d5ca92.notcs:line 1575
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_1.Run(IHost host, String benchmarkName) in C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\eec22220-4fca-49cf-a642-0851a0d5ca92\eec22220-4fca-49cf-a642-0851a0d5ca92.notcs:line 901
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\eec22220-4fca-49cf-a642-0851a0d5ca92\eec22220-4fca-49cf-a642-0851a0d5ca92.notcs:line 53
+// AfterAll
+// Benchmark Process 17560 has exited with code -1.
+
+
+// **************************
+// Benchmark: SalesBenchmarkReadMultichar.UltraMapper: .NET 5.0(Runtime=.NET 5.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "eec22220-4fca-49cf-a642-0851a0d5ca92.dll" --benchmarkName "UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkReadMultichar.UltraMapper" --job ".NET 5.0" --benchmarkId 2 in C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\eec22220-4fca-49cf-a642-0851a0d5ca92\bin\Release\net5.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: .NET 5.0
+
+OverheadJitting  1: 1 op, 294100.00 ns, 294.1000 us/op
+5000001
+WorkloadJitting  1: 1 op, 9443854300.00 ns, 9.4439 s/op
+
+5000001
+WorkloadWarmup   1: 1 op, 9251013600.00 ns, 9.2510 s/op
+5000001
+WorkloadWarmup   2: 1 op, 8928408300.00 ns, 8.9284 s/op
+5000001
+WorkloadWarmup   3: 1 op, 9462414500.00 ns, 9.4624 s/op
+5000001
+WorkloadWarmup   4: 1 op, 8841185900.00 ns, 8.8412 s/op
+5000001
+WorkloadWarmup   5: 1 op, 8943071900.00 ns, 8.9431 s/op
+5000001

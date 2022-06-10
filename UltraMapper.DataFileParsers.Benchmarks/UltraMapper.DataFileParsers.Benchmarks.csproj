@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>net47;net50</TargetFrameworks>
+    <TargetFrameworks>net47;net50;net60</TargetFrameworks>
     <StartupObject>UltraMapper.DataFileParsers.Benchmarks.Program</StartupObject>
     <Platforms>AnyCPU</Platforms>
   </PropertyGroup>

@@ -1,16 +1,16 @@
 ``` ini
 
-BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19044.1586 (21H2)
-Intel Core i7-8700K CPU 3.70GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.17763.2928 (1809/October2018Update/Redstone5)
+Intel Core i7-8565U CPU 1.80GHz (Whiskey Lake), 1 CPU, 8 logical and 4 physical cores
 .NET SDK=6.0.300
   [Host]     : .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
   DefaultJob : .NET 5.0.17 (5.0.1722.21314), X64 RyuJIT
 
 
 ```
-|      Method |    Mean |    Error |   StdDev |
-|------------ |--------:|---------:|---------:|
-|    BaseLine | 1.610 s | 0.0316 s | 0.0411 s |
-|  FileHelper | 3.019 s | 0.0350 s | 0.0293 s |
-|   CsvHelper | 3.826 s | 0.0743 s | 0.1017 s |
-| UltraMapper | 1.684 s | 0.0148 s | 0.0124 s |
+|      Method |     Mean |    Error |   StdDev |
+|------------ |---------:|---------:|---------:|
+|    BaseLine |  4.961 s | 0.1401 s | 0.4043 s |
+|  FileHelper | 10.555 s | 0.3188 s | 0.9301 s |
+|   CsvHelper | 13.676 s | 0.3145 s | 0.9023 s |
+| UltraMapper |  5.826 s | 0.1123 s | 0.1460 s |

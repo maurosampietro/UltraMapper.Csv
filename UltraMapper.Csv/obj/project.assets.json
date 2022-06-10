@@ -122,6 +122,46 @@
           "bin/placeholder/UltraMapper.dll": {}
         }
       }
+    },
+    "net6.0": {
+      "Microsoft.NETCore.Platforms/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.NETCore.Targets/1.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "System.Runtime/4.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.1",
+          "Microsoft.NETCore.Targets": "1.1.3"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Runtime.dll": {}
+        }
+      },
+      "UltraMapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/UltraMapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UltraMapper.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -395,6 +435,10 @@
     "net5.0": [
       "System.Runtime >= 4.3.1",
       "UltraMapper >= 1.0.0"
+    ],
+    "net6.0": [
+      "System.Runtime >= 4.3.1",
+      "UltraMapper >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -424,6 +468,7 @@
       "originalTargetFrameworks": [
         "net47",
         "net50",
+        "net60",
         "netstandard2.0"
       ],
       "sources": {
@@ -434,6 +479,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net50",
+          "projectReferences": {
+            "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper\\UltraMapper\\UltraMapper.csproj": {
+              "projectPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper\\UltraMapper\\UltraMapper.csproj"
+            }
+          }
+        },
+        "net6.0": {
+          "targetAlias": "net60",
           "projectReferences": {
             "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper\\UltraMapper\\UltraMapper.csproj": {
               "projectPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper\\UltraMapper\\UltraMapper.csproj"
@@ -487,7 +540,32 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+      },
+      "net6.0": {
+        "targetAlias": "net60",
+        "dependencies": {
+          "System.Runtime": {
+            "target": "Package",
+            "version": "[4.3.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       },
       "net47": {
         "targetAlias": "net47",
@@ -497,7 +575,7 @@
             "version": "[4.3.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       },
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
@@ -523,7 +601,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

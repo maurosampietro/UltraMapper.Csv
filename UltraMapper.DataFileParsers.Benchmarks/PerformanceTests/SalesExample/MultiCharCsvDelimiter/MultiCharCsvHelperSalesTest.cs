@@ -16,7 +16,10 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.M
             var config = new CsvConfiguration( CultureInfo.InvariantCulture )
             {
                 Delimiter = "~DELIMITER~",
-                LeaveOpen = true, 
+                HasHeaderRecord = true,
+                LeaveOpen = true,
+                HeaderValidated = null,
+                MissingFieldFound = null
             };
 
             var csvReader = new CsvReader( reader, config );
