@@ -16,7 +16,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks
     [SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net47 )]
     public class SalesBenchmarkReadMultichar
     {
-        private string _inputFile;
+        private readonly string _inputFile;
 
         private string DownloadSalesFile()
         {

@@ -7083,7 +7083,7 @@
       },
       "UltraMapper/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/UltraMapper.dll": {}
         },
@@ -8814,7 +8814,7 @@
       },
       "UltraMapper/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/UltraMapper.dll": {}
         },
@@ -13479,18 +13479,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fcea31\\.nuget\\packages\\": {},
+    "C:\\Users\\Sam\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.DataFileParsers.Benchmarks\\UltraMapper.DataFileParsers.Benchmarks.csproj",
+      "projectUniqueName": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.DataFileParsers.Benchmarks\\UltraMapper.DataFileParsers.Benchmarks.csproj",
       "projectName": "UltraMapper.DataFileParsers.Benchmarks",
-      "projectPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.DataFileParsers.Benchmarks\\UltraMapper.DataFileParsers.Benchmarks.csproj",
-      "packagesPath": "C:\\Users\\fcea31\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.DataFileParsers.Benchmarks\\obj\\",
+      "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.DataFileParsers.Benchmarks\\UltraMapper.DataFileParsers.Benchmarks.csproj",
+      "packagesPath": "C:\\Users\\Sam\\.nuget\\packages\\",
+      "outputPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.DataFileParsers.Benchmarks\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -13498,7 +13498,7 @@
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\fcea31\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -13508,7 +13508,6 @@
         "net60"
       ],
       "sources": {
-        "C:\\ALLITUDE_LAVORO\\PROGETTI\\BinComuni": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -13516,24 +13515,24 @@
         "net5.0": {
           "targetAlias": "net50",
           "projectReferences": {
-            "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
-              "projectPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
+            "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
+              "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
             }
           }
         },
         "net6.0": {
           "targetAlias": "net60",
           "projectReferences": {
-            "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
-              "projectPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
+            "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
+              "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
             }
           }
         },
         "net47": {
           "targetAlias": "net47",
           "projectReferences": {
-            "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
-              "projectPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
+            "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
+              "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
             }
           }
         }
@@ -13576,7 +13575,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       },
       "net6.0": {
         "targetAlias": "net60",
@@ -13609,7 +13608,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       },
       "net47": {
         "targetAlias": "net47",
@@ -13627,7 +13626,7 @@
             "version": "[3.5.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

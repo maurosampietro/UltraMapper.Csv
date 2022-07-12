@@ -6,6 +6,7 @@ using System.Reflection;
 using UltraMapper.Conventions;
 using UltraMapper.Csv.Config.FieldOptions;
 using UltraMapper.Csv.Internals;
+using UltraMapper.Csv.UltraMapper.Extensions.PreprocessOptions;
 using UltraMapper.Internals;
 using UltraMapper.MappingExpressionBuilders;
 
@@ -13,6 +14,17 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
 {
     internal class CsvRecordToObjectMapper : ReferenceMapper
     {
+        private static readonly List<IPreProcessOption> _preprocessOptions;
+
+        static CsvRecordToObjectMapper()
+        {
+            var temp = Assembly.GetExecutingAssembly().GetTypes()
+                .Where( t => t.ImplementsInterface( typeof( IPreProcessOption ) ) ).ToList();
+
+            _preprocessOptions = temp
+            .Select( t => (IPreProcessOption)InstanceFactory.CreateObject( t ) ).ToList();
+        }
+
         public CsvRecordToObjectMapper( Configuration mappingConfiguration )
             : base( mappingConfiguration ) { }
 
@@ -50,17 +62,8 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
                 context.ReferenceTracker, context.SourceInstance, context.TargetInstance );
         }
 
-        private readonly Expression<Func<string, string>> _unquoteExp =
-            str => str.Unquote( '"' );
-
-        private readonly Expression<Func<string, string>> _unescapeQuotesExp =
-            str => str.UnescapeQuotes( '"' );
-
         private readonly Expression<Func<string, string, string, string, string>> _getErrorExp =
             ( error, fieldErrorValue, memberName, memberType ) => String.Format( error, fieldErrorValue, memberName, memberType );
-
-        private readonly Expression<Func<string, string, DateTime>> _parseDateTimeFormatExp =
-            ( str, format ) => DateTime.ParseExact( str, format, null );
 
         protected IEnumerable<Expression> GetAssignments( PropertyInfo[] targets, Expression dataArray, ReferenceMapperContext context )
         {
@@ -71,42 +74,19 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
                 var targetMember = targets[ i ];
                 var inOptions = targetMember.GetCustomAttribute<CsvReadOptionsAttribute>();
 
+
                 var arrayAccess = (Expression)Expression.ArrayAccess( dataArray, Expression.Constant( i ) );
-                if( inOptions?.TrimWhitespaces == true )
+
+                foreach( var item in _preprocessOptions )
                 {
-                    var trimMethod = typeof( string ).GetMethod(
-                        nameof( String.Trim ), new Type[] { } );
-
-                    arrayAccess = Expression.Call( arrayAccess, trimMethod );
+                    if( item.CanExecute( targetMember, inOptions ) )
+                        arrayAccess = item.Execute( targetMember, inOptions, arrayAccess );
                 }
-
-                if( inOptions != null && inOptions.TrimChar != '\0' )
-                {
-                    var trimMethod = typeof( string ).GetMethod(
-                        nameof( String.Trim ), new Type[] { typeof( char[] ) } );
-
-                    arrayAccess = Expression.Call( arrayAccess,
-                        trimMethod, Expression.Constant( new[] { inOptions.TrimChar } ) );
-                }
-
-                if( inOptions?.Unquote == true )
-                    arrayAccess = Expression.Invoke( _unquoteExp, arrayAccess );
-
-                if( inOptions?.UnescapeQuotes == true )
-                    arrayAccess = Expression.Invoke( _unescapeQuotesExp, arrayAccess );
 
                 var mappingExpression = MapperConfiguration[ typeof( string ),
                     targetMember.PropertyType ].MappingExpression;
 
                 var expression = mappingExpression.Body;
-
-                if( targetMember.PropertyType == typeof( DateTime ) )
-                {
-                    var memberOptions = FieldConfiguration.Get<CsvReadOptionsAttribute>( context.TargetInstance.Type ).FieldOptions[ targetMember ];
-                    if( !String.IsNullOrWhiteSpace( memberOptions.Format ) )
-                        expression = Expression.Invoke( _parseDateTimeFormatExp,
-                            arrayAccess, Expression.Constant( memberOptions.Format ) );
-                }
 
                 string paramNameToReplace = mappingExpression.Parameters
                     .First( p => p.Type != typeof( ReferenceTracker ) ).Name;
