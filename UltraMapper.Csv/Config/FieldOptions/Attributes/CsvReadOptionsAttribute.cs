@@ -3,7 +3,7 @@ using UltraMapper.Csv.Config.FieldOptions;
 
 namespace UltraMapper.Csv
 {
-    public sealed class CsvReadOptionsAttribute : Attribute, IFieldConfig, IPreprocessOptions
+    public sealed class CsvFieldOptionsAttribute : Attribute, IFieldConfig, ICsvReadPreprocessOptions
     {
         public bool IsIgnored { get; set; }
         public bool IsRequired { get; set; }

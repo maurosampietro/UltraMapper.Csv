@@ -1,18 +1,3 @@
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net50\UltraMapper.Csv.deps.json
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net50\UltraMapper.Csv.dll
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net50\UltraMapper.Csv.pdb
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net50\UltraMapper.dll
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net50\UltraMapper.pdb
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.csproj.AssemblyReference.cache
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.GeneratedMSBuildEditorConfig.editorconfig
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.AssemblyInfoInputs.cache
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.AssemblyInfo.cs
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.csproj.CoreCompileInputs.cache
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.csproj.CopyComplete
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.dll
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\refint\UltraMapper.Csv.dll
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.pdb
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\ref\UltraMapper.Csv.dll
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net50\UltraMapper.Csv.deps.json
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net50\UltraMapper.Csv.dll
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net50\UltraMapper.Csv.pdb
@@ -28,3 +13,18 @@ C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\Ultra
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\refint\UltraMapper.Csv.dll
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.pdb
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\ref\UltraMapper.Csv.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net50\UltraMapper.Csv.deps.json
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net50\UltraMapper.Csv.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net50\UltraMapper.Csv.pdb
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net50\UltraMapper.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Debug\net50\UltraMapper.pdb
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.csproj.AssemblyReference.cache
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.GeneratedMSBuildEditorConfig.editorconfig
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.AssemblyInfoInputs.cache
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.AssemblyInfo.cs
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.csproj.CoreCompileInputs.cache
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.csproj.CopyComplete
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\refint\UltraMapper.Csv.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\UltraMapper.Csv.pdb
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Debug\net50\ref\UltraMapper.Csv.dll

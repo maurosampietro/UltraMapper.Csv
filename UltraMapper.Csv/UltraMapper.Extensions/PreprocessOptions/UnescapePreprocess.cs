@@ -2,6 +2,7 @@
 using System.Linq.Expressions;
 using System.Reflection;
 using UltraMapper.Csv.Internals;
+using UltraMapper.MappingExpressionBuilders;
 
 namespace UltraMapper.Csv.UltraMapper.Extensions.PreprocessOptions
 {
@@ -10,12 +11,12 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.PreprocessOptions
         private static readonly Expression<Func<string, string>> _unescapeQuotesExp =
             str => str.UnescapeQuotes( '"' );
 
-        public bool CanExecute( PropertyInfo targetMember, CsvReadOptionsAttribute options )
+        public bool CanExecute( Mapper mapper, ReferenceMapperContext context, PropertyInfo targetMember, CsvFieldOptionsAttribute options )
         {
             return options?.Unquote == true;
         }
 
-        public Expression Execute( PropertyInfo targetMember, CsvReadOptionsAttribute options, Expression source )
+        public Expression Execute( Mapper mapper, ReferenceMapperContext context, PropertyInfo targetMember, CsvFieldOptionsAttribute options, Expression source )
         {
             return Expression.Invoke( _unescapeQuotesExp, source );
         }

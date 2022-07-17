@@ -22,7 +22,7 @@ namespace UltraMapper.Csv
         ICsvParser<TRecord>, IHeaderSupport, IFooterSupport
         where TRecord : class, new()
     {
-        public FieldOptionsProvider<CsvReadOptionsAttribute> FieldConfig { get; }
+        public FieldOptionsProvider<CsvFieldOptionsAttribute> FieldConfig { get; }
 
         static CsvParser()
         {
@@ -45,7 +45,7 @@ namespace UltraMapper.Csv
             : base( reader, lineSplitter, lineReader, headerReader, footerReader, new CsvReadonlyConfig( config ) )
         {
             var sourceMemberProvider = Mapper.Config.Conventions.OfType<DefaultConvention>().Single().SourceMemberProvider;
-            this.FieldConfig = FieldConfiguration.Register<CsvReadOptionsAttribute, TRecord>( sourceMemberProvider );
+            this.FieldConfig = FieldConfiguration.Register<CsvFieldOptionsAttribute, TRecord>( sourceMemberProvider );
         }
 
         public static CsvParser<TRecord> GetInstance( string filePath, CsvConfig config )

@@ -2,6 +2,7 @@
 using System.Linq.Expressions;
 using System.Reflection;
 using UltraMapper.Csv.Config.FieldOptions;
+using UltraMapper.MappingExpressionBuilders;
 
 namespace UltraMapper.Csv.UltraMapper.Extensions.PreprocessOptions
 {
@@ -10,15 +11,15 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.PreprocessOptions
         private static readonly Expression<Func<string, string, DateTime>> _parseDateTimeFormatExp =
             ( str, format ) => DateTime.ParseExact( str, format, null );
 
-        public bool CanExecute( PropertyInfo targetMember, CsvReadOptionsAttribute options )
+        public bool CanExecute( Mapper mapper, ReferenceMapperContext context, PropertyInfo targetMember, CsvFieldOptionsAttribute options )
         {
             return targetMember.PropertyType == typeof( DateTime ) &&
                 !String.IsNullOrWhiteSpace( options.Format );
         }
 
-        public Expression Execute( PropertyInfo targetMember, CsvReadOptionsAttribute options, Expression source )
+        public Expression Execute( Mapper mapper, ReferenceMapperContext context, PropertyInfo targetMember, CsvFieldOptionsAttribute options, Expression source )
         {
-            var memberOptions = FieldConfiguration.Get<CsvReadOptionsAttribute>( targetMember.DeclaringType )
+            var memberOptions = FieldConfiguration.Get<CsvFieldOptionsAttribute>( targetMember.DeclaringType )
                 .FieldOptions[ targetMember ];
 
             return Expression.Invoke( _parseDateTimeFormatExp,

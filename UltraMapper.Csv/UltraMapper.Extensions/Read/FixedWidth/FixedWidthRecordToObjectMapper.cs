@@ -16,14 +16,20 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.FixedWidth
         public FixedWidthRecordToObjectMapper( Configuration mappingConfiguration )
             : base( mappingConfiguration ) { }
 
-        public override bool CanHandle( Type source, Type target )
+        public override bool CanHandle( Mapping mapping )
         {
+            var source = mapping.Source.EntryType;
+            var target = mapping.Target.EntryType;
+
             return source == typeof( FixedWidthRecordReadObject );
         }
 
-        public override LambdaExpression GetMappingExpression( Type source, Type target, IMappingOptions options )
+        public override LambdaExpression GetMappingExpression( Mapping mapping )
         {
-            var context = this.GetMapperContext( source, target, options );
+            var source = mapping.Source.EntryType;
+            var target = mapping.Target.EntryType;
+
+            var context = this.GetMapperContext( mapping );
             var targetMembers = this.SelectTargetMembers( target )
                 .OfType<PropertyInfo>().ToArray();
 
@@ -126,8 +132,8 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.FixedWidth
                 .Select( ( m, index ) => new
                 {
                     Member = m,
-                    Options = m.GetCustomAttribute<CsvReadOptionsAttribute>() ??
-                        new CsvReadOptionsAttribute() {/*Order = index*/ }
+                    Options = m.GetCustomAttribute<CsvFieldOptionsAttribute>() ??
+                        new CsvFieldOptionsAttribute() {/*Order = index*/ }
                 } )
                 .Where( m => !m.Options.IsIgnored )
                 .OrderByDescending( info => info.Options.IsRequired )

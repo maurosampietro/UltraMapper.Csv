@@ -14,10 +14,10 @@ namespace UltraMapper.Csv.Tests
             public int Year { get; set; }
             public string Make { get; set; }
 
-            [CsvReadOptions( Unquote = true, UnescapeQuotes = true )]
+            [CsvFieldOptions( Unquote = true, UnescapeQuotes = true )]
             public string Model { get; set; }
 
-            [CsvReadOptions( Unquote = true )]
+            [CsvFieldOptions( Unquote = true )]
             public string Description { get; set; }
             public double Price { get; set; }
 

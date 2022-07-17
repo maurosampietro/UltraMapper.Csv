@@ -1,6 +1,6 @@
 ﻿namespace UltraMapper.Csv
 {
-    public interface IPreprocessOptions
+    public interface ICsvReadPreprocessOptions
     {
         string FillInValue { get; set; }
         string Format { get; set; }

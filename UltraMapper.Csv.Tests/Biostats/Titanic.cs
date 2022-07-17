@@ -11,7 +11,7 @@ namespace UltraMapper.Csv.Tests.Biostats
         public string Name { get; set; }
         public string Sex { get; set; }
 
-        [CsvReadOptions( FillInValue = "0" )]
+        [CsvFieldOptions( FillInValue = "0" )]
         public float Age { get; set; }
         public int SibSp { get; set; }
         public int Parch { get; set; }

@@ -17,14 +17,20 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
         public ObjectToFixedWidthRecordMapper( Configuration mappingConfiguration )
             : base( mappingConfiguration ) { }
 
-        public override bool CanHandle( Type source, Type target )
+        public override bool CanHandle( Mapping mapping )
         {
+            var source = mapping.Source.EntryType;
+            var target = mapping.Target.EntryType;
+
             return !source.IsEnumerable() && target == typeof( FixedWidthRecordWriteObject );
         }
 
-        public override LambdaExpression GetMappingExpression( Type source, Type target, IMappingOptions options )
+        public override LambdaExpression GetMappingExpression( Mapping mapping )
         {
-            var context = this.GetMapperContext( source, target, options );
+            var source = mapping.Source.EntryType;
+            var target = mapping.Target.EntryType;
+
+            var context = this.GetMapperContext( mapping );
             var sourceMembers = this.SelectSourceMembers( source ).OfType<PropertyInfo>().ToArray();
 
             var expressions = GetTargetStrings( sourceMembers, context );

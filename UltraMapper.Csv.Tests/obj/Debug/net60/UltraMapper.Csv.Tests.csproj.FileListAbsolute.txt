@@ -32,9 +32,6 @@ C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\net60
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\net60\refint\UltraMapper.Csv.Tests.dll
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\net60\UltraMapper.Csv.Tests.pdb
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\net60\ref\UltraMapper.Csv.Tests.dll
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\net60\UltraMapper.Csv.Tests.dll
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\net60\refint\UltraMapper.Csv.Tests.dll
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\net60\UltraMapper.Csv.Tests.pdb
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\net60\Resources\Biostats.csv
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\net60\Resources\CommentsAndEmptyLines.csv
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\net60\Resources\EmptyFile.csv
@@ -61,4 +58,7 @@ E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.C
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\net60\UltraMapper.Csv.Tests.AssemblyInfo.cs
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\net60\UltraMapper.Csv.Tests.csproj.CoreCompileInputs.cache
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\net60\UltraMapper.Csv.Tests.csproj.CopyComplete
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\net60\UltraMapper.Csv.Tests.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\net60\refint\UltraMapper.Csv.Tests.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\net60\UltraMapper.Csv.Tests.pdb
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\obj\Debug\net60\ref\UltraMapper.Csv.Tests.dll

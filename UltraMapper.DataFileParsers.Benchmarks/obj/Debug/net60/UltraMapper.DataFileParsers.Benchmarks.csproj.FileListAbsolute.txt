@@ -76,9 +76,9 @@ C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmark
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Debug\net60\UltraMapper.DataFileParsers.Benchmarks.pdb
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Debug\net60\UltraMapper.DataFileParsers.Benchmarks.genruntimeconfig.cache
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Debug\net60\ref\UltraMapper.DataFileParsers.Benchmarks.dll
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Debug\net60\UltraMapper.DataFileParsers.Benchmarks.dll
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Debug\net60\refint\UltraMapper.DataFileParsers.Benchmarks.dll
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Debug\net60\UltraMapper.DataFileParsers.Benchmarks.pdb
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\TraceReloggerLib.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\Dia2Lib.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\OSExtensions.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\x86\KernelTraceControl.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\x86\KernelTraceControl.Win61.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\x86\msdia140.dll
@@ -89,9 +89,6 @@ E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.D
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\amd64\msvcp140.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\amd64\vcruntime140.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\amd64\vcruntime140_1.dll
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\TraceReloggerLib.dll
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\Dia2Lib.dll
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\OSExtensions.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\Resources\biostats.csv
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\UltraMapper.DataFileParsers.Benchmarks.exe
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\UltraMapper.DataFileParsers.Benchmarks.dll.config
@@ -152,5 +149,8 @@ E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.D
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Debug\net60\UltraMapper.DataFileParsers.Benchmarks.AssemblyInfo.cs
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Debug\net60\UltraMapper.DataFileParsers.Benchmarks.csproj.CoreCompileInputs.cache
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Debug\net60\UltraMapper.DataFileParsers.Benchmarks.csproj.CopyComplete
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Debug\net60\UltraMapper.DataFileParsers.Benchmarks.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Debug\net60\refint\UltraMapper.DataFileParsers.Benchmarks.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Debug\net60\UltraMapper.DataFileParsers.Benchmarks.pdb
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Debug\net60\UltraMapper.DataFileParsers.Benchmarks.genruntimeconfig.cache
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Debug\net60\ref\UltraMapper.DataFileParsers.Benchmarks.dll

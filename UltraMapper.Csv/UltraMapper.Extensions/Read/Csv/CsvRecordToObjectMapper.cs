@@ -4,8 +4,6 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using UltraMapper.Conventions;
-using UltraMapper.Csv.Config.FieldOptions;
-using UltraMapper.Csv.Internals;
 using UltraMapper.Csv.UltraMapper.Extensions.PreprocessOptions;
 using UltraMapper.Internals;
 using UltraMapper.MappingExpressionBuilders;
@@ -14,28 +12,33 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
 {
     internal class CsvRecordToObjectMapper : ReferenceMapper
     {
-        private static readonly List<IPreProcessOption> _preprocessOptions;
-
-        static CsvRecordToObjectMapper()
+        private static readonly List<IPreProcessOption> _preprocessOptions = new List<IPreProcessOption>()
         {
-            var temp = Assembly.GetExecutingAssembly().GetTypes()
-                .Where( t => t.ImplementsInterface( typeof( IPreProcessOption ) ) ).ToList();
-
-            _preprocessOptions = temp
-            .Select( t => (IPreProcessOption)InstanceFactory.CreateObject( t ) ).ToList();
-        }
+            new UnquotePreprocess(),
+            new UnescapePreprocess(),
+            new TrimWhiteSpacesPreProess(),
+            new TrimCharPreProess(),
+            //new FillInPreProcess(),
+            new DateFormatPreprocess()
+        };
 
         public CsvRecordToObjectMapper( Configuration mappingConfiguration )
             : base( mappingConfiguration ) { }
 
-        public override bool CanHandle( Type source, Type target )
+        public override bool CanHandle( Mapping mapping )
         {
+            var source = mapping.Source.EntryType;
+            var target = mapping.Target.EntryType;
+
             return source == typeof( CsvRecordReadObject );
         }
 
-        public override LambdaExpression GetMappingExpression( Type source, Type target, IMappingOptions options )
+        public override LambdaExpression GetMappingExpression( Mapping mapping )
         {
-            var context = this.GetMapperContext( source, target, options );
+            var source = mapping.Source.EntryType;
+            var target = mapping.Target.EntryType;
+
+            var context = this.GetMapperContext( mapping );
             var targetMembers = this.SelectTargetMembers( target )
                 .OfType<PropertyInfo>().ToArray();
 
@@ -72,15 +75,15 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
             for( int i = 0; i < targets.Length; i++ )
             {
                 var targetMember = targets[ i ];
-                var inOptions = targetMember.GetCustomAttribute<CsvReadOptionsAttribute>();
+                var inOptions = targetMember.GetCustomAttribute<CsvFieldOptionsAttribute>();
 
 
                 var arrayAccess = (Expression)Expression.ArrayAccess( dataArray, Expression.Constant( i ) );
 
                 foreach( var item in _preprocessOptions )
                 {
-                    if( item.CanExecute( targetMember, inOptions ) )
-                        arrayAccess = item.Execute( targetMember, inOptions, arrayAccess );
+                    if( item.CanExecute( _mapper, context, targetMember, inOptions ) )
+                        arrayAccess = item.Execute( _mapper, context, targetMember, inOptions, arrayAccess );
                 }
 
                 var mappingExpression = MapperConfiguration[ typeof( string ),
@@ -151,8 +154,8 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
                 .Select( ( m, index ) => new
                 {
                     Member = m,
-                    Options = m.GetCustomAttribute<CsvReadOptionsAttribute>() ??
-                        new CsvReadOptionsAttribute() {/*Order = index*/ }
+                    Options = m.GetCustomAttribute<CsvFieldOptionsAttribute>() ??
+                        new CsvFieldOptionsAttribute() {/*Order = index*/ }
                 } )
                 .Where( m => !m.Options.IsIgnored )
                 .OrderByDescending( info => info.Options.IsRequired )
