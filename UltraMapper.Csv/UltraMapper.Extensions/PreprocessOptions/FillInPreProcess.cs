@@ -7,7 +7,7 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.PreprocessOptions
 {
     internal class FillInPreProcess : IPreProcessOption
     {
-        private static readonly MethodInfo _isNullOrWhiteSpace = 
+        private static readonly MethodInfo _isNullOrWhiteSpace =
             typeof( string ).GetMethod( nameof( String.IsNullOrWhiteSpace ) );
 
         public bool CanExecute( Mapper mapper, ReferenceMapperContext context, PropertyInfo targetMember, CsvFieldOptionsAttribute options )

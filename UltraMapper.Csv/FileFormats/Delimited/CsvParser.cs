@@ -3,7 +3,6 @@ using System.IO;
 using System.Linq;
 using UltraMapper.Conventions;
 using UltraMapper.Csv.Config;
-using UltraMapper.Csv.Config.DataFileParserConfig;
 using UltraMapper.Csv.Config.FieldOptions;
 using UltraMapper.Csv.FileFormats;
 using UltraMapper.Csv.Footer;
@@ -12,7 +11,6 @@ using UltraMapper.Csv.Header;
 using UltraMapper.Csv.Header.HeaderReaders;
 using UltraMapper.Csv.LineReaders;
 using UltraMapper.Csv.LineSplitters;
-using UltraMapper.Csv.ParsableLineRules;
 using UltraMapper.Csv.UltraMapper.Extensions.Read.Csv;
 using UltraMapper.MappingExpressionBuilders;
 

@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using System.Reflection;
-using UltraMapper.DataFileParsers.Benchmarks;
 
 namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.SingleCharCsvDelimiter
 {
@@ -13,7 +11,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.S
         {
             var reader = new StreamReader( fileLocation );
             var csvReader = new CsvReader( reader, CultureInfo.InvariantCulture, leaveOpen: true );
-           
+
             return csvReader.GetRecords<SaleRecord>();
         }
 

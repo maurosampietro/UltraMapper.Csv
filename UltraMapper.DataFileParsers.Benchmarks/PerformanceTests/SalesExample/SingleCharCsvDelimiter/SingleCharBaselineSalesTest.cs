@@ -1,9 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 using System.Text;
-using UltraMapper.DataFileParsers.Benchmarks;
-using UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample;
 
 namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.SingleCharCsvDelimiter
 {
@@ -51,7 +48,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.S
 
             string fileLocation = Path.Combine( dir,
                 $"1m Sales Records.output.{nameof( SingleCharBaselineSalesTest )}.csv" );
-   
+
             using( var writer = new StreamWriter( fileLocation ) )
             {
                 var sb = new StringBuilder();

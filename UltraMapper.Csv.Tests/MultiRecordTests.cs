@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Linq;
 using UltraMapper.Csv.Benchmarks.SalesExample;
-using UltraMapper.Csv;
+
 
 namespace UltraMapper.Csv.Tests
 {

@@ -17,7 +17,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.GpsDataExample
         {
             string fileLocation = Path.Combine(
                  Path.GetDirectoryName( Assembly.GetExecutingAssembly().Location ),
-                "Resources", $"dataset.{nameof(FileHelpersGpsDataTest)}.csv" );
+                "Resources", $"dataset.{nameof( FileHelpersGpsDataTest )}.csv" );
 
             var engine = new FileHelperEngine<GpsDataRecord>();
             engine.WriteFile( fileLocation, records );

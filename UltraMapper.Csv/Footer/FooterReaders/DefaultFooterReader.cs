@@ -15,7 +15,7 @@ namespace UltraMapper.Csv
             _reader = reader;
         }
 
-        public string GetFooter(  ILineReader lineReader )
+        public string GetFooter( ILineReader lineReader )
         {
             string lastLine = null;
             string line = lineReader.ReadLine( _reader );

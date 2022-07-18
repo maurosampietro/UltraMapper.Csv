@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using UltraMapper.Conventions;
 using UltraMapper.Csv.UltraMapper.Extensions.Write;
-using UltraMapper.MappingExpressionBuilders;
 
 namespace UltraMapper.Csv.FileFormats
 {

@@ -1,5 +1,4 @@
 ﻿using System;
-using UltraMapper.Csv.Config.FieldOptions;
 
 namespace UltraMapper.Csv.Config.FieldOptions.Attributes
 {

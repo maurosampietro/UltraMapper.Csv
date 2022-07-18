@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using System.Globalization;
 using System.Linq;
 
@@ -39,7 +38,7 @@ namespace UltraMapper.Csv.Tests
                 cfg.HasDelimiterInQuotes = true;
                 cfg.HasHeader = true;
                 cfg.HasFooter = false;
-            } );         
+            } );
 
             var header = csvReader.GetHeader();
             var records = csvReader.GetRecords().ToList();

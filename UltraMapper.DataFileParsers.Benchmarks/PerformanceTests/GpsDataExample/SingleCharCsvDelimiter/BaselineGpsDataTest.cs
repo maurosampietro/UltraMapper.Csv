@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text;
-using UltraMapper.DataFileParsers.Benchmarks;
 
 namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.GpsDataExample.SingleCharCsvDelimiter
 {
@@ -37,7 +36,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.GpsDataExample
         {
             string fileLocation = Path.Combine(
               Path.GetDirectoryName( Assembly.GetExecutingAssembly().Location ),
-             "Resources", $"dataset.{nameof(BaselineGpsDataTest)}.csv" );
+             "Resources", $"dataset.{nameof( BaselineGpsDataTest )}.csv" );
 
             using( var writer = new StreamWriter( fileLocation ) )
             {

@@ -1,8 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace UltraMapper.Csv.Tests
 {
@@ -21,13 +18,13 @@ namespace UltraMapper.Csv.Tests
 
             Assert.IsTrue( splitData.Length == 7 );
 
-            Assert.IsTrue( splitData[0] == "a" );
-            Assert.IsTrue( splitData[1] == "b" );
-            Assert.IsTrue( splitData[2] == "c" );
-            Assert.IsTrue( splitData[3] == "" );
-            Assert.IsTrue( splitData[4] == "" );
-            Assert.IsTrue( splitData[5] == "f" );
-            Assert.IsTrue( splitData[6] == "g" );
+            Assert.IsTrue( splitData[ 0 ] == "a" );
+            Assert.IsTrue( splitData[ 1 ] == "b" );
+            Assert.IsTrue( splitData[ 2 ] == "c" );
+            Assert.IsTrue( splitData[ 3 ] == "" );
+            Assert.IsTrue( splitData[ 4 ] == "" );
+            Assert.IsTrue( splitData[ 5 ] == "f" );
+            Assert.IsTrue( splitData[ 6 ] == "g" );
         }
 
         [TestMethod]

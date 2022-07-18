@@ -11,6 +11,6 @@ namespace UltraMapper.Csv
         public string Name { get; set; }
         public int FieldLength { get; set; } = -1;
 
-        public char TrimChar { get; set; } = '\0';    
+        public char TrimChar { get; set; } = '\0';
     }
 }

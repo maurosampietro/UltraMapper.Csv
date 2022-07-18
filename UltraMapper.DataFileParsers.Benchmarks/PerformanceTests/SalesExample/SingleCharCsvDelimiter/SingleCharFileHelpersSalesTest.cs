@@ -1,7 +1,6 @@
 ﻿using FileHelpers;
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 
 namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.SingleCharCsvDelimiter
 {

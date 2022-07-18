@@ -12,8 +12,6 @@ using UltraMapper.Csv.Header.HeaderReaders;
 using UltraMapper.Csv.LineReaders;
 using UltraMapper.Csv.LineSplitters;
 using UltraMapper.Csv.UltraMapper.Extensions.Read;
-using UltraMapper.Csv.UltraMapper.Extensions.Read.Csv;
-using UltraMapper.MappingExpressionBuilders;
 
 namespace UltraMapper.Csv.FileFormats
 {

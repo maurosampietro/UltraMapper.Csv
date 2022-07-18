@@ -9,9 +9,9 @@ namespace UltraMapper.Csv
     public class FileHeaderReader : IHeaderReader
     {
         private readonly string _filePath;
-        
+
         public bool IsConsumingOriginalStream => false;
-        
+
         public FileHeaderReader( string filePath )
         {
             _filePath = filePath;

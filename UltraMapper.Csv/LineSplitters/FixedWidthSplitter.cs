@@ -28,7 +28,7 @@ namespace UltraMapper.Csv
 
         private static int[] GetFieldWidths( Type type )
         {
-            var properties = type.GetProperties( 
+            var properties = type.GetProperties(
                     BindingFlags.Public | BindingFlags.Instance )
                 .Select( p => p.GetCustomAttribute<FixedWidthFieldReadOptionsAttribute>() )
                 .Where( p => p != null );

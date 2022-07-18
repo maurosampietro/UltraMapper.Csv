@@ -64,8 +64,8 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
                     LambdaExpression toStringExp = MapperConfiguration[ item.PropertyType, typeof( string ) ].MappingExpression;
 
                     yield return Expression.Invoke( _appendText, context.TargetInstance,
-                        Expression.Invoke( toStringExp, memberAccess ), 
-                        Expression.Constant( i != targetMembers.Length - 1, typeof(bool) ) );
+                        Expression.Invoke( toStringExp, memberAccess ),
+                        Expression.Constant( i != targetMembers.Length - 1, typeof( bool ) ) );
                 }
             }
         }

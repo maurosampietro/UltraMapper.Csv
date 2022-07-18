@@ -1,15 +1,8 @@
-﻿using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Engines;
-using BenchmarkDotNet.Jobs;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using UltraMapper.Csv;
-using UltraMapper.Csv.FileFormats;
 using UltraMapper.Csv.FileFormats.Delimited;
-using UltraMapper.DataFileParsers.Benchmarks;
-using UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample;
 
 namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.MultiCharCsvDelimiter
 {

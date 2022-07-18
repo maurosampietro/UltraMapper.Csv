@@ -61,5 +61,5 @@ namespace UltraMapper.Csv.Internals
                 }
             }
         }
-   }
+    }
 }

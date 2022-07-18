@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using UltraMapper.Csv.Config.FieldOptions;
 
 namespace UltraMapper.Csv.Internals
@@ -63,7 +61,7 @@ namespace UltraMapper.Csv.Internals
         {
             var strSpan = str.AsSpan();
             var chunks = new List<string>();
-            
+
             int startIndex = 0;
             bool quote = false;
 

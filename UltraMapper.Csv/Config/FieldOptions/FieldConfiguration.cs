@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Reflection;
 using UltraMapper.Conventions;
 
 namespace UltraMapper.Csv.Config.FieldOptions
@@ -27,8 +25,8 @@ namespace UltraMapper.Csv.Config.FieldOptions
             public override bool Equals( object obj )
             {
                 if( obj is Key otherKey )
-                { 
-                    return TFieldConfig == otherKey.TFieldConfig && 
+                {
+                    return TFieldConfig == otherKey.TFieldConfig &&
                         TRecord == otherKey.TRecord;
                 }
 

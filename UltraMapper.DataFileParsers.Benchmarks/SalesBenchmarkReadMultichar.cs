@@ -70,7 +70,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks
         public void BaseLine()
         {
             var c = new MultiCharBaselineSalesTest().ReadRecords( _inputFile ).Count();
-            Console.WriteLine(c);
+            Console.WriteLine( c );
         }
 
         //[Benchmark]

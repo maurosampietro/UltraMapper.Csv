@@ -4,7 +4,6 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using UltraMapper.Csv.Config.FieldOptions;
-using UltraMapper.Csv.FileFormats.FixedWidth;
 using UltraMapper.Csv.Internals;
 using UltraMapper.Csv.UltraMapper.Extensions.Write.FixedWidth;
 using UltraMapper.Internals;
@@ -65,7 +64,7 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
                     var memberAccess = Expression.Property( context.SourceInstance, item );
                     LambdaExpression toStringExp = MapperConfiguration[ item.PropertyType, typeof( string ) ].MappingExpression;
 
-                    var memberOptions = FieldConfiguration.Get<FixedWidthFieldWriteOptionsAttribute>(context.SourceInstance.Type).FieldOptions[ item ];
+                    var memberOptions = FieldConfiguration.Get<FixedWidthFieldWriteOptionsAttribute>( context.SourceInstance.Type ).FieldOptions[ item ];
 
                     yield return Expression.Invoke( _appendText, context.TargetInstance,
                         Expression.Invoke( toStringExp, memberAccess ),

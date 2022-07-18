@@ -3,7 +3,7 @@
     public class SaleRecord
     {
         public string Region { get; set; }
-        public string Country { get; set; }         
+        public string Country { get; set; }
         public string ItemType { get; set; }
         public string SalesChannel { get; set; }
         public string OrderPriority { get; set; }

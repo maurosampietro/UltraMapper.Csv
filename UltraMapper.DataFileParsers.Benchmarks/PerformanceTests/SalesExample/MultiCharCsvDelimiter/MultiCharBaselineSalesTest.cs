@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text;
-using UltraMapper.DataFileParsers.Benchmarks;
 
 namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.MultiCharCsvDelimiter
 {
@@ -54,19 +53,19 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.M
 
                 foreach( var item in records )
                 {
-                    sb.Append( item.Region ).Append(',');
-                    sb.Append( item.Country ).Append(',');
-                    sb.Append( item.ItemType ).Append(',');
-                    sb.Append( item.SalesChannel ).Append(',');
-                    sb.Append( item.OrderPriority ).Append(',');
-                    sb.Append( item.OrderDate  ).Append(',');
-                    sb.Append( item.OrderID ).Append(',');
-                    sb.Append( item.ShipDate ).Append(',');
-                    sb.Append( item.UnitsSold  ).Append(',');
-                    sb.Append( item.UnitPrice  ).Append(',');
-                    sb.Append( item.UnitCost  ).Append(',');
-                    sb.Append( item.TotalRevenue ).Append(',');
-                    sb.Append( item.TotalCost  ).Append(',');
+                    sb.Append( item.Region ).Append( ',' );
+                    sb.Append( item.Country ).Append( ',' );
+                    sb.Append( item.ItemType ).Append( ',' );
+                    sb.Append( item.SalesChannel ).Append( ',' );
+                    sb.Append( item.OrderPriority ).Append( ',' );
+                    sb.Append( item.OrderDate ).Append( ',' );
+                    sb.Append( item.OrderID ).Append( ',' );
+                    sb.Append( item.ShipDate ).Append( ',' );
+                    sb.Append( item.UnitsSold ).Append( ',' );
+                    sb.Append( item.UnitPrice ).Append( ',' );
+                    sb.Append( item.UnitCost ).Append( ',' );
+                    sb.Append( item.TotalRevenue ).Append( ',' );
+                    sb.Append( item.TotalCost ).Append( ',' );
                     sb.Append( item.TotalProfit );
 
                     writer.WriteLine( sb.ToString() );
