@@ -17,7 +17,7 @@ namespace UltraMapper.Csv.FileFormats.FixedWidth
 
         static FixedWidthWriter()
         {
-            Mapper.Config.Mappers.AddBefore<ReferenceMapper>( new ObjectToFixedWidthRecordMapper( Mapper.Config ) );
+            Mapper.Config.Mappers.AddBefore<ReferenceMapper>( new ObjectToFixedWidthRecordMapper() );
         }
 
         public FixedWidthWriter( TextWriter writer ) : base( writer )

@@ -16,7 +16,7 @@ namespace UltraMapper.Csv.FileFormats.Delimited
 
         static CsvWriter()
         {
-            Mapper.Config.Mappers.AddBefore<ReferenceMapper>( new ObjectToCsvRecordMapper( Mapper.Config ) );
+            Mapper.Config.Mappers.AddBefore<ReferenceMapper>( new ObjectToCsvRecordMapper( ) );
         }
 
         public CsvWriter( TextWriter writer, string delimiter ) : base( writer )

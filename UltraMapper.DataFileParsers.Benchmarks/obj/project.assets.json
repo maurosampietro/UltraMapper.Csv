@@ -695,7 +695,7 @@
           "lib/net45/_._": {}
         }
       },
-      "System.Runtime/4.3.1": {
+      "System.Runtime/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -1105,7 +1105,6 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7",
         "dependencies": {
-          "System.Runtime": "4.3.1",
           "UltraMapper": "1.0.0"
         },
         "compile": {
@@ -1774,7 +1773,7 @@
           "lib/net45/_._": {}
         }
       },
-      "System.Runtime/4.3.1": {
+      "System.Runtime/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -2118,7 +2117,6 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7",
         "dependencies": {
-          "System.Runtime": "4.3.1",
           "UltraMapper": "1.0.0"
         },
         "compile": {
@@ -2418,7 +2416,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.Targets/1.1.3": {
+      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -3126,11 +3124,11 @@
           "ref/netstandard1.0/System.Resources.ResourceManager.dll": {}
         }
       },
-      "System.Runtime/4.3.1": {
+      "System.Runtime/4.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.1",
-          "Microsoft.NETCore.Targets": "1.1.3"
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0"
         },
         "compile": {
           "ref/netstandard1.5/System.Runtime.dll": {}
@@ -3741,7 +3739,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "System.Runtime": "4.3.1",
           "UltraMapper": "1.0.0"
         },
         "compile": {
@@ -4041,7 +4038,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.Targets/1.1.3": {
+      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -4252,7 +4249,7 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
-          "runtime.win7-x86.runtime.native.System.IO.Compression": "4.3.2"
+          "runtime.win7-x86.runtime.native.System.IO.Compression": "4.3.0"
         },
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -4331,7 +4328,7 @@
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package"
       },
-      "runtime.win.System.Console/4.3.1": {
+      "runtime.win.System.Console/4.3.0": {
         "type": "package",
         "dependencies": {
           "System.IO": "4.3.0",
@@ -4398,7 +4395,7 @@
           "runtimes/win/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win7-x86.runtime.native.System.IO.Compression/4.3.2": {
+      "runtime.win7-x86.runtime.native.System.IO.Compression/4.3.0": {
         "type": "package",
         "native": {
           "runtimes/win7-x86/native/clrcompression.dll": {}
@@ -4500,7 +4497,7 @@
           "System.IO": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Text.Encoding": "4.3.0",
-          "runtime.win.System.Console": "4.3.1"
+          "runtime.win.System.Console": "4.3.0"
         },
         "compile": {
           "ref/netstandard1.3/System.Console.dll": {}
@@ -4910,11 +4907,11 @@
           "ref/netstandard1.0/System.Resources.ResourceManager.dll": {}
         }
       },
-      "System.Runtime/4.3.1": {
+      "System.Runtime/4.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.1",
-          "Microsoft.NETCore.Targets": "1.1.3",
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
           "runtime.any.System.Runtime": "4.3.0"
         },
         "compile": {
@@ -5472,7 +5469,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "System.Runtime": "4.3.1",
           "UltraMapper": "1.0.0"
         },
         "compile": {
@@ -5772,7 +5768,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.Targets/1.1.3": {
+      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -6480,11 +6476,11 @@
           "ref/netstandard1.0/System.Resources.ResourceManager.dll": {}
         }
       },
-      "System.Runtime/4.3.1": {
+      "System.Runtime/4.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.1",
-          "Microsoft.NETCore.Targets": "1.1.3"
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0"
         },
         "compile": {
           "ref/netstandard1.5/System.Runtime.dll": {}
@@ -7095,7 +7091,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "System.Runtime": "4.3.1",
           "UltraMapper": "1.0.0"
         },
         "compile": {
@@ -7395,7 +7390,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.Targets/1.1.3": {
+      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -7606,7 +7601,7 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
-          "runtime.win7-x86.runtime.native.System.IO.Compression": "4.3.2"
+          "runtime.win7-x86.runtime.native.System.IO.Compression": "4.3.0"
         },
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -7685,7 +7680,7 @@
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package"
       },
-      "runtime.win.System.Console/4.3.1": {
+      "runtime.win.System.Console/4.3.0": {
         "type": "package",
         "dependencies": {
           "System.IO": "4.3.0",
@@ -7752,7 +7747,7 @@
           "runtimes/win/lib/netstandard1.5/System.Runtime.Extensions.dll": {}
         }
       },
-      "runtime.win7-x86.runtime.native.System.IO.Compression/4.3.2": {
+      "runtime.win7-x86.runtime.native.System.IO.Compression/4.3.0": {
         "type": "package",
         "native": {
           "runtimes/win7-x86/native/clrcompression.dll": {}
@@ -7854,7 +7849,7 @@
           "System.IO": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Text.Encoding": "4.3.0",
-          "runtime.win.System.Console": "4.3.1"
+          "runtime.win.System.Console": "4.3.0"
         },
         "compile": {
           "ref/netstandard1.3/System.Console.dll": {}
@@ -8264,11 +8259,11 @@
           "ref/netstandard1.0/System.Resources.ResourceManager.dll": {}
         }
       },
-      "System.Runtime/4.3.1": {
+      "System.Runtime/4.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.1",
-          "Microsoft.NETCore.Targets": "1.1.3",
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
           "runtime.any.System.Runtime": "4.3.0"
         },
         "compile": {
@@ -8826,7 +8821,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "System.Runtime": "4.3.1",
           "UltraMapper": "1.0.0"
         },
         "compile": {
@@ -9231,17 +9225,17 @@
         "version.txt"
       ]
     },
-    "Microsoft.NETCore.Targets/1.1.3": {
-      "sha512": "3Wrmi0kJDzClwAC+iBdUBpEKmEle8FQNsCs77fkiOIw/9oYA07bL1EZNX0kQ2OMN3xpwvl0vAtOCYY3ndDNlhQ==",
+    "Microsoft.NETCore.Targets/1.1.0": {
+      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "type": "package",
-      "path": "microsoft.netcore.targets/1.1.3",
+      "path": "microsoft.netcore.targets/1.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.targets.1.1.3.nupkg.sha512",
+        "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
       ]
@@ -9941,17 +9935,17 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "runtime.win.System.Console/4.3.1": {
-      "sha512": "vHPXC3B18dxhyipVce8xQT1MQv1o5srYZqBlCNu9p9MNjhgGOntdQh/Xh2X4o7M2F839YUcQiGwu8Q498FyDjg==",
+    "runtime.win.System.Console/4.3.0": {
+      "sha512": "RRACWygml5dnmfgC1SW6tLGsFgwsUAKFtvhdyHnIEz4EhWyrd7pacDdY95CacQJy7BMXRDRCejC9aCRC0Y1sQA==",
       "type": "package",
-      "path": "runtime.win.system.console/4.3.1",
+      "path": "runtime.win.system.console/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "ref/netstandard/_._",
-        "runtime.win.system.console.4.3.1.nupkg.sha512",
+        "runtime.win.system.console.4.3.0.nupkg.sha512",
         "runtime.win.system.console.nuspec",
         "runtimes/win/lib/net/_._",
         "runtimes/win/lib/netcore50/System.Console.dll",
@@ -10017,19 +10011,18 @@
         "runtimes/win/lib/netstandard1.5/System.Runtime.Extensions.dll"
       ]
     },
-    "runtime.win7-x86.runtime.native.System.IO.Compression/4.3.2": {
-      "sha512": "E18Sg1VFmHKaBk6i0hOxOtgTlMbpimkIFWC7yLwV7OYmQk9pra/Yz5B0J+RvjfvdUxaBJyfRcM6H/R2r3E7kig==",
+    "runtime.win7-x86.runtime.native.System.IO.Compression/4.3.0": {
+      "sha512": "99pM1ZhX7dPNnr/dOxuAxnVl/2XNWRh1WAUfesV3ZKwbR6mnEzpfbz2GX69zrpGvKbEytsjMKCD+auvvH6f7kA==",
       "type": "package",
-      "path": "runtime.win7-x86.runtime.native.system.io.compression/4.3.2",
+      "path": "runtime.win7-x86.runtime.native.system.io.compression/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.win7-x86.runtime.native.system.io.compression.4.3.2.nupkg.sha512",
+        "runtime.win7-x86.runtime.native.system.io.compression.4.3.0.nupkg.sha512",
         "runtime.win7-x86.runtime.native.system.io.compression.nuspec",
-        "runtimes/win7-x86/native/clrcompression.dll",
-        "runtimes/win7-x86/nativeassets/netcore50/clrcompression.dll"
+        "runtimes/win7-x86/native/clrcompression.dll"
       ]
     },
     "runtime.win7.System.Private.Uri/4.3.0": {
@@ -11842,10 +11835,10 @@
         "system.resources.resourcemanager.nuspec"
       ]
     },
-    "System.Runtime/4.3.1": {
-      "sha512": "abhfv1dTK6NXOmu4bgHIONxHyEqFjW8HwXPmpY9gmll+ix9UNo4XDcmzJn6oLooftxNssVHdJC1pGT9jkSynQg==",
+    "System.Runtime/4.3.0": {
+      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
       "type": "package",
-      "path": "system.runtime/4.3.1",
+      "path": "system.runtime/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11930,7 +11923,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.runtime.4.3.1.nupkg.sha512",
+        "system.runtime.4.3.0.nupkg.sha512",
         "system.runtime.nuspec"
       ]
     },
@@ -13479,18 +13472,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sam\\.nuget\\packages\\": {},
+    "C:\\Users\\fcea31\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.DataFileParsers.Benchmarks\\UltraMapper.DataFileParsers.Benchmarks.csproj",
+      "projectUniqueName": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.DataFileParsers.Benchmarks\\UltraMapper.DataFileParsers.Benchmarks.csproj",
       "projectName": "UltraMapper.DataFileParsers.Benchmarks",
-      "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.DataFileParsers.Benchmarks\\UltraMapper.DataFileParsers.Benchmarks.csproj",
-      "packagesPath": "C:\\Users\\Sam\\.nuget\\packages\\",
-      "outputPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.DataFileParsers.Benchmarks\\obj\\",
+      "projectPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.DataFileParsers.Benchmarks\\UltraMapper.DataFileParsers.Benchmarks.csproj",
+      "packagesPath": "C:\\Users\\fcea31\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.DataFileParsers.Benchmarks\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -13498,7 +13491,7 @@
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fcea31\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -13508,6 +13501,7 @@
         "net60"
       ],
       "sources": {
+        "C:\\ALLITUDE_LAVORO\\PROGETTI\\BinComuni": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -13515,24 +13509,24 @@
         "net5.0": {
           "targetAlias": "net50",
           "projectReferences": {
-            "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
-              "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
+            "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
+              "projectPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
             }
           }
         },
         "net6.0": {
           "targetAlias": "net60",
           "projectReferences": {
-            "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
-              "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
+            "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
+              "projectPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
             }
           }
         },
         "net47": {
           "targetAlias": "net47",
           "projectReferences": {
-            "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
-              "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
+            "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj": {
+              "projectPath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj"
             }
           }
         }
@@ -13575,7 +13569,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       },
       "net6.0": {
         "targetAlias": "net60",
@@ -13608,7 +13602,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       },
       "net47": {
         "targetAlias": "net47",
@@ -13626,7 +13620,7 @@
             "version": "[3.5.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

@@ -24,7 +24,7 @@ namespace UltraMapper.Csv
 
         static CsvParser()
         {
-            Mapper.Config.Mappers.AddBefore<ReferenceMapper>( new CsvRecordToObjectMapper( Mapper.Config ) );
+            Mapper.Config.Mappers.AddBefore<ReferenceMapper>( new CsvRecordToObjectMapper() );
         }
 
         internal CsvParser( TextReader reader, string delimiter,

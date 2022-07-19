@@ -22,7 +22,7 @@ namespace UltraMapper.Csv
 
         static FixedWidthParser()
         {
-            Mapper.Config.Mappers.AddBefore<ReferenceMapper>( new FixedWidthRecordToObjectMapper( Mapper.Config ) );
+            Mapper.Config.Mappers.AddBefore<ReferenceMapper>( new FixedWidthRecordToObjectMapper() );
         }
 
         internal FixedWidthParser( TextReader reader,
