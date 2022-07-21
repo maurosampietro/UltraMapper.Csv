@@ -19,7 +19,6 @@ C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Release\net
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Release\net47\UltraMapper.Csv.Tests.pdb
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Release\net47\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Release\net47\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
-C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Release\net47\System.Runtime.dll
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Release\net47\UltraMapper.Csv.dll
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Release\net47\UltraMapper.dll
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Release\net47\UltraMapper.Csv.pdb

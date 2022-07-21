@@ -13,9 +13,6 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
 {
     internal class ObjectToFixedWidthRecordMapper : ReferenceMapper
     {
-        public ObjectToFixedWidthRecordMapper( Configuration mappingConfiguration )
-            : base( mappingConfiguration ) { }
-
         public override bool CanHandle( Mapping mapping )
         {
             var source = mapping.Source.EntryType;
@@ -62,7 +59,7 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
                 if( item.PropertyType.IsBuiltIn( true ) )
                 {
                     var memberAccess = Expression.Property( context.SourceInstance, item );
-                    LambdaExpression toStringExp = MapperConfiguration[ item.PropertyType, typeof( string ) ].MappingExpression;
+                    LambdaExpression toStringExp = context.MapperConfiguration[ item.PropertyType, typeof( string ) ].MappingExpression;
 
                     var memberOptions = FieldConfiguration.Get<FixedWidthFieldWriteOptionsAttribute>( context.SourceInstance.Type ).FieldOptions[ item ];
 

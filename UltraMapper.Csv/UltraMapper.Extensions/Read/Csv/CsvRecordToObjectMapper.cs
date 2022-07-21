@@ -22,9 +22,6 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
             new DateFormatPreprocess()
         };
 
-        public CsvRecordToObjectMapper( Configuration mappingConfiguration )
-            : base( mappingConfiguration ) { }
-
         public override bool CanHandle( Mapping mapping )
         {
             var source = mapping.Source.EntryType;
@@ -39,7 +36,7 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
             var target = mapping.Target.EntryType;
 
             var context = this.GetMapperContext( mapping );
-            var targetMembers = this.SelectTargetMembers( target )
+            var targetMembers = this.SelectTargetMembers( context, target )
                 .OfType<PropertyInfo>().ToArray();
 
             var dataArray = Expression.Property( context.SourceInstance, nameof( CsvRecordReadObject.Data ) );
@@ -82,11 +79,11 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
 
                 foreach( var item in _preprocessOptions )
                 {
-                    if( item.CanExecute( _mapper, context, targetMember, inOptions ) )
-                        arrayAccess = item.Execute( _mapper, context, targetMember, inOptions, arrayAccess );
+                    if( item.CanExecute( context.MapperInstance, context, targetMember, inOptions ) )
+                        arrayAccess = item.Execute( context.MapperInstance, context, targetMember, inOptions, arrayAccess );
                 }
 
-                var mappingExpression = MapperConfiguration[ typeof( string ),
+                var mappingExpression = context.MapperConfiguration[ typeof( string ),
                     targetMember.PropertyType ].MappingExpression;
 
                 var expression = mappingExpression.Body;
@@ -105,7 +102,7 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
                     var stringNullOrWhiteSpaceMethod = typeof( string ).GetMethod( nameof( String.IsNullOrWhiteSpace ) );
                     var stringNullOrWhiteSpaceExp = Expression.Call( null, stringNullOrWhiteSpaceMethod, arrayAccess );
 
-                    var convertExp = _mapper.Config[ typeof( string ), targetMember.PropertyType ].MappingExpression;
+                    var convertExp = context.MapperConfiguration[ typeof( string ), targetMember.PropertyType ].MappingExpression;
 
                     assignment = Expression.IfThenElse
                     (
@@ -145,10 +142,10 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
             }
         }
 
-        protected IEnumerable<MemberInfo> SelectTargetMembers( Type targetType )
+        protected IEnumerable<MemberInfo> SelectTargetMembers( ReferenceMapperContext context, Type targetType )
         {
-            var targetMemberProvider = _mapper.Config.Conventions
-              .OfType<DefaultConvention>().Single().SourceMemberProvider;
+            var targetMemberProvider = context.MapperInstance.Config.Conventions
+                .OfType<DefaultConvention>().Single().SourceMemberProvider;
 
             return targetMemberProvider.GetMembers( targetType )
                 .Select( ( m, index ) => new

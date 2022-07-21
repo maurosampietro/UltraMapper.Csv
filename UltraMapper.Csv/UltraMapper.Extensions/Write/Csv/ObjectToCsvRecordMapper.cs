@@ -12,9 +12,6 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
 {
     internal class ObjectToCsvRecordMapper : ReferenceMapper
     {
-        public ObjectToCsvRecordMapper( Configuration mappingConfiguration )
-            : base( mappingConfiguration ) { }
-
         public override bool CanHandle( Mapping mapping )
         {
             var source = mapping.Source.EntryType;
@@ -29,7 +26,8 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
             var target = mapping.Target.EntryType;
 
             var context = this.GetMapperContext( mapping );
-            var sourceMembers = this.SelectSourceMembers( source ).OfType<PropertyInfo>().ToArray();
+            var sourceMembers = this.SelectSourceMembers( context, source )
+                .OfType<PropertyInfo>().ToArray();
 
             var expressions = GetTargetStrings( sourceMembers, context );
             var expression = Expression.Block( expressions );
@@ -61,7 +59,7 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
                 if( item.PropertyType.IsBuiltIn( true ) )
                 {
                     var memberAccess = Expression.Property( context.SourceInstance, item );
-                    LambdaExpression toStringExp = MapperConfiguration[ item.PropertyType, typeof( string ) ].MappingExpression;
+                    LambdaExpression toStringExp = context.MapperConfiguration[ item.PropertyType, typeof( string ) ].MappingExpression;
 
                     yield return Expression.Invoke( _appendText, context.TargetInstance,
                         Expression.Invoke( toStringExp, memberAccess ),
@@ -70,9 +68,9 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Write
             }
         }
 
-        protected MemberInfo[] SelectSourceMembers( Type sourceType )
+        protected MemberInfo[] SelectSourceMembers( ReferenceMapperContext context, Type sourceType )
         {
-            var sourceMemberProvider = _mapper.Config.Conventions
+            var sourceMemberProvider = context.MapperInstance.Config.Conventions
               .OfType<DefaultConvention>().Single().SourceMemberProvider;
 
             return sourceMemberProvider.GetMembers( sourceType )

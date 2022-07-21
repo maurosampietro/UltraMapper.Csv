@@ -13,9 +13,6 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.FixedWidth
 {
     internal class FixedWidthRecordToObjectMapper : ReferenceMapper
     {
-        public FixedWidthRecordToObjectMapper( Configuration mappingConfiguration )
-            : base( mappingConfiguration ) { }
-
         public override bool CanHandle( Mapping mapping )
         {
             var source = mapping.Source.EntryType;
@@ -30,7 +27,7 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.FixedWidth
             var target = mapping.Target.EntryType;
 
             var context = this.GetMapperContext( mapping );
-            var targetMembers = this.SelectTargetMembers( target )
+            var targetMembers = this.SelectTargetMembers( context, target )
                 .OfType<PropertyInfo>().ToArray();
 
             var dataArray = Expression.Property( context.SourceInstance, nameof( FixedWidthRecordReadObject.Data ) );
@@ -85,7 +82,7 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.FixedWidth
                         trimMethod, Expression.Constant( new[] { inOptions.TrimChar } ) );
                 }
 
-                var mappingExpression = MapperConfiguration[ typeof( string ),
+                var mappingExpression = context.MapperConfiguration[ typeof( string ),
                     targetMember.PropertyType ].MappingExpression;
 
                 string paramNameToReplace = mappingExpression.Parameters
@@ -123,9 +120,9 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.FixedWidth
             }
         }
 
-        protected IEnumerable<MemberInfo> SelectTargetMembers( Type targetType )
+        protected IEnumerable<MemberInfo> SelectTargetMembers( ReferenceMapperContext context, Type targetType )
         {
-            var targetMemberProvider = _mapper.Config.Conventions
+            var targetMemberProvider = context.MapperInstance.Config.Conventions
               .OfType<DefaultConvention>().Single().SourceMemberProvider;
 
             return targetMemberProvider.GetMembers( targetType )
