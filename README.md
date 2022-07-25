@@ -8,7 +8,6 @@ UltraMapper makes it easy to write a performant parser of any kind, from scratch
 
 Every parser performs two basic tasks: the actual text analysis and a mapping step.
 
-UltraMapper and UltraMapper.Parsing allows you to completely separate the two steps leading to clear and straightforward code.
-You are only in charge of implementing the text-analysis part
+UltraMapper allows you to completely separate the two steps leading to clear and straightforward code.
 
 **Even though much more than just basic funcionality has already been implemented; UltrMapper.Csv won't be officially released until UltraMapper major refactor will be completed. While in beta, Nuget packages and builds won't be available.**
