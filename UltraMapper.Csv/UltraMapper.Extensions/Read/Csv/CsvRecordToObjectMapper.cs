@@ -25,14 +25,11 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
         public override bool CanHandle( Mapping mapping )
         {
             var source = mapping.Source.EntryType;
-            var target = mapping.Target.EntryType;
-
             return source == typeof( CsvRecordReadObject );
         }
 
         public override LambdaExpression GetMappingExpression( Mapping mapping )
         {
-            var source = mapping.Source.EntryType;
             var target = mapping.Target.EntryType;
 
             var context = this.GetMapperContext( mapping );
@@ -62,29 +59,28 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
                 context.ReferenceTracker, context.SourceInstance, context.TargetInstance );
         }
 
-        private readonly Expression<Func<string, string, string, string, string>> _getErrorExp =
-            ( error, fieldErrorValue, memberName, memberType ) => String.Format( error, fieldErrorValue, memberName, memberType );
-
         protected IEnumerable<Expression> GetAssignments( PropertyInfo[] targets, Expression dataArray, ReferenceMapperContext context )
         {
-            string errorMsg = "Value '{0}' not assignable to param '{1}' of type {2}";
+            var typeMapping = context.MapperConfiguration[ typeof( string[] ), context.TargetInstance.Type ];
 
             for( int i = 0; i < targets.Length; i++ )
             {
                 var targetMember = targets[ i ];
-                var inOptions = targetMember.GetCustomAttribute<CsvFieldOptionsAttribute>();
 
+                var mappingSource = new MappingSource( typeof( string ) );
+                var mappingTarget = new MappingTarget( targetMember );
+
+                var memberMapping = typeMapping.AddMemberToMemberMapping( mappingSource, mappingTarget );
+                var mappingExpression = memberMapping.MappingExpression;
 
                 var arrayAccess = (Expression)Expression.ArrayAccess( dataArray, Expression.Constant( i ) );
 
+                var inOptions = targetMember.GetCustomAttribute<CsvFieldOptionsAttribute>();
                 foreach( var item in _preprocessOptions )
                 {
                     if( item.CanExecute( context.MapperInstance, context, targetMember, inOptions ) )
                         arrayAccess = item.Execute( context.MapperInstance, context, targetMember, inOptions, arrayAccess );
                 }
-
-                var mappingExpression = context.MapperConfiguration[ typeof( string ),
-                    targetMember.PropertyType ].MappingExpression;
 
                 var expression = mappingExpression.Body;
 
@@ -116,29 +112,7 @@ namespace UltraMapper.Csv.UltraMapper.Extensions.Read.Csv
                     );
                 }
 
-                var exceptionParam = Expression.Parameter( typeof( Exception ), "exception" );
-                var ctor = typeof( ArgumentException )
-                    .GetConstructor( new Type[] { typeof( string ), typeof( Exception ) } );
-
-                var getErrorMsg = Expression.Invoke
-                (
-                    _getErrorExp,
-                    Expression.Constant( errorMsg ),
-                    arrayAccess,
-                    Expression.Constant( targetMember.Name ),
-                    Expression.Constant( targetMember.PropertyType.Name )
-                );
-
-                yield return Expression.TryCatch
-                (
-                    Expression.Block( typeof( void ), assignment ),
-
-                    Expression.Catch( exceptionParam, Expression.Throw
-                    (
-                        Expression.New( ctor, getErrorMsg, exceptionParam ),
-                        typeof( void )
-                    ) )
-                );
+                yield return assignment;
             }
         }
 

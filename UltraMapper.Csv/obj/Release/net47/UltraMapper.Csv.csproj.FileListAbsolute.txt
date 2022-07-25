@@ -12,7 +12,6 @@ C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net47\Ult
 C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net47\UltraMapper.Csv.pdb
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net47\UltraMapper.Csv.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net47\UltraMapper.Csv.pdb
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net47\System.Runtime.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net47\UltraMapper.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net47\UltraMapper.pdb
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net47\UltraMapper.Csv.csproj.AssemblyReference.cache

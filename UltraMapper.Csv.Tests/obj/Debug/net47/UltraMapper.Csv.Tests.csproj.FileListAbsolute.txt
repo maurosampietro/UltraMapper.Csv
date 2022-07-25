@@ -46,7 +46,6 @@ E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.C
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\net47\UltraMapper.Csv.Tests.pdb
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\net47\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\net47\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\net47\System.Runtime.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\net47\UltraMapper.Csv.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\net47\UltraMapper.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv.Tests\bin\Debug\net47\UltraMapper.Csv.pdb

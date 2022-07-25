@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wo55/POdLJKOJjcKDdi60oDCd6c0rKnSd8EvG9PMsYlRRLYEZxx3Q9hLE6+cJvGaLEHaLAAy5he4Bwf7tZxOQw==",
+  "dgSpecHash": "EimnkRPkDgo8TShVOW1TPrf3+xnZlaHy+12H1VEF5L0vFIU/xltI3y/Lb5sVOlQcfeJs8B5TLZHZy/R0EmXM4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fcea31\\Desktop\\um\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj",
+  "projectFilePath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Csv\\UltraMapper.Csv\\UltraMapper.Csv.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\fcea31\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\fcea31\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Sam\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
