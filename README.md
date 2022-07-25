@@ -12,4 +12,5 @@ UltraMapper and UltraMapper.Parsing allows you to completely separate the two st
 You are only in charge of implementing the text-analysis part
 
 **Even though much more than just basic funcionality has already been implemented; this repository is still considered a beta.**
+
 **While in beta, Nuget packages and builds won't be available.
