@@ -2,7 +2,7 @@
 
 UltraMapper.Csv is a full-fledged parser for CSV, FIXEDWIDTH and other data file-formats.
 
-#About UltraMapper-based parsers
+# About UltraMapper-based parsers
 
 UltraMapper makes it easy to write a performant, full-fledged parser of any kind, from scratch and in little time.
 
