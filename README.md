@@ -1,15 +1,13 @@
 # UltraMapper.Csv
 
-Whenever you need to transform text in a strong-typed object 2 steps are involved:
-- text analysis (the actual parsing)
-- mapping step 
-  
-With the help of UltraMapper, it is possible to decouple those 2 steps,
-delegating the mapping stage completely to UltraMapper and obtaining excellent performance.
+UltraMapper.Csv is a full-fledged parser for CSV, FIXEDWIDTH and other data file-formats.
 
-Check out the other parsers using UltraMapper for the mapping stage:
+# About UltraMapper-based parsers
 
-UltraMapper.CommandLine
-UltraMapper.Json
+UltraMapper makes it easy to write a performant parser of any kind, from scratch and in little time.
 
+Every parser performs two basic tasks: the actual text analysis and a mapping step.
 
+UltraMapper allows you to completely separate the two steps leading to clear and straightforward code.
+
+**Even though much more than just basic funcionality has already been implemented; UltrMapper.Csv won't be officially released until UltraMapper major refactor will be completed. While in beta, Nuget packages and builds won't be available.**
