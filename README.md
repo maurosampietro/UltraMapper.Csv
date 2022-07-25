@@ -1,14 +1,14 @@
 # UltraMapper.Csv
 
 UltraMapper.Csv is a full-fledged parser for CSV, FIXEDWIDTH and other data file-formats.
-The goal of this project is to show how UltraMapper can make it easy to write a performant, full-fledged parser of any kind.
 
+#About UltraMapper-based parsers
 
-
+UltraMapper makes it easy to write a performant, full-fledged parser of any kind, from scratch and in little time.
 
 Every parser performs two basic tasks: the actual text analysis and a mapping step.
-UltraMapper and UltraMapper.Parsing allows you to completely separate the two steps, leading to clear and straightforward code.
 
-Even though much more than just basic funcionality has already been implemented; this repository is still considered a beta:
-UltraMapper.Csv and UltraMapper.Json and UltraMapper.CommandLine are the 3 main projects driving the need of new features of, and an easier way to integrate with UltraMapper 
+UltraMapper and UltraMapper.Parsing allows you to completely separate the two steps leading to clear and straightforward code.
+You are only in charge of implementing the text-analysis part
 
+Even though much more than just basic funcionality has already been implemented; this repository is still considered a beta.
