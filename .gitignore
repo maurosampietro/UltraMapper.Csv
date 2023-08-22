@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/UltraMapper.Csv/obj/Debug/net60/UltraMapper.Csv.assets.cache
+/UltraMapper.Csv/obj/Debug/net60/UltraMapper.Csv.csproj.AssemblyReference.cache
+/UltraMapper.Csv/obj/Release/net60/UltraMapper.Csv.csproj.AssemblyReference.cache
+/UltraMapper.Csv.Tests/obj/Debug/net60/UltraMapper.Csv.Tests.assets.cache
+/UltraMapper.Csv.Tests/obj/Debug/net60/UltraMapper.Csv.Tests.csproj.AssemblyReference.cache
+/UltraMapper.Csv.Tests/obj/Release/net60/UltraMapper.Csv.Tests.csproj.AssemblyReference.cache
