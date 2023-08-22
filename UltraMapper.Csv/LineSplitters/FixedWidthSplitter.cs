@@ -12,6 +12,9 @@ namespace UltraMapper.Csv
 
         public FixedWidthLineSplitter( int[] fieldWidths )
         {
+            if( fieldWidths == null || fieldWidths.Length == 0 )
+                throw new ArgumentException( "Field widths not provided or empty" );
+
             _fieldWidths = fieldWidths;
         }
 

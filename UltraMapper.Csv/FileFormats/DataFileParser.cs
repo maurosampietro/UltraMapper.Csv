@@ -12,6 +12,7 @@ using UltraMapper.Csv.Header.HeaderReaders;
 using UltraMapper.Csv.LineReaders;
 using UltraMapper.Csv.LineSplitters;
 using UltraMapper.Csv.UltraMapper.Extensions.Read;
+using UltraMapper.Internals;
 
 namespace UltraMapper.Csv.FileFormats
 {
@@ -23,7 +24,7 @@ namespace UltraMapper.Csv.FileFormats
         protected readonly TReadObject _dataRecord = new TReadObject();
         protected readonly TextReader _reader;
 
-        protected Action<ReferenceTracker, object, object> _mapFunction;
+        protected UltraMapperDelegate _mapFunction;
 
         protected readonly IHeaderReader _headerReader;
         protected readonly IFooterReader _footerReader;

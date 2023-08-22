@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.IO;
 using System.Linq;
 using UltraMapper.Csv.Config.FieldOptions;
@@ -67,15 +68,16 @@ namespace UltraMapper.Csv.Tests
         {
             string fileLocation = Resources.GetFileLocation( "FixedWidth.dat" );
 
-            var reader = FixedWidthParser<FixedWidthRecordNoLengths>.GetInstance( fileLocation, cfg =>
+            Assert.ThrowsException<ArgumentException>( () =>
             {
-                cfg.HasHeader = true;
-                cfg.HasFooter = true;
-            } );
+                var reader = FixedWidthParser<FixedWidthRecordNoLengths>.GetInstance( fileLocation, cfg =>
+                {
+                    cfg.HasHeader = true;
+                    cfg.HasFooter = true;
+                } );
 
-            //Assert.ThrowsException<Exception>( () =>
-            reader.GetRecords().ToList();
-            //);
+                reader.GetRecords().ToList();
+            } );
         }
 
         [TestMethod]

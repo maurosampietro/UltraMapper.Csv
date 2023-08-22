@@ -1,7 +1,0 @@
-// Validating benchmarks:
-// ***** BenchmarkRunner: Start   *****
-// ***** Found 10 benchmark(s) in total *****
-// ***** Building 1 exe(s) in Parallel: Start   *****
-// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\664e52e2-e613-4d3f-9eab-d22fab87dc77
-// command took 7,46s and exited with 0
-// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\fcea31\Desktop\um\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net50\664e52e2-e613-4d3f-9eab-d22fab87dc77

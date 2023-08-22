@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UltraMapper.Conventions;
 using UltraMapper.Csv.UltraMapper.Extensions.Write;
+using UltraMapper.Internals;
 
 namespace UltraMapper.Csv.FileFormats
 {
@@ -11,7 +12,7 @@ namespace UltraMapper.Csv.FileFormats
     {
         protected readonly TextWriter _writer;
         protected readonly TWriteObject _writingObject;
-        private Action<ReferenceTracker, object, object> _mapFunction;
+        private UltraMapperDelegate _mapFunction;
 
         public DataFileWriter( TextWriter writer )
         {

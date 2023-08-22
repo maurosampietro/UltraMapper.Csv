@@ -17,7 +17,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.M
             {
                 Delimiter = "~DELIMITER~",
                 HasHeaderRecord = true,
-                LeaveOpen = true,
+                //LeaveOpen = true,
                 HeaderValidated = null,
                 MissingFieldFound = null
             };

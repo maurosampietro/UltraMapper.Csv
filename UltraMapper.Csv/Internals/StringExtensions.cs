@@ -65,9 +65,9 @@ namespace UltraMapper.Csv.Internals
             int startIndex = 0;
             bool quote = false;
 
-            for( int i = 0; i < str.Length; i++ )
+            for( int i = 0; i < strSpan.Length; i++ )
             {
-                if( !quote && str[ i ] == delimiter )
+                if( !quote && strSpan[ i ] == delimiter )
                 {
                     chunks.Add( strSpan[ startIndex..i ].ToString() );
                     startIndex = i + 1;
@@ -80,6 +80,9 @@ namespace UltraMapper.Csv.Internals
 
             if( startIndex < str.Length )
                 chunks.Add( strSpan[ startIndex..str.Length ].ToString() );
+
+            if( strSpan[ str.Length - 1 ] == delimiter )
+                chunks.Add( String.Empty );
 
             return chunks;
         }
