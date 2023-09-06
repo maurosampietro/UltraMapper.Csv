@@ -1,0 +1,14 @@
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net48\UltraMapper.Csv.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net48\UltraMapper.Csv.pdb
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net48\UltraMapper.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net48\UltraMapper.Parsing.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net48\UltraMapper.Parsing.pdb
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net48\UltraMapper.pdb
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net48\UltraMapper.Csv.csproj.AssemblyReference.cache
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net48\UltraMapper.Csv.GeneratedMSBuildEditorConfig.editorconfig
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net48\UltraMapper.Csv.AssemblyInfoInputs.cache
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net48\UltraMapper.Csv.AssemblyInfo.cs
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net48\UltraMapper.Csv.csproj.CoreCompileInputs.cache
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net48\UltraMapper.Csv.csproj.CopyComplete
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net48\UltraMapper.Csv.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net48\UltraMapper.Csv.pdb

@@ -104,6 +104,8 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
+          "net48",
+          "net50",
           "net60"
         ],
         "sources": {
@@ -112,8 +114,30 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
+          "net5.0": {
+            "targetAlias": "net50",
+            "projectReferences": {
+              "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Parsing\\UltraMapper.Parsing\\UltraMapper.Parsing.csproj": {
+                "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Parsing\\UltraMapper.Parsing\\UltraMapper.Parsing.csproj"
+              },
+              "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper\\UltraMapper\\UltraMapper.csproj": {
+                "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper\\UltraMapper\\UltraMapper.csproj"
+              }
+            }
+          },
           "net6.0": {
             "targetAlias": "net60",
+            "projectReferences": {
+              "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Parsing\\UltraMapper.Parsing\\UltraMapper.Parsing.csproj": {
+                "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Parsing\\UltraMapper.Parsing\\UltraMapper.Parsing.csproj"
+              },
+              "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper\\UltraMapper\\UltraMapper.csproj": {
+                "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper\\UltraMapper\\UltraMapper.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
             "projectReferences": {
               "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Parsing\\UltraMapper.Parsing\\UltraMapper.Parsing.csproj": {
                 "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Parsing\\UltraMapper.Parsing\\UltraMapper.Parsing.csproj"
@@ -131,6 +155,26 @@
         }
       },
       "frameworks": {
+        "net5.0": {
+          "targetAlias": "net50",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        },
         "net6.0": {
           "targetAlias": "net60",
           "imports": [
@@ -149,6 +193,10 @@
               "privateAssets": "all"
             }
           },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
@@ -173,6 +221,8 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
+          "net48",
+          "net50",
           "net60"
         ],
         "sources": {
@@ -181,8 +231,24 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
+          "net5.0": {
+            "targetAlias": "net50",
+            "projectReferences": {
+              "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper\\UltraMapper\\UltraMapper.csproj": {
+                "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper\\UltraMapper\\UltraMapper.csproj"
+              }
+            }
+          },
           "net6.0": {
             "targetAlias": "net60",
+            "projectReferences": {
+              "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper\\UltraMapper\\UltraMapper.csproj": {
+                "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper\\UltraMapper\\UltraMapper.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
             "projectReferences": {
               "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper\\UltraMapper\\UltraMapper.csproj": {
                 "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper\\UltraMapper\\UltraMapper.csproj"
@@ -197,6 +263,26 @@
         }
       },
       "frameworks": {
+        "net5.0": {
+          "targetAlias": "net50",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        },
         "net6.0": {
           "targetAlias": "net60",
           "imports": [
@@ -215,6 +301,10 @@
               "privateAssets": "all"
             }
           },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
@@ -239,6 +329,8 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
+          "net48",
+          "net50",
           "net60"
         ],
         "sources": {
@@ -247,8 +339,16 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
+          "net5.0": {
+            "targetAlias": "net50",
+            "projectReferences": {}
+          },
           "net6.0": {
             "targetAlias": "net60",
+            "projectReferences": {}
+          },
+          "net48": {
+            "targetAlias": "net48",
             "projectReferences": {}
           }
         },
@@ -259,6 +359,26 @@
         }
       },
       "frameworks": {
+        "net5.0": {
+          "targetAlias": "net50",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        },
         "net6.0": {
           "targetAlias": "net60",
           "imports": [
@@ -277,6 +397,10 @@
               "privateAssets": "all"
             }
           },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
