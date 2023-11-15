@@ -1,0 +1,17 @@
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net70\UltraMapper.Csv.deps.json
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net70\UltraMapper.Csv.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net70\UltraMapper.Csv.pdb
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net70\UltraMapper.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net70\UltraMapper.Parsing.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net70\UltraMapper.Parsing.pdb
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\bin\Release\net70\UltraMapper.pdb
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net70\UltraMapper.Csv.csproj.AssemblyReference.cache
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net70\UltraMapper.Csv.GeneratedMSBuildEditorConfig.editorconfig
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net70\UltraMapper.Csv.AssemblyInfoInputs.cache
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net70\UltraMapper.Csv.AssemblyInfo.cs
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net70\UltraMapper.Csv.csproj.CoreCompileInputs.cache
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net70\UltraMapper.Csv.csproj.CopyComplete
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net70\UltraMapper.Csv.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net70\refint\UltraMapper.Csv.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net70\UltraMapper.Csv.pdb
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\obj\Release\net70\ref\UltraMapper.Csv.dll

@@ -1,0 +1,1296 @@
+// Validating benchmarks:
+//    * No exporters defined, results will not be persisted.
+
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 50 benchmark(s) in total *****
+// ***** Building 7 exe(s) in Parallel: Start   *****
+// ***** Done, took 00:00:11 (11.74 sec)   *****
+// ***** Failed to build in Parallel, switching to sequential build   *****
+// ***** Done, took 00:00:02 (2.65 sec)   *****
+// Found 20 benchmarks:
+//   SalesBenchmarkRead.BaseLine: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+//   SalesBenchmarkRead.FileHelper: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+//   SalesBenchmarkRead.CsvHelper: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+//   SalesBenchmarkRead.UltraMapper: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+//   SalesBenchmarkRead.BaseLine: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmarkRead.FileHelper: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmarkRead.CsvHelper: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmarkRead.UltraMapper: .NET 5.0(Runtime=.NET 5.0)
+//   SalesBenchmarkRead.BaseLine: .NET 6.0(Runtime=.NET 6.0)
+//   SalesBenchmarkRead.FileHelper: .NET 6.0(Runtime=.NET 6.0)
+//   SalesBenchmarkRead.CsvHelper: .NET 6.0(Runtime=.NET 6.0)
+//   SalesBenchmarkRead.UltraMapper: .NET 6.0(Runtime=.NET 6.0)
+//   SalesBenchmarkRead.BaseLine: .NET 7.0(Runtime=.NET 7.0)
+//   SalesBenchmarkRead.FileHelper: .NET 7.0(Runtime=.NET 7.0)
+//   SalesBenchmarkRead.CsvHelper: .NET 7.0(Runtime=.NET 7.0)
+//   SalesBenchmarkRead.UltraMapper: .NET 7.0(Runtime=.NET 7.0)
+//   SalesBenchmarkRead.BaseLine: .NET Framework 4.8(Runtime=.NET Framework 4.8)
+//   SalesBenchmarkRead.FileHelper: .NET Framework 4.8(Runtime=.NET Framework 4.8)
+//   SalesBenchmarkRead.CsvHelper: .NET Framework 4.8(Runtime=.NET Framework 4.8)
+//   SalesBenchmarkRead.UltraMapper: .NET Framework 4.8(Runtime=.NET Framework 4.8)
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: SalesBenchmarkRead.BaseLine: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+// *** Execute ***
+// Launch: 1 / 1
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.8
+// Runtime=.NET 6.0.16 (6.0.1623.17311), X64 RyuJIT AVX2 DEBUG [AttachedDebugger]
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+
+OverheadJitting  1: 1 op, 116800.00 ns, 116.8000 us/op
+WorkloadJitting  1: 1 op, 3223581900.00 ns, 3.2236 s/op
+
+OverheadJitting  2: 1 op, 1000.00 ns, 1.0000 us/op
+WorkloadJitting  2: 1 op, 3247722500.00 ns, 3.2477 s/op
+
+WorkloadWarmup   1: 1 op, 3220286400.00 ns, 3.2203 s/op
+WorkloadWarmup   2: 1 op, 3225335400.00 ns, 3.2253 s/op
+WorkloadWarmup   3: 1 op, 3240085200.00 ns, 3.2401 s/op
+WorkloadWarmup   4: 1 op, 3487898000.00 ns, 3.4879 s/op
+WorkloadWarmup   5: 1 op, 3216708600.00 ns, 3.2167 s/op
+WorkloadWarmup   6: 1 op, 3192550900.00 ns, 3.1926 s/op
+WorkloadWarmup   7: 1 op, 3204141500.00 ns, 3.2041 s/op
+WorkloadWarmup   8: 1 op, 3184734800.00 ns, 3.1847 s/op
+
+WorkloadActual   1: 1 op, 3304972900.00 ns, 3.3050 s/op
+WorkloadActual   2: 1 op, 3258859100.00 ns, 3.2589 s/op
+WorkloadActual   3: 1 op, 3229189900.00 ns, 3.2292 s/op
+WorkloadActual   4: 1 op, 3219970900.00 ns, 3.2200 s/op
+WorkloadActual   5: 1 op, 3203066900.00 ns, 3.2031 s/op
+WorkloadActual   6: 1 op, 3216617500.00 ns, 3.2166 s/op
+WorkloadActual   7: 1 op, 3193990400.00 ns, 3.1940 s/op
+WorkloadActual   8: 1 op, 3213785100.00 ns, 3.2138 s/op
+WorkloadActual   9: 1 op, 3225435400.00 ns, 3.2254 s/op
+WorkloadActual  10: 1 op, 3223226500.00 ns, 3.2232 s/op
+WorkloadActual  11: 1 op, 3331679500.00 ns, 3.3317 s/op
+WorkloadActual  12: 1 op, 3701405600.00 ns, 3.7014 s/op
+WorkloadActual  13: 1 op, 3337558000.00 ns, 3.3376 s/op
+WorkloadActual  14: 1 op, 3305485200.00 ns, 3.3055 s/op
+WorkloadActual  15: 1 op, 3521766400.00 ns, 3.5218 s/op
+
+WorkloadResult   1: 1 op, 3304972900.00 ns, 3.3050 s/op
+WorkloadResult   2: 1 op, 3258859100.00 ns, 3.2589 s/op
+WorkloadResult   3: 1 op, 3229189900.00 ns, 3.2292 s/op
+WorkloadResult   4: 1 op, 3219970900.00 ns, 3.2200 s/op
+WorkloadResult   5: 1 op, 3203066900.00 ns, 3.2031 s/op
+WorkloadResult   6: 1 op, 3216617500.00 ns, 3.2166 s/op
+WorkloadResult   7: 1 op, 3193990400.00 ns, 3.1940 s/op
+WorkloadResult   8: 1 op, 3213785100.00 ns, 3.2138 s/op
+WorkloadResult   9: 1 op, 3225435400.00 ns, 3.2254 s/op
+WorkloadResult  10: 1 op, 3223226500.00 ns, 3.2232 s/op
+WorkloadResult  11: 1 op, 3331679500.00 ns, 3.3317 s/op
+WorkloadResult  12: 1 op, 3337558000.00 ns, 3.3376 s/op
+WorkloadResult  13: 1 op, 3305485200.00 ns, 3.3055 s/op
+
+
+Mean = 3.251 s, StdErr = 0.014 s (0.43%), N = 13, StdDev = 0.051 s
+Min = 3.194 s, Q1 = 3.217 s, Median = 3.225 s, Q3 = 3.305 s, Max = 3.338 s
+IQR = 0.088 s, LowerFence = 3.084 s, UpperFence = 3.438 s
+ConfidenceInterval = [3.190 s; 3.312 s] (CI 99.9%), Margin = 0.061 s (1.87% of Mean)
+Skewness = 0.6, Kurtosis = 1.59, MValue = 2
+
+// ** Remained 49 (98.0%) benchmark(s) to run. Estimated finish 2023-09-29 22:56 (6h 33m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: SalesBenchmarkRead.FileHelper: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+// *** Execute ***
+// Launch: 1 / 1
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.8
+// Runtime=.NET 6.0.16 (6.0.1623.17311), X64 RyuJIT AVX2 DEBUG [AttachedDebugger]
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+
+OverheadJitting  1: 1 op, 121800.00 ns, 121.8000 us/op
+WorkloadJitting  1: 1 op, 6008827500.00 ns, 6.0088 s/op
+
+OverheadJitting  2: 1 op, 1800.00 ns, 1.8000 us/op
+WorkloadJitting  2: 1 op, 5623093600.00 ns, 5.6231 s/op
+
+WorkloadWarmup   1: 1 op, 5599623500.00 ns, 5.5996 s/op
+WorkloadWarmup   2: 1 op, 5552567200.00 ns, 5.5526 s/op
+WorkloadWarmup   3: 1 op, 5505500900.00 ns, 5.5055 s/op
+WorkloadWarmup   4: 1 op, 5577033900.00 ns, 5.5770 s/op
+WorkloadWarmup   5: 1 op, 5475416000.00 ns, 5.4754 s/op
+WorkloadWarmup   6: 1 op, 5686246400.00 ns, 5.6862 s/op
+WorkloadWarmup   7: 1 op, 5633784300.00 ns, 5.6338 s/op
+
+WorkloadActual   1: 1 op, 5775591400.00 ns, 5.7756 s/op
+WorkloadActual   2: 1 op, 5866959500.00 ns, 5.8670 s/op
+WorkloadActual   3: 1 op, 5869030700.00 ns, 5.8690 s/op
+WorkloadActual   4: 1 op, 5980733700.00 ns, 5.9807 s/op
+WorkloadActual   5: 1 op, 5685288800.00 ns, 5.6853 s/op
+WorkloadActual   6: 1 op, 5901455400.00 ns, 5.9015 s/op
+WorkloadActual   7: 1 op, 5976375700.00 ns, 5.9764 s/op
+WorkloadActual   8: 1 op, 6174707200.00 ns, 6.1747 s/op
+WorkloadActual   9: 1 op, 5759201600.00 ns, 5.7592 s/op
+WorkloadActual  10: 1 op, 5768147800.00 ns, 5.7681 s/op
+WorkloadActual  11: 1 op, 5738936300.00 ns, 5.7389 s/op
+WorkloadActual  12: 1 op, 5760738600.00 ns, 5.7607 s/op
+WorkloadActual  13: 1 op, 5682215600.00 ns, 5.6822 s/op
+WorkloadActual  14: 1 op, 5708091700.00 ns, 5.7081 s/op
+WorkloadActual  15: 1 op, 5720482300.00 ns, 5.7205 s/op
+
+WorkloadResult   1: 1 op, 5775591400.00 ns, 5.7756 s/op
+WorkloadResult   2: 1 op, 5866959500.00 ns, 5.8670 s/op
+WorkloadResult   3: 1 op, 5869030700.00 ns, 5.8690 s/op
+WorkloadResult   4: 1 op, 5980733700.00 ns, 5.9807 s/op
+WorkloadResult   5: 1 op, 5685288800.00 ns, 5.6853 s/op
+WorkloadResult   6: 1 op, 5901455400.00 ns, 5.9015 s/op
+WorkloadResult   7: 1 op, 5976375700.00 ns, 5.9764 s/op
+WorkloadResult   8: 1 op, 5759201600.00 ns, 5.7592 s/op
+WorkloadResult   9: 1 op, 5768147800.00 ns, 5.7681 s/op
+WorkloadResult  10: 1 op, 5738936300.00 ns, 5.7389 s/op
+WorkloadResult  11: 1 op, 5760738600.00 ns, 5.7607 s/op
+WorkloadResult  12: 1 op, 5682215600.00 ns, 5.6822 s/op
+WorkloadResult  13: 1 op, 5708091700.00 ns, 5.7081 s/op
+WorkloadResult  14: 1 op, 5720482300.00 ns, 5.7205 s/op
+
+
+Mean = 5.800 s, StdErr = 0.027 s (0.47%), N = 14, StdDev = 0.101 s
+Min = 5.682 s, Q1 = 5.725 s, Median = 5.764 s, Q3 = 5.869 s, Max = 5.981 s
+IQR = 0.143 s, LowerFence = 5.510 s, UpperFence = 6.084 s
+ConfidenceInterval = [5.685 s; 5.914 s] (CI 99.9%), Margin = 0.114 s (1.97% of Mean)
+Skewness = 0.58, Kurtosis = 1.82, MValue = 2
+
+// ** Remained 48 (96.0%) benchmark(s) to run. Estimated finish 2023-09-29 20:33 (4h 8m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: SalesBenchmarkRead.CsvHelper: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+// *** Execute ***
+// Launch: 1 / 1
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.8
+// Runtime=.NET 6.0.16 (6.0.1623.17311), X64 RyuJIT AVX2 DEBUG [AttachedDebugger]
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+
+OverheadJitting  1: 1 op, 142900.00 ns, 142.9000 us/op
+WorkloadJitting  1: 1 op, 7017785000.00 ns, 7.0178 s/op
+
+OverheadJitting  2: 1 op, 1100.00 ns, 1.1000 us/op
+WorkloadJitting  2: 1 op, 6856178600.00 ns, 6.8562 s/op
+
+WorkloadWarmup   1: 1 op, 6767816000.00 ns, 6.7678 s/op
+WorkloadWarmup   2: 1 op, 6899486400.00 ns, 6.8995 s/op
+WorkloadWarmup   3: 1 op, 6877968900.00 ns, 6.8780 s/op
+WorkloadWarmup   4: 1 op, 6930189500.00 ns, 6.9302 s/op
+WorkloadWarmup   5: 1 op, 6863173900.00 ns, 6.8632 s/op
+WorkloadWarmup   6: 1 op, 6854441500.00 ns, 6.8544 s/op
+
+WorkloadActual   1: 1 op, 7134216900.00 ns, 7.1342 s/op
+WorkloadActual   2: 1 op, 7116264400.00 ns, 7.1163 s/op
+WorkloadActual   3: 1 op, 6966537700.00 ns, 6.9665 s/op
+WorkloadActual   4: 1 op, 6850222300.00 ns, 6.8502 s/op
+WorkloadActual   5: 1 op, 6710023800.00 ns, 6.7100 s/op
+WorkloadActual   6: 1 op, 6593439100.00 ns, 6.5934 s/op
+WorkloadActual   7: 1 op, 6756529500.00 ns, 6.7565 s/op
+WorkloadActual   8: 1 op, 6599227200.00 ns, 6.5992 s/op
+WorkloadActual   9: 1 op, 6701831500.00 ns, 6.7018 s/op
+WorkloadActual  10: 1 op, 6745322300.00 ns, 6.7453 s/op
+WorkloadActual  11: 1 op, 6944241400.00 ns, 6.9442 s/op
+WorkloadActual  12: 1 op, 6867857300.00 ns, 6.8679 s/op
+WorkloadActual  13: 1 op, 6870112300.00 ns, 6.8701 s/op
+WorkloadActual  14: 1 op, 6971983800.00 ns, 6.9720 s/op
+WorkloadActual  15: 1 op, 6845588400.00 ns, 6.8456 s/op
+WorkloadActual  16: 1 op, 6835580000.00 ns, 6.8356 s/op
+WorkloadActual  17: 1 op, 6664739000.00 ns, 6.6647 s/op
+WorkloadActual  18: 1 op, 6983663000.00 ns, 6.9837 s/op
+WorkloadActual  19: 1 op, 6953125800.00 ns, 6.9531 s/op
+WorkloadActual  20: 1 op, 6922697700.00 ns, 6.9227 s/op
+
+WorkloadResult   1: 1 op, 7134216900.00 ns, 7.1342 s/op
+WorkloadResult   2: 1 op, 7116264400.00 ns, 7.1163 s/op
+WorkloadResult   3: 1 op, 6966537700.00 ns, 6.9665 s/op
+WorkloadResult   4: 1 op, 6850222300.00 ns, 6.8502 s/op
+WorkloadResult   5: 1 op, 6710023800.00 ns, 6.7100 s/op
+WorkloadResult   6: 1 op, 6593439100.00 ns, 6.5934 s/op
+WorkloadResult   7: 1 op, 6756529500.00 ns, 6.7565 s/op
+WorkloadResult   8: 1 op, 6599227200.00 ns, 6.5992 s/op
+WorkloadResult   9: 1 op, 6701831500.00 ns, 6.7018 s/op
+WorkloadResult  10: 1 op, 6745322300.00 ns, 6.7453 s/op
+WorkloadResult  11: 1 op, 6944241400.00 ns, 6.9442 s/op
+WorkloadResult  12: 1 op, 6867857300.00 ns, 6.8679 s/op
+WorkloadResult  13: 1 op, 6870112300.00 ns, 6.8701 s/op
+WorkloadResult  14: 1 op, 6971983800.00 ns, 6.9720 s/op
+WorkloadResult  15: 1 op, 6845588400.00 ns, 6.8456 s/op
+WorkloadResult  16: 1 op, 6835580000.00 ns, 6.8356 s/op
+WorkloadResult  17: 1 op, 6664739000.00 ns, 6.6647 s/op
+WorkloadResult  18: 1 op, 6983663000.00 ns, 6.9837 s/op
+WorkloadResult  19: 1 op, 6953125800.00 ns, 6.9531 s/op
+WorkloadResult  20: 1 op, 6922697700.00 ns, 6.9227 s/op
+
+
+Mean = 6.852 s, StdErr = 0.034 s (0.50%), N = 20, StdDev = 0.154 s
+Min = 6.593 s, Q1 = 6.736 s, Median = 6.859 s, Q3 = 6.956 s, Max = 7.134 s
+IQR = 0.220 s, LowerFence = 6.407 s, UpperFence = 7.286 s
+ConfidenceInterval = [6.718 s; 6.985 s] (CI 99.9%), Margin = 0.133 s (1.95% of Mean)
+Skewness = 0.01, Kurtosis = 2.07, MValue = 2
+
+// ** Remained 47 (94.0%) benchmark(s) to run. Estimated finish 2023-09-29 20:00 (3h 32m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: SalesBenchmarkRead.UltraMapper: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+// *** Execute ***
+// Launch: 1 / 1
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.8
+// Runtime=.NET 6.0.16 (6.0.1623.17311), X64 RyuJIT AVX2 DEBUG [AttachedDebugger]
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+
+OverheadJitting  1: 1 op, 109200.00 ns, 109.2000 us/op
+WorkloadJitting  1: 1 op, 8069702400.00 ns, 8.0697 s/op
+
+OverheadJitting  2: 1 op, 1300.00 ns, 1.3000 us/op
+WorkloadJitting  2: 1 op, 3415522700.00 ns, 3.4155 s/op
+
+WorkloadWarmup   1: 1 op, 3438901300.00 ns, 3.4389 s/op
+WorkloadWarmup   2: 1 op, 3451999000.00 ns, 3.4520 s/op
+WorkloadWarmup   3: 1 op, 3492621400.00 ns, 3.4926 s/op
+WorkloadWarmup   4: 1 op, 3524909000.00 ns, 3.5249 s/op
+WorkloadWarmup   5: 1 op, 3653256200.00 ns, 3.6533 s/op
+WorkloadWarmup   6: 1 op, 3594062200.00 ns, 3.5941 s/op
+WorkloadWarmup   7: 1 op, 3626230000.00 ns, 3.6262 s/op
+WorkloadWarmup   8: 1 op, 3539269800.00 ns, 3.5393 s/op
+
+WorkloadActual   1: 1 op, 3427638500.00 ns, 3.4276 s/op
+WorkloadActual   2: 1 op, 3514911900.00 ns, 3.5149 s/op
+WorkloadActual   3: 1 op, 3499394600.00 ns, 3.4994 s/op
+WorkloadActual   4: 1 op, 3410072400.00 ns, 3.4101 s/op
+WorkloadActual   5: 1 op, 3401973700.00 ns, 3.4020 s/op
+WorkloadActual   6: 1 op, 3444072900.00 ns, 3.4441 s/op
+WorkloadActual   7: 1 op, 3396078300.00 ns, 3.3961 s/op
+WorkloadActual   8: 1 op, 3517422200.00 ns, 3.5174 s/op
+WorkloadActual   9: 1 op, 3510334900.00 ns, 3.5103 s/op
+WorkloadActual  10: 1 op, 3656316000.00 ns, 3.6563 s/op
+WorkloadActual  11: 1 op, 3792449800.00 ns, 3.7924 s/op
+WorkloadActual  12: 1 op, 3458623500.00 ns, 3.4586 s/op
+WorkloadActual  13: 1 op, 3467247300.00 ns, 3.4672 s/op
+WorkloadActual  14: 1 op, 3485010000.00 ns, 3.4850 s/op
+WorkloadActual  15: 1 op, 3424383900.00 ns, 3.4244 s/op
+
+WorkloadResult   1: 1 op, 3427638500.00 ns, 3.4276 s/op
+WorkloadResult   2: 1 op, 3514911900.00 ns, 3.5149 s/op
+WorkloadResult   3: 1 op, 3499394600.00 ns, 3.4994 s/op
+WorkloadResult   4: 1 op, 3410072400.00 ns, 3.4101 s/op
+WorkloadResult   5: 1 op, 3401973700.00 ns, 3.4020 s/op
+WorkloadResult   6: 1 op, 3444072900.00 ns, 3.4441 s/op
+WorkloadResult   7: 1 op, 3396078300.00 ns, 3.3961 s/op
+WorkloadResult   8: 1 op, 3517422200.00 ns, 3.5174 s/op
+WorkloadResult   9: 1 op, 3510334900.00 ns, 3.5103 s/op
+WorkloadResult  10: 1 op, 3458623500.00 ns, 3.4586 s/op
+WorkloadResult  11: 1 op, 3467247300.00 ns, 3.4672 s/op
+WorkloadResult  12: 1 op, 3485010000.00 ns, 3.4850 s/op
+WorkloadResult  13: 1 op, 3424383900.00 ns, 3.4244 s/op
+
+
+Mean = 3.458 s, StdErr = 0.012 s (0.36%), N = 13, StdDev = 0.044 s
+Min = 3.396 s, Q1 = 3.424 s, Median = 3.459 s, Q3 = 3.499 s, Max = 3.517 s
+IQR = 0.075 s, LowerFence = 3.312 s, UpperFence = 3.612 s
+ConfidenceInterval = [3.405 s; 3.511 s] (CI 99.9%), Margin = 0.053 s (1.53% of Mean)
+Skewness = 0.02, Kurtosis = 1.32, MValue = 2
+
+// ** Remained 46 (92.0%) benchmark(s) to run. Estimated finish 2023-09-29 19:23 (2h 53m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// Build Error: Standard output: 
+  
+ Standard error: 
+   Determining projects to restore...
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net5.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\UltraMapper.Csv.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Parsing\UltraMapper.Parsing\UltraMapper.Parsing.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper\UltraMapper\UltraMapper.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net5.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj]
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj : error NU1201: Project UltraMapper.DataFileParsers.Benchmarks is not compatible with net5.0 (.NETCoreApp,Version=v5.0). Project UltraMapper.DataFileParsers.Benchmarks supports:
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net6.0 (.NETCoreApp,Version=v6.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net7.0 (.NETCoreApp,Version=v7.0)
+  Failed to restore E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj (in 95 ms).
+  4 of 5 projects are up-to-date for restore.
+
+// BenchmarkDotNet has failed to build the auto-generated boilerplate code.
+// It can be found in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0
+// Please follow the troubleshooting guide: https://benchmarkdotnet.org/articles/guides/troubleshooting.html
+
+// ** Remained 45 (90.0%) benchmark(s) to run. Estimated finish 2023-09-29 18:45 (2h 15m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// Build Error: Standard output: 
+  
+ Standard error: 
+   Determining projects to restore...
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net5.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\UltraMapper.Csv.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Parsing\UltraMapper.Parsing\UltraMapper.Parsing.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper\UltraMapper\UltraMapper.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net5.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj]
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj : error NU1201: Project UltraMapper.DataFileParsers.Benchmarks is not compatible with net5.0 (.NETCoreApp,Version=v5.0). Project UltraMapper.DataFileParsers.Benchmarks supports:
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net6.0 (.NETCoreApp,Version=v6.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net7.0 (.NETCoreApp,Version=v7.0)
+  Failed to restore E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj (in 95 ms).
+  4 of 5 projects are up-to-date for restore.
+
+// BenchmarkDotNet has failed to build the auto-generated boilerplate code.
+// It can be found in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0
+// Please follow the troubleshooting guide: https://benchmarkdotnet.org/articles/guides/troubleshooting.html
+
+// ** Remained 44 (88.0%) benchmark(s) to run. Estimated finish 2023-09-29 18:20 (1h 50m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// Build Error: Standard output: 
+  
+ Standard error: 
+   Determining projects to restore...
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net5.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\UltraMapper.Csv.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Parsing\UltraMapper.Parsing\UltraMapper.Parsing.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper\UltraMapper\UltraMapper.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net5.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj]
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj : error NU1201: Project UltraMapper.DataFileParsers.Benchmarks is not compatible with net5.0 (.NETCoreApp,Version=v5.0). Project UltraMapper.DataFileParsers.Benchmarks supports:
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net6.0 (.NETCoreApp,Version=v6.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net7.0 (.NETCoreApp,Version=v7.0)
+  Failed to restore E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj (in 95 ms).
+  4 of 5 projects are up-to-date for restore.
+
+// BenchmarkDotNet has failed to build the auto-generated boilerplate code.
+// It can be found in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0
+// Please follow the troubleshooting guide: https://benchmarkdotnet.org/articles/guides/troubleshooting.html
+
+// ** Remained 43 (86.0%) benchmark(s) to run. Estimated finish 2023-09-29 18:02 (1h 32m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// Build Error: Standard output: 
+  
+ Standard error: 
+   Determining projects to restore...
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net5.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\UltraMapper.Csv.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Parsing\UltraMapper.Parsing\UltraMapper.Parsing.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper\UltraMapper\UltraMapper.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net5.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj]
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj : error NU1201: Project UltraMapper.DataFileParsers.Benchmarks is not compatible with net5.0 (.NETCoreApp,Version=v5.0). Project UltraMapper.DataFileParsers.Benchmarks supports:
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net6.0 (.NETCoreApp,Version=v6.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net7.0 (.NETCoreApp,Version=v7.0)
+  Failed to restore E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0\BenchmarkDotNet.Autogenerated.csproj (in 95 ms).
+  4 of 5 projects are up-to-date for restore.
+
+// BenchmarkDotNet has failed to build the auto-generated boilerplate code.
+// It can be found in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 5.0
+// Please follow the troubleshooting guide: https://benchmarkdotnet.org/articles/guides/troubleshooting.html
+
+// ** Remained 42 (84.0%) benchmark(s) to run. Estimated finish 2023-09-29 17:49 (1h 19m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: SalesBenchmarkRead.BaseLine: .NET 6.0(Runtime=.NET 6.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ".NET 6.0.dll" --anonymousPipes 4180 2128 --benchmarkName UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead.BaseLine --job ".NET 6.0" --benchmarkId 0 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 6.0\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.8
+// Runtime=.NET 6.0.16 (6.0.1623.17311), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: .NET 6.0
+
+OverheadJitting  1: 1 op, 166900.00 ns, 166.9000 us/op
+WorkloadJitting  1: 1 op, 2885139800.00 ns, 2.8851 s/op
+
+OverheadJitting  2: 1 op, 200.00 ns, 200.0000 ns/op
+WorkloadJitting  2: 1 op, 2858914100.00 ns, 2.8589 s/op
+
+WorkloadWarmup   1: 1 op, 2869951000.00 ns, 2.8700 s/op
+WorkloadWarmup   2: 1 op, 2855677100.00 ns, 2.8557 s/op
+WorkloadWarmup   3: 1 op, 2910142200.00 ns, 2.9101 s/op
+WorkloadWarmup   4: 1 op, 3069684700.00 ns, 3.0697 s/op
+WorkloadWarmup   5: 1 op, 3034462100.00 ns, 3.0345 s/op
+WorkloadWarmup   6: 1 op, 3042610600.00 ns, 3.0426 s/op
+WorkloadWarmup   7: 1 op, 2973238100.00 ns, 2.9732 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 3002054500.00 ns, 3.0021 s/op
+WorkloadActual   2: 1 op, 3165250100.00 ns, 3.1653 s/op
+WorkloadActual   3: 1 op, 3061071500.00 ns, 3.0611 s/op
+WorkloadActual   4: 1 op, 2975770400.00 ns, 2.9758 s/op
+WorkloadActual   5: 1 op, 3054590900.00 ns, 3.0546 s/op
+WorkloadActual   6: 1 op, 2965152100.00 ns, 2.9652 s/op
+WorkloadActual   7: 1 op, 3036519100.00 ns, 3.0365 s/op
+WorkloadActual   8: 1 op, 2888729000.00 ns, 2.8887 s/op
+WorkloadActual   9: 1 op, 2892541100.00 ns, 2.8925 s/op
+WorkloadActual  10: 1 op, 2928026800.00 ns, 2.9280 s/op
+WorkloadActual  11: 1 op, 3093119900.00 ns, 3.0931 s/op
+WorkloadActual  12: 1 op, 2991945600.00 ns, 2.9919 s/op
+WorkloadActual  13: 1 op, 2982865600.00 ns, 2.9829 s/op
+WorkloadActual  14: 1 op, 3157345500.00 ns, 3.1573 s/op
+WorkloadActual  15: 1 op, 2941309100.00 ns, 2.9413 s/op
+WorkloadActual  16: 1 op, 2897027500.00 ns, 2.8970 s/op
+WorkloadActual  17: 1 op, 2901648400.00 ns, 2.9016 s/op
+WorkloadActual  18: 1 op, 2931132200.00 ns, 2.9311 s/op
+WorkloadActual  19: 1 op, 2946200500.00 ns, 2.9462 s/op
+WorkloadActual  20: 1 op, 2963257500.00 ns, 2.9633 s/op
+WorkloadActual  21: 1 op, 2931081000.00 ns, 2.9311 s/op
+WorkloadActual  22: 1 op, 2894265200.00 ns, 2.8943 s/op
+WorkloadActual  23: 1 op, 2880337700.00 ns, 2.8803 s/op
+WorkloadActual  24: 1 op, 2932545400.00 ns, 2.9325 s/op
+WorkloadActual  25: 1 op, 2976931400.00 ns, 2.9769 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 3002054500.00 ns, 3.0021 s/op
+WorkloadResult   2: 1 op, 3061071500.00 ns, 3.0611 s/op
+WorkloadResult   3: 1 op, 2975770400.00 ns, 2.9758 s/op
+WorkloadResult   4: 1 op, 3054590900.00 ns, 3.0546 s/op
+WorkloadResult   5: 1 op, 2965152100.00 ns, 2.9652 s/op
+WorkloadResult   6: 1 op, 3036519100.00 ns, 3.0365 s/op
+WorkloadResult   7: 1 op, 2888729000.00 ns, 2.8887 s/op
+WorkloadResult   8: 1 op, 2892541100.00 ns, 2.8925 s/op
+WorkloadResult   9: 1 op, 2928026800.00 ns, 2.9280 s/op
+WorkloadResult  10: 1 op, 3093119900.00 ns, 3.0931 s/op
+WorkloadResult  11: 1 op, 2991945600.00 ns, 2.9919 s/op
+WorkloadResult  12: 1 op, 2982865600.00 ns, 2.9829 s/op
+WorkloadResult  13: 1 op, 2941309100.00 ns, 2.9413 s/op
+WorkloadResult  14: 1 op, 2897027500.00 ns, 2.8970 s/op
+WorkloadResult  15: 1 op, 2901648400.00 ns, 2.9016 s/op
+WorkloadResult  16: 1 op, 2931132200.00 ns, 2.9311 s/op
+WorkloadResult  17: 1 op, 2946200500.00 ns, 2.9462 s/op
+WorkloadResult  18: 1 op, 2963257500.00 ns, 2.9633 s/op
+WorkloadResult  19: 1 op, 2931081000.00 ns, 2.9311 s/op
+WorkloadResult  20: 1 op, 2894265200.00 ns, 2.8943 s/op
+WorkloadResult  21: 1 op, 2880337700.00 ns, 2.8803 s/op
+WorkloadResult  22: 1 op, 2932545400.00 ns, 2.9325 s/op
+WorkloadResult  23: 1 op, 2976931400.00 ns, 2.9769 s/op
+
+// AfterAll
+// Benchmark Process 15960 has exited with code 0.
+
+Mean = 2.959 s, StdErr = 0.012 s (0.42%), N = 23, StdDev = 0.060 s
+Min = 2.880 s, Q1 = 2.915 s, Median = 2.946 s, Q3 = 2.987 s, Max = 3.093 s
+IQR = 0.073 s, LowerFence = 2.806 s, UpperFence = 3.096 s
+ConfidenceInterval = [2.912 s; 3.007 s] (CI 99.9%), Margin = 0.047 s (1.59% of Mean)
+Skewness = 0.6, Kurtosis = 2.33, MValue = 2
+
+// ** Remained 41 (82.0%) benchmark(s) to run. Estimated finish 2023-09-29 17:48 (1h 16m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: SalesBenchmarkRead.FileHelper: .NET 6.0(Runtime=.NET 6.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ".NET 6.0.dll" --anonymousPipes 1352 5472 --benchmarkName UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead.FileHelper --job ".NET 6.0" --benchmarkId 1 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 6.0\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.8
+// Runtime=.NET 6.0.16 (6.0.1623.17311), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: .NET 6.0
+
+OverheadJitting  1: 1 op, 164500.00 ns, 164.5000 us/op
+WorkloadJitting  1: 1 op, 5658793100.00 ns, 5.6588 s/op
+
+OverheadJitting  2: 1 op, 200.00 ns, 200.0000 ns/op
+WorkloadJitting  2: 1 op, 5508601700.00 ns, 5.5086 s/op
+
+WorkloadWarmup   1: 1 op, 5366746700.00 ns, 5.3667 s/op
+WorkloadWarmup   2: 1 op, 5403818400.00 ns, 5.4038 s/op
+WorkloadWarmup   3: 1 op, 5375616700.00 ns, 5.3756 s/op
+WorkloadWarmup   4: 1 op, 5469376900.00 ns, 5.4694 s/op
+WorkloadWarmup   5: 1 op, 5444112800.00 ns, 5.4441 s/op
+WorkloadWarmup   6: 1 op, 5569320300.00 ns, 5.5693 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 5450908900.00 ns, 5.4509 s/op
+WorkloadActual   2: 1 op, 5441423100.00 ns, 5.4414 s/op
+WorkloadActual   3: 1 op, 5466471000.00 ns, 5.4665 s/op
+WorkloadActual   4: 1 op, 5473608600.00 ns, 5.4736 s/op
+WorkloadActual   5: 1 op, 5688588000.00 ns, 5.6886 s/op
+WorkloadActual   6: 1 op, 5567398800.00 ns, 5.5674 s/op
+WorkloadActual   7: 1 op, 5458433000.00 ns, 5.4584 s/op
+WorkloadActual   8: 1 op, 5576206200.00 ns, 5.5762 s/op
+WorkloadActual   9: 1 op, 5430181800.00 ns, 5.4302 s/op
+WorkloadActual  10: 1 op, 5394265900.00 ns, 5.3943 s/op
+WorkloadActual  11: 1 op, 5541502700.00 ns, 5.5415 s/op
+WorkloadActual  12: 1 op, 5607596300.00 ns, 5.6076 s/op
+WorkloadActual  13: 1 op, 5358128300.00 ns, 5.3581 s/op
+WorkloadActual  14: 1 op, 5442037600.00 ns, 5.4420 s/op
+WorkloadActual  15: 1 op, 5546962000.00 ns, 5.5470 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 5450908900.00 ns, 5.4509 s/op
+WorkloadResult   2: 1 op, 5441423100.00 ns, 5.4414 s/op
+WorkloadResult   3: 1 op, 5466471000.00 ns, 5.4665 s/op
+WorkloadResult   4: 1 op, 5473608600.00 ns, 5.4736 s/op
+WorkloadResult   5: 1 op, 5688588000.00 ns, 5.6886 s/op
+WorkloadResult   6: 1 op, 5567398800.00 ns, 5.5674 s/op
+WorkloadResult   7: 1 op, 5458433000.00 ns, 5.4584 s/op
+WorkloadResult   8: 1 op, 5576206200.00 ns, 5.5762 s/op
+WorkloadResult   9: 1 op, 5430181800.00 ns, 5.4302 s/op
+WorkloadResult  10: 1 op, 5394265900.00 ns, 5.3943 s/op
+WorkloadResult  11: 1 op, 5541502700.00 ns, 5.5415 s/op
+WorkloadResult  12: 1 op, 5607596300.00 ns, 5.6076 s/op
+WorkloadResult  13: 1 op, 5358128300.00 ns, 5.3581 s/op
+WorkloadResult  14: 1 op, 5442037600.00 ns, 5.4420 s/op
+WorkloadResult  15: 1 op, 5546962000.00 ns, 5.5470 s/op
+
+// AfterAll
+// Benchmark Process 3248 has exited with code 0.
+
+Mean = 5.496 s, StdErr = 0.023 s (0.42%), N = 15, StdDev = 0.089 s
+Min = 5.358 s, Q1 = 5.442 s, Median = 5.466 s, Q3 = 5.557 s, Max = 5.689 s
+IQR = 0.115 s, LowerFence = 5.269 s, UpperFence = 5.730 s
+ConfidenceInterval = [5.401 s; 5.591 s] (CI 99.9%), Margin = 0.095 s (1.73% of Mean)
+Skewness = 0.49, Kurtosis = 2.28, MValue = 2
+
+// ** Remained 40 (80.0%) benchmark(s) to run. Estimated finish 2023-09-29 17:49 (1h 15m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: SalesBenchmarkRead.CsvHelper: .NET 6.0(Runtime=.NET 6.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ".NET 6.0.dll" --anonymousPipes 6004 1612 --benchmarkName UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead.CsvHelper --job ".NET 6.0" --benchmarkId 2 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 6.0\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.8
+// Runtime=.NET 6.0.16 (6.0.1623.17311), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: .NET 6.0
+
+OverheadJitting  1: 1 op, 162900.00 ns, 162.9000 us/op
+WorkloadJitting  1: 1 op, 6764990500.00 ns, 6.7650 s/op
+
+OverheadJitting  2: 1 op, 1100.00 ns, 1.1000 us/op
+WorkloadJitting  2: 1 op, 6634860200.00 ns, 6.6349 s/op
+
+WorkloadWarmup   1: 1 op, 6508075300.00 ns, 6.5081 s/op
+WorkloadWarmup   2: 1 op, 6484693400.00 ns, 6.4847 s/op
+WorkloadWarmup   3: 1 op, 6448863200.00 ns, 6.4489 s/op
+WorkloadWarmup   4: 1 op, 6489671900.00 ns, 6.4897 s/op
+WorkloadWarmup   5: 1 op, 6403467400.00 ns, 6.4035 s/op
+WorkloadWarmup   6: 1 op, 6464402000.00 ns, 6.4644 s/op
+WorkloadWarmup   7: 1 op, 6537583900.00 ns, 6.5376 s/op
+WorkloadWarmup   8: 1 op, 6501187900.00 ns, 6.5012 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 6619631900.00 ns, 6.6196 s/op
+WorkloadActual   2: 1 op, 6530402900.00 ns, 6.5304 s/op
+WorkloadActual   3: 1 op, 6345440400.00 ns, 6.3454 s/op
+WorkloadActual   4: 1 op, 6371484600.00 ns, 6.3715 s/op
+WorkloadActual   5: 1 op, 6704774900.00 ns, 6.7048 s/op
+WorkloadActual   6: 1 op, 6745889000.00 ns, 6.7459 s/op
+WorkloadActual   7: 1 op, 6434520100.00 ns, 6.4345 s/op
+WorkloadActual   8: 1 op, 6417961600.00 ns, 6.4180 s/op
+WorkloadActual   9: 1 op, 6429312800.00 ns, 6.4293 s/op
+WorkloadActual  10: 1 op, 6642729700.00 ns, 6.6427 s/op
+WorkloadActual  11: 1 op, 6390820900.00 ns, 6.3908 s/op
+WorkloadActual  12: 1 op, 6610942200.00 ns, 6.6109 s/op
+WorkloadActual  13: 1 op, 6485794100.00 ns, 6.4858 s/op
+WorkloadActual  14: 1 op, 6403872400.00 ns, 6.4039 s/op
+WorkloadActual  15: 1 op, 6504163800.00 ns, 6.5042 s/op
+WorkloadActual  16: 1 op, 6541462400.00 ns, 6.5415 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 6619631900.00 ns, 6.6196 s/op
+WorkloadResult   2: 1 op, 6530402900.00 ns, 6.5304 s/op
+WorkloadResult   3: 1 op, 6345440400.00 ns, 6.3454 s/op
+WorkloadResult   4: 1 op, 6371484600.00 ns, 6.3715 s/op
+WorkloadResult   5: 1 op, 6704774900.00 ns, 6.7048 s/op
+WorkloadResult   6: 1 op, 6745889000.00 ns, 6.7459 s/op
+WorkloadResult   7: 1 op, 6434520100.00 ns, 6.4345 s/op
+WorkloadResult   8: 1 op, 6417961600.00 ns, 6.4180 s/op
+WorkloadResult   9: 1 op, 6429312800.00 ns, 6.4293 s/op
+WorkloadResult  10: 1 op, 6642729700.00 ns, 6.6427 s/op
+WorkloadResult  11: 1 op, 6390820900.00 ns, 6.3908 s/op
+WorkloadResult  12: 1 op, 6610942200.00 ns, 6.6109 s/op
+WorkloadResult  13: 1 op, 6485794100.00 ns, 6.4858 s/op
+WorkloadResult  14: 1 op, 6403872400.00 ns, 6.4039 s/op
+WorkloadResult  15: 1 op, 6504163800.00 ns, 6.5042 s/op
+WorkloadResult  16: 1 op, 6541462400.00 ns, 6.5415 s/op
+
+// AfterAll
+// Benchmark Process 22764 has exited with code 0.
+
+Mean = 6.511 s, StdErr = 0.031 s (0.47%), N = 16, StdDev = 0.123 s
+Min = 6.345 s, Q1 = 6.414 s, Median = 6.495 s, Q3 = 6.613 s, Max = 6.746 s
+IQR = 0.199 s, LowerFence = 6.116 s, UpperFence = 6.911 s
+ConfidenceInterval = [6.386 s; 6.637 s] (CI 99.9%), Margin = 0.125 s (1.93% of Mean)
+Skewness = 0.42, Kurtosis = 1.79, MValue = 2
+
+// ** Remained 39 (78.0%) benchmark(s) to run. Estimated finish 2023-09-29 17:53 (1h 16m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: SalesBenchmarkRead.UltraMapper: .NET 6.0(Runtime=.NET 6.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ".NET 6.0.dll" --anonymousPipes 2688 2704 --benchmarkName UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead.UltraMapper --job ".NET 6.0" --benchmarkId 3 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 6.0\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.8
+// Runtime=.NET 6.0.16 (6.0.1623.17311), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: .NET 6.0
+
+OverheadJitting  1: 1 op, 148200.00 ns, 148.2000 us/op
+WorkloadJitting  1: 1 op, 3972431800.00 ns, 3.9724 s/op
+
+OverheadJitting  2: 1 op, 200.00 ns, 200.0000 ns/op
+WorkloadJitting  2: 1 op, 3227463400.00 ns, 3.2275 s/op
+
+WorkloadWarmup   1: 1 op, 3517133800.00 ns, 3.5171 s/op
+WorkloadWarmup   2: 1 op, 3208072900.00 ns, 3.2081 s/op
+WorkloadWarmup   3: 1 op, 3212033500.00 ns, 3.2120 s/op
+WorkloadWarmup   4: 1 op, 3225520500.00 ns, 3.2255 s/op
+WorkloadWarmup   5: 1 op, 3172258800.00 ns, 3.1723 s/op
+WorkloadWarmup   6: 1 op, 3179543400.00 ns, 3.1795 s/op
+WorkloadWarmup   7: 1 op, 3210771600.00 ns, 3.2108 s/op
+WorkloadWarmup   8: 1 op, 3167604700.00 ns, 3.1676 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 3231654200.00 ns, 3.2317 s/op
+WorkloadActual   2: 1 op, 3335499600.00 ns, 3.3355 s/op
+WorkloadActual   3: 1 op, 3186422900.00 ns, 3.1864 s/op
+WorkloadActual   4: 1 op, 3155090300.00 ns, 3.1551 s/op
+WorkloadActual   5: 1 op, 3156225900.00 ns, 3.1562 s/op
+WorkloadActual   6: 1 op, 3183685700.00 ns, 3.1837 s/op
+WorkloadActual   7: 1 op, 3164563300.00 ns, 3.1646 s/op
+WorkloadActual   8: 1 op, 3161933800.00 ns, 3.1619 s/op
+WorkloadActual   9: 1 op, 3191398000.00 ns, 3.1914 s/op
+WorkloadActual  10: 1 op, 3183771200.00 ns, 3.1838 s/op
+WorkloadActual  11: 1 op, 3415321900.00 ns, 3.4153 s/op
+WorkloadActual  12: 1 op, 3274449400.00 ns, 3.2744 s/op
+WorkloadActual  13: 1 op, 3253493600.00 ns, 3.2535 s/op
+WorkloadActual  14: 1 op, 3201185800.00 ns, 3.2012 s/op
+WorkloadActual  15: 1 op, 3151521500.00 ns, 3.1515 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 3231654200.00 ns, 3.2317 s/op
+WorkloadResult   2: 1 op, 3335499600.00 ns, 3.3355 s/op
+WorkloadResult   3: 1 op, 3186422900.00 ns, 3.1864 s/op
+WorkloadResult   4: 1 op, 3155090300.00 ns, 3.1551 s/op
+WorkloadResult   5: 1 op, 3156225900.00 ns, 3.1562 s/op
+WorkloadResult   6: 1 op, 3183685700.00 ns, 3.1837 s/op
+WorkloadResult   7: 1 op, 3164563300.00 ns, 3.1646 s/op
+WorkloadResult   8: 1 op, 3161933800.00 ns, 3.1619 s/op
+WorkloadResult   9: 1 op, 3191398000.00 ns, 3.1914 s/op
+WorkloadResult  10: 1 op, 3183771200.00 ns, 3.1838 s/op
+WorkloadResult  11: 1 op, 3274449400.00 ns, 3.2744 s/op
+WorkloadResult  12: 1 op, 3253493600.00 ns, 3.2535 s/op
+WorkloadResult  13: 1 op, 3201185800.00 ns, 3.2012 s/op
+WorkloadResult  14: 1 op, 3151521500.00 ns, 3.1515 s/op
+
+// AfterAll
+// Benchmark Process 5420 has exited with code 0.
+
+Mean = 3.202 s, StdErr = 0.014 s (0.45%), N = 14, StdDev = 0.054 s
+Min = 3.152 s, Q1 = 3.163 s, Median = 3.185 s, Q3 = 3.224 s, Max = 3.335 s
+IQR = 0.061 s, LowerFence = 3.070 s, UpperFence = 3.316 s
+ConfidenceInterval = [3.142 s; 3.263 s] (CI 99.9%), Margin = 0.061 s (1.89% of Mean)
+Skewness = 1.12, Kurtosis = 3.19, MValue = 2
+
+// ** Remained 38 (76.0%) benchmark(s) to run. Estimated finish 2023-09-29 17:51 (1h 13m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: SalesBenchmarkRead.BaseLine: .NET 7.0(Runtime=.NET 7.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ".NET 7.0.dll" --anonymousPipes 2648 2684 --benchmarkName UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead.BaseLine --job ".NET 7.0" --benchmarkId 0 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 7.0\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.8
+// Runtime=.NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: .NET 7.0
+
+OverheadJitting  1: 1 op, 204200.00 ns, 204.2000 us/op
+WorkloadJitting  1: 1 op, 2898446700.00 ns, 2.8984 s/op
+
+OverheadJitting  2: 1 op, 300.00 ns, 300.0000 ns/op
+WorkloadJitting  2: 1 op, 2883514600.00 ns, 2.8835 s/op
+
+WorkloadWarmup   1: 1 op, 2850542700.00 ns, 2.8505 s/op
+WorkloadWarmup   2: 1 op, 2918236700.00 ns, 2.9182 s/op
+WorkloadWarmup   3: 1 op, 2898752000.00 ns, 2.8988 s/op
+WorkloadWarmup   4: 1 op, 2963687800.00 ns, 2.9637 s/op
+WorkloadWarmup   5: 1 op, 3115425700.00 ns, 3.1154 s/op
+WorkloadWarmup   6: 1 op, 3103651600.00 ns, 3.1037 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 2923981600.00 ns, 2.9240 s/op
+WorkloadActual   2: 1 op, 2867667400.00 ns, 2.8677 s/op
+WorkloadActual   3: 1 op, 2848728300.00 ns, 2.8487 s/op
+WorkloadActual   4: 1 op, 2837156800.00 ns, 2.8372 s/op
+WorkloadActual   5: 1 op, 2990518100.00 ns, 2.9905 s/op
+WorkloadActual   6: 1 op, 2893640500.00 ns, 2.8936 s/op
+WorkloadActual   7: 1 op, 2938903900.00 ns, 2.9389 s/op
+WorkloadActual   8: 1 op, 2913714500.00 ns, 2.9137 s/op
+WorkloadActual   9: 1 op, 2938137500.00 ns, 2.9381 s/op
+WorkloadActual  10: 1 op, 2899379800.00 ns, 2.8994 s/op
+WorkloadActual  11: 1 op, 2929349800.00 ns, 2.9293 s/op
+WorkloadActual  12: 1 op, 2843233600.00 ns, 2.8432 s/op
+WorkloadActual  13: 1 op, 2871647900.00 ns, 2.8716 s/op
+WorkloadActual  14: 1 op, 2879663000.00 ns, 2.8797 s/op
+WorkloadActual  15: 1 op, 2869509800.00 ns, 2.8695 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 2923981600.00 ns, 2.9240 s/op
+WorkloadResult   2: 1 op, 2867667400.00 ns, 2.8677 s/op
+WorkloadResult   3: 1 op, 2848728300.00 ns, 2.8487 s/op
+WorkloadResult   4: 1 op, 2837156800.00 ns, 2.8372 s/op
+WorkloadResult   5: 1 op, 2990518100.00 ns, 2.9905 s/op
+WorkloadResult   6: 1 op, 2893640500.00 ns, 2.8936 s/op
+WorkloadResult   7: 1 op, 2938903900.00 ns, 2.9389 s/op
+WorkloadResult   8: 1 op, 2913714500.00 ns, 2.9137 s/op
+WorkloadResult   9: 1 op, 2938137500.00 ns, 2.9381 s/op
+WorkloadResult  10: 1 op, 2899379800.00 ns, 2.8994 s/op
+WorkloadResult  11: 1 op, 2929349800.00 ns, 2.9293 s/op
+WorkloadResult  12: 1 op, 2843233600.00 ns, 2.8432 s/op
+WorkloadResult  13: 1 op, 2871647900.00 ns, 2.8716 s/op
+WorkloadResult  14: 1 op, 2879663000.00 ns, 2.8797 s/op
+WorkloadResult  15: 1 op, 2869509800.00 ns, 2.8695 s/op
+
+// AfterAll
+// Benchmark Process 23304 has exited with code 0.
+
+Mean = 2.896 s, StdErr = 0.011 s (0.38%), N = 15, StdDev = 0.043 s
+Min = 2.837 s, Q1 = 2.869 s, Median = 2.894 s, Q3 = 2.927 s, Max = 2.991 s
+IQR = 0.058 s, LowerFence = 2.781 s, UpperFence = 3.014 s
+ConfidenceInterval = [2.851 s; 2.942 s] (CI 99.9%), Margin = 0.046 s (1.58% of Mean)
+Skewness = 0.44, Kurtosis = 2.27, MValue = 2
+
+// ** Remained 37 (74.0%) benchmark(s) to run. Estimated finish 2023-09-29 17:48 (1h 8m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: SalesBenchmarkRead.FileHelper: .NET 7.0(Runtime=.NET 7.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ".NET 7.0.dll" --anonymousPipes 2068 2084 --benchmarkName UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead.FileHelper --job ".NET 7.0" --benchmarkId 1 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 7.0\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.8
+// Runtime=.NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: .NET 7.0
+
+OverheadJitting  1: 1 op, 179700.00 ns, 179.7000 us/op
+WorkloadJitting  1: 1 op, 5263499300.00 ns, 5.2635 s/op
+
+OverheadJitting  2: 1 op, 300.00 ns, 300.0000 ns/op
+WorkloadJitting  2: 1 op, 5022667100.00 ns, 5.0227 s/op
+
+WorkloadWarmup   1: 1 op, 4967279000.00 ns, 4.9673 s/op
+WorkloadWarmup   2: 1 op, 5141175900.00 ns, 5.1412 s/op
+WorkloadWarmup   3: 1 op, 5105178800.00 ns, 5.1052 s/op
+WorkloadWarmup   4: 1 op, 5107506900.00 ns, 5.1075 s/op
+WorkloadWarmup   5: 1 op, 5137665600.00 ns, 5.1377 s/op
+WorkloadWarmup   6: 1 op, 5042382600.00 ns, 5.0424 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 5113831100.00 ns, 5.1138 s/op
+WorkloadActual   2: 1 op, 5054323400.00 ns, 5.0543 s/op
+WorkloadActual   3: 1 op, 4919078600.00 ns, 4.9191 s/op
+WorkloadActual   4: 1 op, 4998997200.00 ns, 4.9990 s/op
+WorkloadActual   5: 1 op, 4856135100.00 ns, 4.8561 s/op
+WorkloadActual   6: 1 op, 4960794200.00 ns, 4.9608 s/op
+WorkloadActual   7: 1 op, 4891604700.00 ns, 4.8916 s/op
+WorkloadActual   8: 1 op, 4836499000.00 ns, 4.8365 s/op
+WorkloadActual   9: 1 op, 4950790900.00 ns, 4.9508 s/op
+WorkloadActual  10: 1 op, 4949096400.00 ns, 4.9491 s/op
+WorkloadActual  11: 1 op, 4909198000.00 ns, 4.9092 s/op
+WorkloadActual  12: 1 op, 5055048500.00 ns, 5.0550 s/op
+WorkloadActual  13: 1 op, 4918005200.00 ns, 4.9180 s/op
+WorkloadActual  14: 1 op, 4892472700.00 ns, 4.8925 s/op
+WorkloadActual  15: 1 op, 4889639300.00 ns, 4.8896 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 5054323400.00 ns, 5.0543 s/op
+WorkloadResult   2: 1 op, 4919078600.00 ns, 4.9191 s/op
+WorkloadResult   3: 1 op, 4998997200.00 ns, 4.9990 s/op
+WorkloadResult   4: 1 op, 4856135100.00 ns, 4.8561 s/op
+WorkloadResult   5: 1 op, 4960794200.00 ns, 4.9608 s/op
+WorkloadResult   6: 1 op, 4891604700.00 ns, 4.8916 s/op
+WorkloadResult   7: 1 op, 4836499000.00 ns, 4.8365 s/op
+WorkloadResult   8: 1 op, 4950790900.00 ns, 4.9508 s/op
+WorkloadResult   9: 1 op, 4949096400.00 ns, 4.9491 s/op
+WorkloadResult  10: 1 op, 4909198000.00 ns, 4.9092 s/op
+WorkloadResult  11: 1 op, 5055048500.00 ns, 5.0550 s/op
+WorkloadResult  12: 1 op, 4918005200.00 ns, 4.9180 s/op
+WorkloadResult  13: 1 op, 4892472700.00 ns, 4.8925 s/op
+WorkloadResult  14: 1 op, 4889639300.00 ns, 4.8896 s/op
+
+// AfterAll
+// Benchmark Process 19660 has exited with code 0.
+
+Mean = 4.934 s, StdErr = 0.018 s (0.36%), N = 14, StdDev = 0.066 s
+Min = 4.836 s, Q1 = 4.892 s, Median = 4.919 s, Q3 = 4.958 s, Max = 5.055 s
+IQR = 0.066 s, LowerFence = 4.792 s, UpperFence = 5.058 s
+ConfidenceInterval = [4.860 s; 5.009 s] (CI 99.9%), Margin = 0.075 s (1.51% of Mean)
+Skewness = 0.52, Kurtosis = 2.16, MValue = 2
+
+// ** Remained 36 (72.0%) benchmark(s) to run. Estimated finish 2023-09-29 17:48 (1h 7m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: SalesBenchmarkRead.CsvHelper: .NET 7.0(Runtime=.NET 7.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ".NET 7.0.dll" --anonymousPipes 1324 1340 --benchmarkName UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead.CsvHelper --job ".NET 7.0" --benchmarkId 2 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 7.0\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.8
+// Runtime=.NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: .NET 7.0
+
+OverheadJitting  1: 1 op, 162800.00 ns, 162.8000 us/op
+WorkloadJitting  1: 1 op, 6656093600.00 ns, 6.6561 s/op
+
+OverheadJitting  2: 1 op, 300.00 ns, 300.0000 ns/op
+WorkloadJitting  2: 1 op, 6577345400.00 ns, 6.5773 s/op
+
+WorkloadWarmup   1: 1 op, 6723625100.00 ns, 6.7236 s/op
+WorkloadWarmup   2: 1 op, 6930669400.00 ns, 6.9307 s/op
+WorkloadWarmup   3: 1 op, 6988954600.00 ns, 6.9890 s/op
+WorkloadWarmup   4: 1 op, 6920890800.00 ns, 6.9209 s/op
+WorkloadWarmup   5: 1 op, 6844697900.00 ns, 6.8447 s/op
+WorkloadWarmup   6: 1 op, 6858632700.00 ns, 6.8586 s/op
+WorkloadWarmup   7: 1 op, 6698163600.00 ns, 6.6982 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 6528681300.00 ns, 6.5287 s/op
+WorkloadActual   2: 1 op, 6673375500.00 ns, 6.6734 s/op
+WorkloadActual   3: 1 op, 6636765000.00 ns, 6.6368 s/op
+WorkloadActual   4: 1 op, 6721647000.00 ns, 6.7216 s/op
+WorkloadActual   5: 1 op, 6760088500.00 ns, 6.7601 s/op
+WorkloadActual   6: 1 op, 6680166300.00 ns, 6.6802 s/op
+WorkloadActual   7: 1 op, 6934606800.00 ns, 6.9346 s/op
+WorkloadActual   8: 1 op, 6785029500.00 ns, 6.7850 s/op
+WorkloadActual   9: 1 op, 6639959400.00 ns, 6.6400 s/op
+WorkloadActual  10: 1 op, 6704036900.00 ns, 6.7040 s/op
+WorkloadActual  11: 1 op, 6626670300.00 ns, 6.6267 s/op
+WorkloadActual  12: 1 op, 6783560400.00 ns, 6.7836 s/op
+WorkloadActual  13: 1 op, 6767202000.00 ns, 6.7672 s/op
+WorkloadActual  14: 1 op, 6710051900.00 ns, 6.7101 s/op
+WorkloadActual  15: 1 op, 6865894500.00 ns, 6.8659 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 6528681300.00 ns, 6.5287 s/op
+WorkloadResult   2: 1 op, 6673375500.00 ns, 6.6734 s/op
+WorkloadResult   3: 1 op, 6636765000.00 ns, 6.6368 s/op
+WorkloadResult   4: 1 op, 6721647000.00 ns, 6.7216 s/op
+WorkloadResult   5: 1 op, 6760088500.00 ns, 6.7601 s/op
+WorkloadResult   6: 1 op, 6680166300.00 ns, 6.6802 s/op
+WorkloadResult   7: 1 op, 6934606800.00 ns, 6.9346 s/op
+WorkloadResult   8: 1 op, 6785029500.00 ns, 6.7850 s/op
+WorkloadResult   9: 1 op, 6639959400.00 ns, 6.6400 s/op
+WorkloadResult  10: 1 op, 6704036900.00 ns, 6.7040 s/op
+WorkloadResult  11: 1 op, 6626670300.00 ns, 6.6267 s/op
+WorkloadResult  12: 1 op, 6783560400.00 ns, 6.7836 s/op
+WorkloadResult  13: 1 op, 6767202000.00 ns, 6.7672 s/op
+WorkloadResult  14: 1 op, 6710051900.00 ns, 6.7101 s/op
+WorkloadResult  15: 1 op, 6865894500.00 ns, 6.8659 s/op
+
+// AfterAll
+// Benchmark Process 22716 has exited with code 0.
+
+Mean = 6.721 s, StdErr = 0.026 s (0.39%), N = 15, StdDev = 0.101 s
+Min = 6.529 s, Q1 = 6.657 s, Median = 6.710 s, Q3 = 6.775 s, Max = 6.935 s
+IQR = 0.119 s, LowerFence = 6.479 s, UpperFence = 6.953 s
+ConfidenceInterval = [6.613 s; 6.829 s] (CI 99.9%), Margin = 0.108 s (1.60% of Mean)
+Skewness = 0.27, Kurtosis = 2.65, MValue = 2
+
+// ** Remained 35 (70.0%) benchmark(s) to run. Estimated finish 2023-09-29 17:51 (1h 7m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: SalesBenchmarkRead.UltraMapper: .NET 7.0(Runtime=.NET 7.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ".NET 7.0.dll" --anonymousPipes 5616 1964 --benchmarkName UltraMapper.DataFileParsers.Benchmarks.SalesBenchmarkRead.UltraMapper --job ".NET 7.0" --benchmarkId 3 in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET 7.0\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.8
+// Runtime=.NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: .NET 7.0
+
+OverheadJitting  1: 1 op, 166500.00 ns, 166.5000 us/op
+WorkloadJitting  1: 1 op, 3290804100.00 ns, 3.2908 s/op
+
+OverheadJitting  2: 1 op, 1100.00 ns, 1.1000 us/op
+WorkloadJitting  2: 1 op, 3313931300.00 ns, 3.3139 s/op
+
+WorkloadWarmup   1: 1 op, 3324790500.00 ns, 3.3248 s/op
+WorkloadWarmup   2: 1 op, 3370399100.00 ns, 3.3704 s/op
+WorkloadWarmup   3: 1 op, 3279454300.00 ns, 3.2795 s/op
+WorkloadWarmup   4: 1 op, 3305746600.00 ns, 3.3057 s/op
+WorkloadWarmup   5: 1 op, 3340929300.00 ns, 3.3409 s/op
+WorkloadWarmup   6: 1 op, 3329193900.00 ns, 3.3292 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 3335255600.00 ns, 3.3353 s/op
+WorkloadActual   2: 1 op, 3316905400.00 ns, 3.3169 s/op
+WorkloadActual   3: 1 op, 3270529700.00 ns, 3.2705 s/op
+WorkloadActual   4: 1 op, 3320715100.00 ns, 3.3207 s/op
+WorkloadActual   5: 1 op, 3292808000.00 ns, 3.2928 s/op
+WorkloadActual   6: 1 op, 3293961700.00 ns, 3.2940 s/op
+WorkloadActual   7: 1 op, 3270594600.00 ns, 3.2706 s/op
+WorkloadActual   8: 1 op, 3316916800.00 ns, 3.3169 s/op
+WorkloadActual   9: 1 op, 3287903400.00 ns, 3.2879 s/op
+WorkloadActual  10: 1 op, 3331050600.00 ns, 3.3311 s/op
+WorkloadActual  11: 1 op, 3235505400.00 ns, 3.2355 s/op
+WorkloadActual  12: 1 op, 3197343200.00 ns, 3.1973 s/op
+WorkloadActual  13: 1 op, 3225793900.00 ns, 3.2258 s/op
+WorkloadActual  14: 1 op, 3262931200.00 ns, 3.2629 s/op
+WorkloadActual  15: 1 op, 3106943100.00 ns, 3.1069 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 3335255600.00 ns, 3.3353 s/op
+WorkloadResult   2: 1 op, 3316905400.00 ns, 3.3169 s/op
+WorkloadResult   3: 1 op, 3270529700.00 ns, 3.2705 s/op
+WorkloadResult   4: 1 op, 3320715100.00 ns, 3.3207 s/op
+WorkloadResult   5: 1 op, 3292808000.00 ns, 3.2928 s/op
+WorkloadResult   6: 1 op, 3293961700.00 ns, 3.2940 s/op
+WorkloadResult   7: 1 op, 3270594600.00 ns, 3.2706 s/op
+WorkloadResult   8: 1 op, 3316916800.00 ns, 3.3169 s/op
+WorkloadResult   9: 1 op, 3287903400.00 ns, 3.2879 s/op
+WorkloadResult  10: 1 op, 3331050600.00 ns, 3.3311 s/op
+WorkloadResult  11: 1 op, 3235505400.00 ns, 3.2355 s/op
+WorkloadResult  12: 1 op, 3197343200.00 ns, 3.1973 s/op
+WorkloadResult  13: 1 op, 3225793900.00 ns, 3.2258 s/op
+WorkloadResult  14: 1 op, 3262931200.00 ns, 3.2629 s/op
+WorkloadResult  15: 1 op, 3106943100.00 ns, 3.1069 s/op
+
+// AfterAll
+// Benchmark Process 20200 has exited with code 0.
+
+Mean = 3.271 s, StdErr = 0.016 s (0.48%), N = 15, StdDev = 0.061 s
+Min = 3.107 s, Q1 = 3.249 s, Median = 3.288 s, Q3 = 3.317 s, Max = 3.335 s
+IQR = 0.068 s, LowerFence = 3.148 s, UpperFence = 3.418 s
+ConfidenceInterval = [3.206 s; 3.336 s] (CI 99.9%), Margin = 0.065 s (1.98% of Mean)
+Skewness = -1.24, Kurtosis = 3.98, MValue = 2
+
+// ** Remained 34 (68.0%) benchmark(s) to run. Estimated finish 2023-09-29 17:49 (1h 3m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// Build Error: Standard output: 
+  
+ Standard error: 
+   Determining projects to restore...
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\UltraMapper.Csv.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Parsing\UltraMapper.Parsing\UltraMapper.Parsing.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper\UltraMapper\UltraMapper.csproj::TargetFramework=net50]
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201: Project UltraMapper.DataFileParsers.Benchmarks is not compatible with net48 (.NETFramework,Version=v4.8). Project UltraMapper.DataFileParsers.Benchmarks supports:
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net6.0 (.NETCoreApp,Version=v6.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net7.0 (.NETCoreApp,Version=v7.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201: Project UltraMapper.DataFileParsers.Benchmarks is not compatible with net48 (.NETFramework,Version=v4.8) / win7-x64. Project UltraMapper.DataFileParsers.Benchmarks supports:
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net6.0 (.NETCoreApp,Version=v6.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net7.0 (.NETCoreApp,Version=v7.0)
+  Failed to restore E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj (in 128 ms).
+  4 of 5 projects are up-to-date for restore.
+
+// BenchmarkDotNet has failed to build the auto-generated boilerplate code.
+// It can be found in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8
+// Please follow the troubleshooting guide: https://benchmarkdotnet.org/articles/guides/troubleshooting.html
+
+// ** Remained 33 (66.0%) benchmark(s) to run. Estimated finish 2023-09-29 17:43 (0h 58m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// Build Error: Standard output: 
+  
+ Standard error: 
+   Determining projects to restore...
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\UltraMapper.Csv.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Parsing\UltraMapper.Parsing\UltraMapper.Parsing.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper\UltraMapper\UltraMapper.csproj::TargetFramework=net50]
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201: Project UltraMapper.DataFileParsers.Benchmarks is not compatible with net48 (.NETFramework,Version=v4.8). Project UltraMapper.DataFileParsers.Benchmarks supports:
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net6.0 (.NETCoreApp,Version=v6.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net7.0 (.NETCoreApp,Version=v7.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201: Project UltraMapper.DataFileParsers.Benchmarks is not compatible with net48 (.NETFramework,Version=v4.8) / win7-x64. Project UltraMapper.DataFileParsers.Benchmarks supports:
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net6.0 (.NETCoreApp,Version=v6.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net7.0 (.NETCoreApp,Version=v7.0)
+  Failed to restore E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj (in 128 ms).
+  4 of 5 projects are up-to-date for restore.
+
+// BenchmarkDotNet has failed to build the auto-generated boilerplate code.
+// It can be found in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8
+// Please follow the troubleshooting guide: https://benchmarkdotnet.org/articles/guides/troubleshooting.html
+
+// ** Remained 32 (64.0%) benchmark(s) to run. Estimated finish 2023-09-29 17:38 (0h 53m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// Build Error: Standard output: 
+  
+ Standard error: 
+   Determining projects to restore...
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\UltraMapper.Csv.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Parsing\UltraMapper.Parsing\UltraMapper.Parsing.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper\UltraMapper\UltraMapper.csproj::TargetFramework=net50]
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201: Project UltraMapper.DataFileParsers.Benchmarks is not compatible with net48 (.NETFramework,Version=v4.8). Project UltraMapper.DataFileParsers.Benchmarks supports:
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net6.0 (.NETCoreApp,Version=v6.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net7.0 (.NETCoreApp,Version=v7.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201: Project UltraMapper.DataFileParsers.Benchmarks is not compatible with net48 (.NETFramework,Version=v4.8) / win7-x64. Project UltraMapper.DataFileParsers.Benchmarks supports:
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net6.0 (.NETCoreApp,Version=v6.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net7.0 (.NETCoreApp,Version=v7.0)
+  Failed to restore E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj (in 128 ms).
+  4 of 5 projects are up-to-date for restore.
+
+// BenchmarkDotNet has failed to build the auto-generated boilerplate code.
+// It can be found in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8
+// Please follow the troubleshooting guide: https://benchmarkdotnet.org/articles/guides/troubleshooting.html
+
+// ** Remained 31 (62.0%) benchmark(s) to run. Estimated finish 2023-09-29 17:34 (0h 49m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// Build Error: Standard output: 
+  
+ Standard error: 
+   Determining projects to restore...
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.Csv\UltraMapper.Csv.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Parsing\UltraMapper.Parsing\UltraMapper.Parsing.csproj::TargetFramework=net50]
+C:\Program Files\dotnet\sdk\7.0.302\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(28,5): warning NETSDK1138: The target framework 'net50' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy. [E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper\UltraMapper\UltraMapper.csproj::TargetFramework=net50]
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201: Project UltraMapper.DataFileParsers.Benchmarks is not compatible with net48 (.NETFramework,Version=v4.8). Project UltraMapper.DataFileParsers.Benchmarks supports:
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net6.0 (.NETCoreApp,Version=v6.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net7.0 (.NETCoreApp,Version=v7.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201: Project UltraMapper.DataFileParsers.Benchmarks is not compatible with net48 (.NETFramework,Version=v4.8) / win7-x64. Project UltraMapper.DataFileParsers.Benchmarks supports:
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net6.0 (.NETCoreApp,Version=v6.0)
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj : error NU1201:   - net7.0 (.NETCoreApp,Version=v7.0)
+  Failed to restore E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8\BenchmarkDotNet.Autogenerated.csproj (in 128 ms).
+  4 of 5 projects are up-to-date for restore.
+
+// BenchmarkDotNet has failed to build the auto-generated boilerplate code.
+// It can be found in E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Debug\net60\.NET Framework 4.8
+// Please follow the troubleshooting guide: https://benchmarkdotnet.org/articles/guides/troubleshooting.html
+
+// ** Remained 30 (60.0%) benchmark(s) to run. Estimated finish 2023-09-29 17:30 (0h 45m from now) **
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+
+// * Detailed results *
+SalesBenchmarkRead.BaseLine: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+Runtime = ; GC = 
+Mean = 3.251 s, StdErr = 0.014 s (0.43%), N = 13, StdDev = 0.051 s
+Min = 3.194 s, Q1 = 3.217 s, Median = 3.225 s, Q3 = 3.305 s, Max = 3.338 s
+IQR = 0.088 s, LowerFence = 3.084 s, UpperFence = 3.438 s
+ConfidenceInterval = [3.190 s; 3.312 s] (CI 99.9%), Margin = 0.061 s (1.87% of Mean)
+Skewness = 0.6, Kurtosis = 1.59, MValue = 2
+-------------------- Histogram --------------------
+[3.179 s ; 3.354 s) | @@@@@@@@@@@@@
+---------------------------------------------------
+
+SalesBenchmarkRead.FileHelper: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+Runtime = ; GC = 
+Mean = 5.800 s, StdErr = 0.027 s (0.47%), N = 14, StdDev = 0.101 s
+Min = 5.682 s, Q1 = 5.725 s, Median = 5.764 s, Q3 = 5.869 s, Max = 5.981 s
+IQR = 0.143 s, LowerFence = 5.510 s, UpperFence = 6.084 s
+ConfidenceInterval = [5.685 s; 5.914 s] (CI 99.9%), Margin = 0.114 s (1.97% of Mean)
+Skewness = 0.58, Kurtosis = 1.82, MValue = 2
+-------------------- Histogram --------------------
+[5.672 s ; 5.981 s) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+SalesBenchmarkRead.CsvHelper: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+Runtime = ; GC = 
+Mean = 6.852 s, StdErr = 0.034 s (0.50%), N = 20, StdDev = 0.154 s
+Min = 6.593 s, Q1 = 6.736 s, Median = 6.859 s, Q3 = 6.956 s, Max = 7.134 s
+IQR = 0.220 s, LowerFence = 6.407 s, UpperFence = 7.286 s
+ConfidenceInterval = [6.718 s; 6.985 s] (CI 99.9%), Margin = 0.133 s (1.95% of Mean)
+Skewness = 0.01, Kurtosis = 2.07, MValue = 2
+-------------------- Histogram --------------------
+[6.519 s ; 6.785 s) | @@@@@@@
+[6.785 s ; 6.984 s) | @@@@@@@@@@@
+[6.984 s ; 7.208 s) | @@
+---------------------------------------------------
+
+SalesBenchmarkRead.UltraMapper: Job-KNOHZT(Toolchain=InProcessEmitToolchain)
+Runtime = ; GC = 
+Mean = 3.458 s, StdErr = 0.012 s (0.36%), N = 13, StdDev = 0.044 s
+Min = 3.396 s, Q1 = 3.424 s, Median = 3.459 s, Q3 = 3.499 s, Max = 3.517 s
+IQR = 0.075 s, LowerFence = 3.312 s, UpperFence = 3.612 s
+ConfidenceInterval = [3.405 s; 3.511 s] (CI 99.9%), Margin = 0.053 s (1.53% of Mean)
+Skewness = 0.02, Kurtosis = 1.32, MValue = 2
+-------------------- Histogram --------------------
+[3.386 s ; 3.536 s) | @@@@@@@@@@@@@
+---------------------------------------------------
+
+SalesBenchmarkRead.BaseLine: .NET 5.0(Runtime=.NET 5.0)
+Runtime = ; GC = 
+There are not any results runs
+
+SalesBenchmarkRead.FileHelper: .NET 5.0(Runtime=.NET 5.0)
+Runtime = ; GC = 
+There are not any results runs
+
+SalesBenchmarkRead.CsvHelper: .NET 5.0(Runtime=.NET 5.0)
+Runtime = ; GC = 
+There are not any results runs
+
+SalesBenchmarkRead.UltraMapper: .NET 5.0(Runtime=.NET 5.0)
+Runtime = ; GC = 
+There are not any results runs
+
+SalesBenchmarkRead.BaseLine: .NET 6.0(Runtime=.NET 6.0)
+Runtime = .NET 6.0.16 (6.0.1623.17311), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 2.959 s, StdErr = 0.012 s (0.42%), N = 23, StdDev = 0.060 s
+Min = 2.880 s, Q1 = 2.915 s, Median = 2.946 s, Q3 = 2.987 s, Max = 3.093 s
+IQR = 0.073 s, LowerFence = 2.806 s, UpperFence = 3.096 s
+ConfidenceInterval = [2.912 s; 3.007 s] (CI 99.9%), Margin = 0.047 s (1.59% of Mean)
+Skewness = 0.6, Kurtosis = 2.33, MValue = 2
+-------------------- Histogram --------------------
+[2.862 s ; 2.926 s) | @@@@@@
+[2.926 s ; 3.018 s) | @@@@@@@@@@@@@
+[3.018 s ; 3.121 s) | @@@@
+---------------------------------------------------
+
+SalesBenchmarkRead.FileHelper: .NET 6.0(Runtime=.NET 6.0)
+Runtime = .NET 6.0.16 (6.0.1623.17311), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 5.496 s, StdErr = 0.023 s (0.42%), N = 15, StdDev = 0.089 s
+Min = 5.358 s, Q1 = 5.442 s, Median = 5.466 s, Q3 = 5.557 s, Max = 5.689 s
+IQR = 0.115 s, LowerFence = 5.269 s, UpperFence = 5.730 s
+ConfidenceInterval = [5.401 s; 5.591 s] (CI 99.9%), Margin = 0.095 s (1.73% of Mean)
+Skewness = 0.49, Kurtosis = 2.28, MValue = 2
+-------------------- Histogram --------------------
+[5.311 s ; 5.488 s) | @@@@@@@@@
+[5.488 s ; 5.736 s) | @@@@@@
+---------------------------------------------------
+
+SalesBenchmarkRead.CsvHelper: .NET 6.0(Runtime=.NET 6.0)
+Runtime = .NET 6.0.16 (6.0.1623.17311), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 6.511 s, StdErr = 0.031 s (0.47%), N = 16, StdDev = 0.123 s
+Min = 6.345 s, Q1 = 6.414 s, Median = 6.495 s, Q3 = 6.613 s, Max = 6.746 s
+IQR = 0.199 s, LowerFence = 6.116 s, UpperFence = 6.911 s
+ConfidenceInterval = [6.386 s; 6.637 s] (CI 99.9%), Margin = 0.125 s (1.93% of Mean)
+Skewness = 0.42, Kurtosis = 1.79, MValue = 2
+-------------------- Histogram --------------------
+[6.326 s ; 6.521 s) | @@@@@@@@@
+[6.521 s ; 6.793 s) | @@@@@@@
+---------------------------------------------------
+
+SalesBenchmarkRead.UltraMapper: .NET 6.0(Runtime=.NET 6.0)
+Runtime = .NET 6.0.16 (6.0.1623.17311), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 3.202 s, StdErr = 0.014 s (0.45%), N = 14, StdDev = 0.054 s
+Min = 3.152 s, Q1 = 3.163 s, Median = 3.185 s, Q3 = 3.224 s, Max = 3.335 s
+IQR = 0.061 s, LowerFence = 3.070 s, UpperFence = 3.316 s
+ConfidenceInterval = [3.142 s; 3.263 s] (CI 99.9%), Margin = 0.061 s (1.89% of Mean)
+Skewness = 1.12, Kurtosis = 3.19, MValue = 2
+-------------------- Histogram --------------------
+[3.145 s ; 3.221 s) | @@@@@@@@@@
+[3.221 s ; 3.365 s) | @@@@
+---------------------------------------------------
+
+SalesBenchmarkRead.BaseLine: .NET 7.0(Runtime=.NET 7.0)
+Runtime = .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 2.896 s, StdErr = 0.011 s (0.38%), N = 15, StdDev = 0.043 s
+Min = 2.837 s, Q1 = 2.869 s, Median = 2.894 s, Q3 = 2.927 s, Max = 2.991 s
+IQR = 0.058 s, LowerFence = 2.781 s, UpperFence = 3.014 s
+ConfidenceInterval = [2.851 s; 2.942 s] (CI 99.9%), Margin = 0.046 s (1.58% of Mean)
+Skewness = 0.44, Kurtosis = 2.27, MValue = 2
+-------------------- Histogram --------------------
+[2.830 s ; 2.945 s) | @@@@@@@@@@@@@@
+[2.945 s ; 3.013 s) | @
+---------------------------------------------------
+
+SalesBenchmarkRead.FileHelper: .NET 7.0(Runtime=.NET 7.0)
+Runtime = .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 4.934 s, StdErr = 0.018 s (0.36%), N = 14, StdDev = 0.066 s
+Min = 4.836 s, Q1 = 4.892 s, Median = 4.919 s, Q3 = 4.958 s, Max = 5.055 s
+IQR = 0.066 s, LowerFence = 4.792 s, UpperFence = 5.058 s
+ConfidenceInterval = [4.860 s; 5.009 s] (CI 99.9%), Margin = 0.075 s (1.51% of Mean)
+Skewness = 0.52, Kurtosis = 2.16, MValue = 2
+-------------------- Histogram --------------------
+[4.801 s ; 4.974 s) | @@@@@@@@@@@
+[4.974 s ; 5.077 s) | @@@
+---------------------------------------------------
+
+SalesBenchmarkRead.CsvHelper: .NET 7.0(Runtime=.NET 7.0)
+Runtime = .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 6.721 s, StdErr = 0.026 s (0.39%), N = 15, StdDev = 0.101 s
+Min = 6.529 s, Q1 = 6.657 s, Median = 6.710 s, Q3 = 6.775 s, Max = 6.935 s
+IQR = 0.119 s, LowerFence = 6.479 s, UpperFence = 6.953 s
+ConfidenceInterval = [6.613 s; 6.829 s] (CI 99.9%), Margin = 0.108 s (1.60% of Mean)
+Skewness = 0.27, Kurtosis = 2.65, MValue = 2
+-------------------- Histogram --------------------
+[6.475 s ; 6.741 s) | @@@@@@@@@
+[6.741 s ; 6.988 s) | @@@@@@
+---------------------------------------------------
+
+SalesBenchmarkRead.UltraMapper: .NET 7.0(Runtime=.NET 7.0)
+Runtime = .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 3.271 s, StdErr = 0.016 s (0.48%), N = 15, StdDev = 0.061 s
+Min = 3.107 s, Q1 = 3.249 s, Median = 3.288 s, Q3 = 3.317 s, Max = 3.335 s
+IQR = 0.068 s, LowerFence = 3.148 s, UpperFence = 3.418 s
+ConfidenceInterval = [3.206 s; 3.336 s] (CI 99.9%), Margin = 0.065 s (1.98% of Mean)
+Skewness = -1.24, Kurtosis = 3.98, MValue = 2
+-------------------- Histogram --------------------
+[3.075 s ; 3.184 s) | @
+[3.184 s ; 3.259 s) | @@@
+[3.259 s ; 3.368 s) | @@@@@@@@@@@
+---------------------------------------------------
+
+SalesBenchmarkRead.BaseLine: .NET Framework 4.8(Runtime=.NET Framework 4.8)
+Runtime = ; GC = 
+There are not any results runs
+
+SalesBenchmarkRead.FileHelper: .NET Framework 4.8(Runtime=.NET Framework 4.8)
+Runtime = ; GC = 
+There are not any results runs
+
+SalesBenchmarkRead.CsvHelper: .NET Framework 4.8(Runtime=.NET Framework 4.8)
+Runtime = ; GC = 
+There are not any results runs
+
+SalesBenchmarkRead.UltraMapper: .NET Framework 4.8(Runtime=.NET Framework 4.8)
+Runtime = ; GC = 
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet v0.13.8, Windows 10 (10.0.19045.3448/22H2/2022Update)
+Intel Core i7-8700K CPU 3.70GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
+.NET SDK 7.0.302
+  [Host]   : .NET 6.0.16 (6.0.1623.17311), X64 RyuJIT AVX2 DEBUG [AttachedDebugger]
+  .NET 6.0 : .NET 6.0.16 (6.0.1623.17311), X64 RyuJIT AVX2
+  .NET 7.0 : .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+
+
+| Method      | Job                | Runtime            | Mean    | Error    | StdDev   |
+|------------ |------------------- |------------------- |--------:|---------:|---------:|
+| BaseLine    | Job-KNOHZT         | .NET 6.0           | 3.251 s | 0.0608 s | 0.0508 s |
+| FileHelper  | Job-KNOHZT         | .NET 6.0           | 5.800 s | 0.1144 s | 0.1014 s |
+| CsvHelper   | Job-KNOHZT         | .NET 6.0           | 6.852 s | 0.1333 s | 0.1535 s |
+| UltraMapper | Job-KNOHZT         | .NET 6.0           | 3.458 s | 0.0531 s | 0.0443 s |
+| BaseLine    | .NET 5.0           | .NET 5.0           |      NA |       NA |       NA |
+| FileHelper  | .NET 5.0           | .NET 5.0           |      NA |       NA |       NA |
+| CsvHelper   | .NET 5.0           | .NET 5.0           |      NA |       NA |       NA |
+| UltraMapper | .NET 5.0           | .NET 5.0           |      NA |       NA |       NA |
+| BaseLine    | .NET 6.0           | .NET 6.0           | 2.959 s | 0.0472 s | 0.0596 s |
+| FileHelper  | .NET 6.0           | .NET 6.0           | 5.496 s | 0.0948 s | 0.0887 s |
+| CsvHelper   | .NET 6.0           | .NET 6.0           | 6.511 s | 0.1255 s | 0.1232 s |
+| UltraMapper | .NET 6.0           | .NET 6.0           | 3.202 s | 0.0606 s | 0.0537 s |
+| BaseLine    | .NET 7.0           | .NET 7.0           | 2.896 s | 0.0457 s | 0.0428 s |
+| FileHelper  | .NET 7.0           | .NET 7.0           | 4.934 s | 0.0745 s | 0.0661 s |
+| CsvHelper   | .NET 7.0           | .NET 7.0           | 6.721 s | 0.1077 s | 0.1008 s |
+| UltraMapper | .NET 7.0           | .NET 7.0           | 3.271 s | 0.0648 s | 0.0606 s |
+| BaseLine    | .NET Framework 4.8 | .NET Framework 4.8 |      NA |       NA |       NA |
+| FileHelper  | .NET Framework 4.8 | .NET Framework 4.8 |      NA |       NA |       NA |
+| CsvHelper   | .NET Framework 4.8 | .NET Framework 4.8 |      NA |       NA |       NA |
+| UltraMapper | .NET Framework 4.8 | .NET Framework 4.8 |      NA |       NA |       NA |
+
+Benchmarks with issues:
+  SalesBenchmarkRead.BaseLine: .NET 5.0(Runtime=.NET 5.0)
+  SalesBenchmarkRead.FileHelper: .NET 5.0(Runtime=.NET 5.0)
+  SalesBenchmarkRead.CsvHelper: .NET 5.0(Runtime=.NET 5.0)

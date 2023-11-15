@@ -1,31 +1,6 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.8": {
-      "UltraMapper/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.8",
-        "compile": {
-          "bin/placeholder/UltraMapper.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/UltraMapper.dll": {}
-        }
-      },
-      "UltraMapper.Parsing/2.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.8",
-        "dependencies": {
-          "UltraMapper": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/UltraMapper.Parsing.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/UltraMapper.Parsing.dll": {}
-        }
-      }
-    },
     "net5.0": {
       "UltraMapper/1.0.0": {
         "type": "project",
@@ -75,6 +50,31 @@
           "bin/placeholder/UltraMapper.Parsing.dll": {}
         }
       }
+    },
+    "net7.0": {
+      "UltraMapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/UltraMapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UltraMapper.dll": {}
+        }
+      },
+      "UltraMapper.Parsing/2.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "UltraMapper": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UltraMapper.Parsing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UltraMapper.Parsing.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -90,15 +90,15 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.8": [
-      "UltraMapper >= 1.0.0",
-      "UltraMapper.Parsing >= 2.0.0"
-    ],
     "net5.0": [
       "UltraMapper >= 1.0.0",
       "UltraMapper.Parsing >= 2.0.0"
     ],
     "net6.0": [
+      "UltraMapper >= 1.0.0",
+      "UltraMapper.Parsing >= 2.0.0"
+    ],
+    "net7.0": [
       "UltraMapper >= 1.0.0",
       "UltraMapper.Parsing >= 2.0.0"
     ]
@@ -128,9 +128,9 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net48",
         "net50",
-        "net60"
+        "net60",
+        "net70"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -160,8 +160,8 @@
             }
           }
         },
-        "net48": {
-          "targetAlias": "net48",
+        "net7.0": {
+          "targetAlias": "net70",
           "projectReferences": {
             "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Parsing\\UltraMapper.Parsing\\UltraMapper.Parsing.csproj": {
               "projectPath": "E:\\Sviluppo Software\\OnlineRepos\\UltraMapper.Suite\\UltraMapper.Parsing\\UltraMapper.Parsing\\UltraMapper.Parsing.csproj"
@@ -197,7 +197,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       },
       "net6.0": {
         "targetAlias": "net60",
@@ -217,11 +217,27 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       },
-      "net48": {
-        "targetAlias": "net48",
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+      "net7.0": {
+        "targetAlias": "net70",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

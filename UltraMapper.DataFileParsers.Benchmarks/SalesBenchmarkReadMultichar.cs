@@ -11,9 +11,10 @@ using UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.Multi
 
 namespace UltraMapper.DataFileParsers.Benchmarks
 {
-    [SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net60 )]
-    [SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net50 )]
-    [SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net47 )]
+    [SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net70 )]
+    //[SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net60 )]
+    //[SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net50 )]
+    //[SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net48 )]
     public class SalesBenchmarkReadMultichar
     {
         private readonly string _inputFile;

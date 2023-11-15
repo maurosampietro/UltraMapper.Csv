@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "UltraMapper.Csv/1.0.0": {
+        "dependencies": {
+          "UltraMapper": "1.0.0",
+          "UltraMapper.Parsing": "2.0.0"
+        },
+        "runtime": {
+          "UltraMapper.Csv.dll": {}
+        }
+      },
+      "UltraMapper/1.0.0": {
+        "runtime": {
+          "UltraMapper.dll": {}
+        }
+      },
+      "UltraMapper.Parsing/2.0.0": {
+        "dependencies": {
+          "UltraMapper": "1.0.0"
+        },
+        "runtime": {
+          "UltraMapper.Parsing.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UltraMapper.Csv/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UltraMapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UltraMapper.Parsing/2.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

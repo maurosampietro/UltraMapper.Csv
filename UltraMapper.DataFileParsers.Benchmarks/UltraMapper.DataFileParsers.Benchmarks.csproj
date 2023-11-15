@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>net47;net50;net60</TargetFrameworks>
+    <TargetFrameworks>net60;net70;</TargetFrameworks>
     <StartupObject>UltraMapper.DataFileParsers.Benchmarks.Program</StartupObject>
     <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BenchmarkDotNet" Version="0.13.2" />
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.9" />
     <PackageReference Include="CsvHelper" Version="30.0.1" />
     <PackageReference Include="FileHelpers" Version="3.5.2" />
   </ItemGroup>

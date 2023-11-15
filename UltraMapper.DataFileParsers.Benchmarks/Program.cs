@@ -8,7 +8,7 @@ namespace UltraMapper.DataFileParsers.Benchmarks
     {
         public static void Main( string[] args )
         {
-            var summary = BenchmarkRunner.Run( typeof( Program ).Assembly, new DebugInProcessConfig() );
+            var summary = BenchmarkRunner.Run( typeof( Program ).Assembly/*, new DebugInProcessConfig()*/ );
 
             Console.ReadLine();
             Console.ReadLine();

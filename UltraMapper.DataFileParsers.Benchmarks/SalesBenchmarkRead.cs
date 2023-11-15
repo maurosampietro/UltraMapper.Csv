@@ -8,9 +8,10 @@ using UltraMapper.DataFileParsers.Benchmarks.PerformanceTests.SalesExample.Singl
 
 namespace UltraMapper.DataFileParsers.Benchmarks
 {
-    [SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net60 )]
-    [SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net50 )]
-    [SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net47 )]
+    [SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net70 )]
+    //[SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net60 )]
+    //[SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net50 )]
+    //[SimpleJob( BenchmarkDotNet.Jobs.RuntimeMoniker.Net48 )]
     public class SalesBenchmarkRead
     {
         private string _inputFile;
