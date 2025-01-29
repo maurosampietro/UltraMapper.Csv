@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UltraMapper.Csv.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e9a60e60f031e30a2970cfea25e7d727c853137")]
 [assembly: System.Reflection.AssemblyProductAttribute("UltraMapper.Csv.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UltraMapper.Csv.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

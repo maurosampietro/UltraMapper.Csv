@@ -85,7 +85,6 @@ E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.D
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Release\net60\UltraMapper.DataFileParsers.Benchmarks.AssemblyInfoInputs.cache
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Release\net60\UltraMapper.DataFileParsers.Benchmarks.AssemblyInfo.cs
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Release\net60\UltraMapper.DataFileParsers.Benchmarks.csproj.CoreCompileInputs.cache
-E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Release\net60\UltraMapper.DataFileParsers.Benchmarks.csproj.CopyComplete
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Release\net60\UltraMapper.DataFileParsers.Benchmarks.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Release\net60\refint\UltraMapper.DataFileParsers.Benchmarks.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Release\net60\UltraMapper.DataFileParsers.Benchmarks.pdb
@@ -102,3 +101,5 @@ E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.D
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net60\runtimes\win-x64\native\capstone.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net60\runtimes\win-x86\native\capstone.dll
 E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\bin\Release\net60\runtimes\win\lib\netcoreapp2.0\System.Management.dll
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Release\net60\UltraMapper.DataFileParsers.Benchmarks.sourcelink.json
+E:\Sviluppo Software\OnlineRepos\UltraMapper.Suite\UltraMapper.Csv\UltraMapper.DataFileParsers.Benchmarks\obj\Release\net60\UltraMap.3FCDF94F.Up2Date

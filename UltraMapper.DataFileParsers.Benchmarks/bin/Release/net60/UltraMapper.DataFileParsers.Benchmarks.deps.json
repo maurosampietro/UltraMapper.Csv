@@ -465,7 +465,10 @@
       "System.Threading.Tasks.Extensions/4.5.4": {},
       "UltraMapper/1.0.0": {
         "runtime": {
-          "UltraMapper.dll": {}
+          "UltraMapper.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "0.0.0.0"
+          }
         }
       },
       "UltraMapper.Csv/1.0.0": {
@@ -474,7 +477,10 @@
           "UltraMapper.Parsing": "2.0.0"
         },
         "runtime": {
-          "UltraMapper.Csv.dll": {}
+          "UltraMapper.Csv.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "UltraMapper.Parsing/2.0.0": {
@@ -482,7 +488,10 @@
           "UltraMapper": "1.0.0"
         },
         "runtime": {
-          "UltraMapper.Parsing.dll": {}
+          "UltraMapper.Parsing.dll": {
+            "assemblyVersion": "2.0.0",
+            "fileVersion": "0.0.0.0"
+          }
         }
       }
     }
